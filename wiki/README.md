@@ -1,4 +1,4 @@
-# wiki/ — pages propres (écrites par le LLM)
+# wiki/ - pages propres (écrites par le LLM)
 
 **Le LLM écrit ici** : résumés, pages-concepts, synthèses. **Tu lis.**
 

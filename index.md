@@ -5,7 +5,7 @@ vault: ai-automation
 updated: 2026-06-20
 ---
 
-# Index — coffre `ai-automation`
+# Index - coffre `ai-automation`
 
 > Carte de navigation du `wiki/`. **Maintenue par le LLM** à chaque ingest.
 > Tant qu'aucune source n'est ingérée, l'index est vide (normal).
@@ -26,3 +26,5 @@ _(aucune synthèse pour l'instant)_
 ## À compléter (trous repérés au lint)
 
 _(rien encore)_
+
+<!-- TEST Sync -->
