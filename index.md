@@ -27,4 +27,4 @@ _(aucune synthèse pour l'instant)_
 
 _(rien encore)_
 
-<!-- TEST Sync  -->
+<!-- TEST Sync -->
