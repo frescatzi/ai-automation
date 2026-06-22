@@ -2,26 +2,23 @@
 type: index
 title: "Index — ai-automation"
 vault: ai-automation
-updated: 2026-06-20
+updated: 2026-06-22
 ---
 
 # Index - coffre `ai-automation`
 
 > Carte de navigation du `wiki/`. **Maintenue par le LLM** à chaque ingest.
-> Tant qu'aucune source n'est ingérée, l'index est vide (normal).
 
 ## Concepts (wiki/)
 
-_(aucun concept pour l'instant — la première ingestion remplira cette section)_
-
-<!-- Modèle d'entrée à utiliser par le LLM :
-## Thème
-- [[concept-nom]] — courte glose (status: draft/active)
--->
+### API Claude
+- [[concept-limites-api-claude]] — limites de débit (RPM/ITPM/OTPM) et de dépenses de l'API Claude (status: draft)
+- [[concept-prompt-caching]] — impact du cache de prompt sur le débit ITPM effectif (status: draft)
 
 ## Synthèses (wiki/)
 
-_(aucune synthèse pour l'instant)_
+### Automation
+- [[synthese-oauth2-n8n-google]] — configurer OAuth2 Google dans n8n, erreurs 401/403 courantes (status: draft)
 
 ## À compléter (trous repérés au lint)
 
