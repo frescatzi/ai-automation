@@ -1,11 +1,12 @@
 ---
 type: wiki
-title: "Configurer OAuth2 Google dans n8n"
-status: draft
+title: Configurer OAuth2 Google dans n8n
+status: active
 publish: none
 vault: ai-automation
-brand: null
-sources: [raw/2026-06-22--sop-configuration-oauth2-n8n-google.md]
+brand:
+sources:
+  - raw/2026-06-22--sop-configuration-oauth2-n8n-google.md
 related: []
 updated: 2026-06-22
 ---
