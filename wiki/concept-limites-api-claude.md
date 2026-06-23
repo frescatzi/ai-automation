@@ -1,12 +1,14 @@
 ---
 type: wiki
-title: "Limites de débit et de dépenses — API Claude"
-status: draft
+title: Limites de débit et de dépenses — API Claude
+status: active
 publish: none
 vault: ai-automation
-brand: null
-sources: [raw/2026-06-22--claude-api-rate-limits.md]
-related: ["wiki/concept-prompt-caching.md"]
+brand:
+sources:
+  - raw/2026-06-22--claude-api-rate-limits.md
+related:
+  - wiki/concept-prompt-caching.md
 updated: 2026-06-22
 ---
 

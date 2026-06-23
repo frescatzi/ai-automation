@@ -1,12 +1,14 @@
 ---
 type: wiki
-title: "Prompt caching — impact sur le débit effectif (API Claude)"
-status: draft
+title: Prompt caching — impact sur le débit effectif (API Claude)
+status: active
 publish: none
 vault: ai-automation
-brand: null
-sources: [raw/2026-06-22--claude-api-rate-limits.md]
-related: ["wiki/concept-limites-api-claude.md"]
+brand:
+sources:
+  - raw/2026-06-22--claude-api-rate-limits.md
+related:
+  - wiki/concept-limites-api-claude.md
 updated: 2026-06-22
 ---
 
