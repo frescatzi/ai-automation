@@ -30,3 +30,6 @@ Le cache de prompt côté API Claude ne sert pas qu'à réduire les coûts (lect
 
 - L'avantage ITPM ne s'applique pas à Haiku 3.5 : les `cache_read_input_tokens` y comptent dans le calcul.
 - L'effet dépend directement du taux de cache réel obtenu (proportion de tokens servis depuis le cache vs recréés) — pas un gain garanti, à mesurer par usage.
+
+
+<!-- test déclencheur croisé 2026-06-24 -->
