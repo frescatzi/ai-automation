@@ -39,4 +39,4 @@ L'API Claude encadre l'usage par organisation via deux mécanismes indépendants
 - [[concept-prompt-caching]] — comment le cache réduit le coût ITPM effectif.
 
 
-<!-- test déclencheur croisé 2026-06-24 Test Katel-->
+<!-- test déclencheur croisé 2026-06-24 Test Katel -->
