@@ -1,3 +1,15 @@
+---
+type: wiki
+title: "SOP — Installer pgvector sur un Postgres géré par Coolify"
+status: active
+publish: notion
+vault: ai-automation
+brand: null
+sources: ["raw/2026-06-24--sop-installer-pgvector-sur-postgres-coolify.md"]
+related: ["sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n", "synthese-lumina-systeme-reference"]
+updated: 2026-06-24
+---
+
 # SOP — Installer pgvector sur un Postgres géré par Coolify
 
 **But :** activer l'extension `pgvector` sur une base PostgreSQL déjà déployée via Coolify, quand l'image standard ne la contient pas, puis créer une table vectorielle et son index de recherche.

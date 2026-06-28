@@ -9,3 +9,19 @@
 ## [2026-06-22] ingest | Limites de débit/dépenses API Claude → wiki/concept-limites-api-claude.md, wiki/concept-prompt-caching.md
 ## [2026-06-22] ingest | SOP OAuth2 n8n + Google → wiki/synthese-oauth2-n8n-google.md
 ## [2026-06-22] lint   | raw/2026-06-22--marketing-psychologie-du-consommateur.md hors périmètre (vault: personal dans son propre frontmatter) — pas de page wiki/ créée ici, à déplacer vers le coffre personal
+## [2026-06-24] ingest | Lumina système référence complète → wiki/synthese-lumina-systeme-reference.md (status: active, publish: notion)
+## [2026-06-24] ingest | SOP Lumina intake Drive→GitHub + publish Notion idempotent → wiki/sop/sop-lumina-intake-et-publish.md
+## [2026-06-24] ingest | SOP générique pipeline ingestion & publication idempotente → wiki/sop/sop-generique-pipeline-source-vers-vues.md
+## [2026-06-24] ingest | SOP système multi-agents + MCP (existant) → frontmatter + related ajoutés à wiki/sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n.md
+## [2026-06-24] ingest | SOP installer pgvector Coolify (existant) → frontmatter + related ajoutés à wiki/sop/SOP_installer-pgvector-sur-postgres-coolify.md
+## [2026-06-24] ingest | Guide connexion agents AI n8n (existant) → frontmatter + related ajoutés à wiki/sop/Guide-Connexion-Agents-AI-n8n.md
+## [2026-06-24] ingest | n8n brancher API & premier workflow (existant) → frontmatter + related ajoutés à wiki/sop/n8n-Brancher-API-et-Premier-Workflow.md
+## [2026-06-24] ingest | Instructions projet ChatGPT n8n v2 (existant) → frontmatter + related ajoutés à wiki/architecture/Instructions_Projet_ChatGPT_n8n_v2.md
+## [2026-06-24] ingest | Brief montage vaults Obsidian → wiki/architecture/brief-montage-vaults.md
+## [2026-06-24] ingest | Batch 2026-06-24 — 9 sources raw/ traitées, index.md mis à jour (Architecture + SOP sections ajoutées)
+## [2026-06-24] lint   | Audit backlinks : synthese-oauth2-n8n-google (related vide → relié à Guide-Connexion-Agents-AI-n8n + sop-lumina-intake-et-publish) ; concept-limites-api-claude (related étendu aux 3 nouvelles pages) ; frontmatter ajouté à 4 pages architecture sans en-tête (Architecture_Connaissance_Obsidian_Centric, Claude_Review_Knowledge_Governance_Layer_v1, Memoire_Centrale_ASP_Brief_Construction, Plan_Demarrage_Memoire_Centrale_MVP)
+## [2026-06-29] ingest | OAuth2 patron universel → wiki/concept-oauth2-automation.md (CRÉÉ, draft) · source : raw/2026-06-22--concept-configurer-oauth2-automation.md
+## [2026-06-29] ingest | Limites API Claude enrichi (best-practices agents, note Lumina) → wiki/concept-limites-api-claude.md (MAJ) · source : raw/2026-06-23--concept-claude-api-rate-limits.md
+## [2026-06-29] ingest | Stubs créés pour concepts référencés manquants : wiki/concept-gestion-erreurs-429.md · wiki/concept-n8n-credentials.md
+## [2026-06-29] ingest | Backlinks ajoutés : synthese-oauth2-n8n-google → concept-oauth2-automation + concept-n8n-credentials ; concept-prompt-caching → concept-gestion-erreurs-429
+## [2026-06-29] ingest | _archive_queue.json créé (13 entrées : 11 runs précédents + 2 de ce run) — exclut raw/2026-06-22--marketing-psychologie-du-consommateur.md (hors périmètre, vault: personal)

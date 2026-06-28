@@ -1,3 +1,15 @@
+---
+type: wiki
+title: "Architecture de la Connaissance — Modèle Git-hub (Obsidian + LLM Wiki)"
+status: active
+publish: notion
+vault: ai-automation
+brand: null
+sources: []
+related: ["synthese-lumina-systeme-reference", "architecture/brief-montage-vaults", "architecture/Memoire_Centrale_ASP_Brief_Construction"]
+updated: 2026-06-20
+---
+
 # Architecture de la Connaissance — Modèle Git-hub (Obsidian + LLM Wiki)
 
 **Date :** 2026-06-20

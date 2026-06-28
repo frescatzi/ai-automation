@@ -1,3 +1,15 @@
+---
+type: wiki
+title: "Guide — Connecter Claude, ChatGPT et Gemini dans n8n"
+status: active
+publish: notion
+vault: ai-automation
+brand: null
+sources: ["raw/2026-06-24--guide-connexion-agents-ai-n8n.md"]
+related: ["sop/n8n-Brancher-API-et-Premier-Workflow", "concept-limites-api-claude", "synthese-lumina-systeme-reference"]
+updated: 2026-06-24
+---
+
 # Guide : connecter Claude, ChatGPT et Gemini dans n8n
 
 *Pour les faire dialoguer entre eux et tourner en autonomie, sans PC allumé*

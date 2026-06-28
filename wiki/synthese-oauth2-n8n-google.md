@@ -7,8 +7,11 @@ vault: ai-automation
 brand:
 sources:
   - raw/2026-06-22--sop-configuration-oauth2-n8n-google.md
-related: []
-updated: 2026-06-22
+related:
+  - wiki/concept-oauth2-automation.md
+  - sop/Guide-Connexion-Agents-AI-n8n
+  - sop/sop-lumina-intake-et-publish
+updated: 2026-06-29
 ---
 
 # Configurer OAuth2 Google dans n8n
@@ -36,3 +39,10 @@ Connecter n8n (auto-hébergé) aux API Google Workspace (Drive, Gmail…) passe 
 - Procédure documentée pour une instance n8n auto-hébergée (`n8n.aftersunpeople.com`) ; l'URI de callback est à adapter au domaine réel.
 - La limite des 7 jours de refresh token est spécifique au mode Test non vérifié — disparaît une fois l'app publiée/vérifiée par Google (processus non couvert par cette source).
 - Ne jamais committer le Client Secret en clair ; utiliser les variables d'environnement n8n en équipe.
+
+## Voir aussi
+
+- [[concept-oauth2-automation]] — patron OAuth2 universel (indépendant de n8n et de Google) : 3 étapes, 3 erreurs, règles de sécurité.
+- [[concept-n8n-credentials]] — gestion des credentials n8n (API Key, OAuth2, rotation).
+- [[sop/Guide-Connexion-Agents-AI-n8n]] — configurer les credentials Anthropic/OpenAI/Gemini dans n8n (même contexte d'intégration).
+- [[sop/sop-lumina-intake-et-publish]] — le robot d'intake Lumina utilise Google Drive avec ces mêmes credentials OAuth2.

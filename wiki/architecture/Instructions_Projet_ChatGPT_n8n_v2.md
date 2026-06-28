@@ -1,3 +1,15 @@
+---
+type: wiki
+title: "Projet ChatGPT — Idéation, Architecture & Pré-analyse de l'écosystème IA / n8n"
+status: active
+publish: notion
+vault: ai-automation
+brand: null
+sources: ["raw/2026-06-24--instructions-projet-chatgpt-n8n-v2.md"]
+related: ["synthese-lumina-systeme-reference", "architecture/brief-montage-vaults"]
+updated: 2026-06-24
+---
+
 # Projet ChatGPT — Idéation, Architecture & Pré-analyse de l'écosystème IA / n8n
 
 > **Version définitive (v3.1 — 2026-06-19).** ChatGPT est le **cerveau en amont** de mon écosystème : il pense, structure, pré-analyse et challenge. La **construction des livrables techniques finaux** (fichiers d'agents, prompts système définitifs, specs de workflows, code, doc technique) est déléguée à Claude (Cowork / Code).

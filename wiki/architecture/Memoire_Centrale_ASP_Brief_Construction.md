@@ -1,3 +1,15 @@
+---
+type: wiki
+title: "Mémoire Centrale ASP — Brief de construction (MVP)"
+status: active
+publish: notion
+vault: ai-automation
+brand: null
+sources: []
+related: ["synthese-lumina-systeme-reference", "sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n", "architecture/Plan_Demarrage_Memoire_Centrale_MVP", "architecture/Architecture_Connaissance_Obsidian_Centric"]
+updated: 2026-06-19
+---
+
 # Mémoire Centrale ASP — Brief de construction (MVP)
 
 > **Document autonome.** À utiliser dans une nouvelle discussion Cowork dédiée à la construction de la mémoire. Tout le contexte nécessaire est dans ce fichier — pas besoin d'avoir suivi les échanges précédents.

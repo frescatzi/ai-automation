@@ -1,3 +1,15 @@
+---
+type: wiki
+title: "n8n — Brancher les 3 API et créer le premier workflow multi-agents"
+status: active
+publish: notion
+vault: ai-automation
+brand: null
+sources: ["raw/2026-06-24--n8n-brancher-api-et-premier-workflow.md"]
+related: ["sop/Guide-Connexion-Agents-AI-n8n", "concept-limites-api-claude"]
+updated: 2026-06-24
+---
+
 # n8n — Brancher les 3 API et créer le premier workflow multi-agents
 
 Pour votre instance : **https://n8n.aftersunpeople.com**

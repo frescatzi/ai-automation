@@ -7,9 +7,14 @@ vault: ai-automation
 brand:
 sources:
   - raw/2026-06-22--claude-api-rate-limits.md
+  - raw/2026-06-23--concept-claude-api-rate-limits.md
 related:
   - wiki/concept-prompt-caching.md
-updated: 2026-06-22
+  - wiki/concept-gestion-erreurs-429.md
+  - synthese-lumina-systeme-reference
+  - sop/Guide-Connexion-Agents-AI-n8n
+  - sop/n8n-Brancher-API-et-Premier-Workflow
+updated: 2026-06-29
 ---
 
 # Limites de débit et de dépenses — API Claude
@@ -34,9 +39,25 @@ L'API Claude encadre l'usage par organisation via deux mécanismes indépendants
 - Synthèse valable pour les niveaux 1 (limites standard documentées) ; les niveaux 2-4 et le custom ont des plafonds plus élevés non détaillés ici — voir Console → Limits pour les chiffres à jour.
 - Les limites par espace de travail héritent de celles de l'organisation si non définies explicitement ; l'org reste toujours la limite plafond.
 
+## Bonnes pratiques pour construire un agent robuste
+
+1. **Gérer les 429** : lire `retry-after`, faire un backoff exponentiel avec jitter, ne pas marteler. Voir [[concept-gestion-erreurs-429]].
+2. **`max_tokens` ne pénalise pas l'OTPM** — le mettre haut sans crainte.
+3. **Limites par modèle** → on peut saturer plusieurs modèles en parallèle (Opus 4.x et Sonnet 4.x ont chacun leur quota combiné).
+4. **Monter en charge progressivement** pour éviter les pics qui déclenchent des 429 d'accélération.
+5. **Surveiller** : Console → page *Usage* (graphes input/output + taux de cache) + page *Limits* pour ajuster les plafonds.
+
+## Note Lumina
+
+Le robot d'ingestion utilise **Gemini** (gratuit) pour le tri initial → pas de pression sur les limites Claude. Si la rédaction `wiki/` ou la mémoire agents bascule sur l'API Claude, **activer le prompt caching** sur les instructions système (`CLAUDE.md` / `ROUTING.md` répétés à chaque appel) sera le premier réflexe pour tenir le débit.
+
 ## Voir aussi
 
 - [[concept-prompt-caching]] — comment le cache réduit le coût ITPM effectif.
+- [[concept-gestion-erreurs-429]] — stratégie de retry sur les 429, backoff, en-têtes utiles.
+- [[synthese-lumina-systeme-reference]] — pourquoi le node Anthropic natif n8n est interdit (bug 404).
+- [[sop/Guide-Connexion-Agents-AI-n8n]] — créer et gérer les clés API Anthropic/OpenAI/Gemini dans n8n.
+- [[sop/n8n-Brancher-API-et-Premier-Workflow]] — brancher la clé Claude dans n8n pas à pas.
 
 
 <!-- test déclencheur croisé 2026-06-24 Test Katel -->

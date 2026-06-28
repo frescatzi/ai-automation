@@ -1,3 +1,15 @@
+---
+type: wiki
+title: "Plan de démarrage — Mémoire Centrale (MVP)"
+status: active
+publish: notion
+vault: ai-automation
+brand: null
+sources: []
+related: ["architecture/Memoire_Centrale_ASP_Brief_Construction", "synthese-lumina-systeme-reference", "sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n"]
+updated: 2026-06-19
+---
+
 # Plan de démarrage — Mémoire Centrale (MVP)
 
 **Date :** 2026-06-19

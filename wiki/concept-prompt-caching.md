@@ -9,7 +9,8 @@ sources:
   - raw/2026-06-22--claude-api-rate-limits.md
 related:
   - wiki/concept-limites-api-claude.md
-updated: 2026-06-22
+  - wiki/concept-gestion-erreurs-429.md
+updated: 2026-06-29
 ---
 
 # Prompt caching — impact sur le débit effectif

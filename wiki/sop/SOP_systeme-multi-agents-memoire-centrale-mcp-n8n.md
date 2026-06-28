@@ -1,3 +1,15 @@
+---
+type: wiki
+title: "SOP — Système multi-agents avec mémoire centrale & serveur MCP (n8n)"
+status: active
+publish: notion
+vault: ai-automation
+brand: null
+sources: ["raw/2026-06-24--sop-systeme-multi-agents-memoire-centrale-mcp-n8n.md"]
+related: ["synthese-lumina-systeme-reference", "sop/SOP_installer-pgvector-sur-postgres-coolify", "sop/sop-lumina-intake-et-publish"]
+updated: 2026-06-24
+---
+
 # SOP — Système multi-agents avec mémoire centrale & serveur MCP (n8n)
 
 **Type :** Procédure générique réutilisable (template)

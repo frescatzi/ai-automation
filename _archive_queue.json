@@ -1,0 +1,67 @@
+[
+  {
+    "path": "raw/2026-06-22--claude-api-rate-limits.md",
+    "category": "API Claude",
+    "processed_at": "2026-06-22"
+  },
+  {
+    "path": "raw/2026-06-22--sop-configuration-oauth2-n8n-google.md",
+    "category": "Automation / Intégrations",
+    "processed_at": "2026-06-22"
+  },
+  {
+    "path": "raw/2026-06-22--concept-configurer-oauth2-automation.md",
+    "category": "Automation / Intégrations",
+    "processed_at": "2026-06-29"
+  },
+  {
+    "path": "raw/2026-06-23--concept-claude-api-rate-limits.md",
+    "category": "API Claude",
+    "processed_at": "2026-06-29"
+  },
+  {
+    "path": "raw/2026-06-24--synthese-lumina-systeme-reference.md",
+    "category": "Système Lumina",
+    "processed_at": "2026-06-24"
+  },
+  {
+    "path": "raw/2026-06-24--sop-lumina-intake-et-publish.md",
+    "category": "Système Lumina",
+    "processed_at": "2026-06-24"
+  },
+  {
+    "path": "raw/2026-06-24--sop-generique-pipeline-source-vers-vues.md",
+    "category": "Automation / Ingestion",
+    "processed_at": "2026-06-24"
+  },
+  {
+    "path": "raw/2026-06-24--sop-systeme-multi-agents-memoire-centrale-mcp-n8n.md",
+    "category": "Architecture / Agents",
+    "processed_at": "2026-06-24"
+  },
+  {
+    "path": "raw/2026-06-24--sop-installer-pgvector-sur-postgres-coolify.md",
+    "category": "Infrastructure",
+    "processed_at": "2026-06-24"
+  },
+  {
+    "path": "raw/2026-06-24--guide-connexion-agents-ai-n8n.md",
+    "category": "n8n",
+    "processed_at": "2026-06-24"
+  },
+  {
+    "path": "raw/2026-06-24--n8n-brancher-api-et-premier-workflow.md",
+    "category": "n8n",
+    "processed_at": "2026-06-24"
+  },
+  {
+    "path": "raw/2026-06-24--instructions-projet-chatgpt-n8n-v2.md",
+    "category": "Architecture",
+    "processed_at": "2026-06-24"
+  },
+  {
+    "path": "raw/2026-06-24--brief-claudecode-montage-vaults-obsidian.md",
+    "category": "Architecture / Obsidian",
+    "processed_at": "2026-06-24"
+  }
+]

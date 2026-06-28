@@ -1,3 +1,15 @@
+---
+type: wiki
+title: "Analyse critique — Knowledge Governance Layer v1"
+status: active
+publish: notion
+vault: ai-automation
+brand: null
+sources: []
+related: ["architecture/Instructions_Projet_ChatGPT_n8n_v2", "architecture/brief-montage-vaults"]
+updated: 2026-06-19
+---
+
 # Analyse critique — Knowledge Governance Layer (réponse au Session Review ChatGPT)
 
 **Date :** 2026-06-19
