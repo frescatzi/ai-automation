@@ -13,12 +13,36 @@ Rules:
 - You only write inside `wiki/`, `index.md`, `log.md`, and `_archive_queue.json`.
 
 Steps:
-1. PURGE DU MANIFESTE — avant toute autre action, nettoie `_archive_queue.json` :
-   - Lis le tableau JSON (ou pars d'un tableau vide si le fichier n'existe pas).
-   - Pour chaque entrée, vérifie si le fichier `path` existe encore dans `raw/`.
-   - Supprime toute entrée dont le fichier est absent (déjà archivé par n8n).
-   - Conserve les entrées dont le fichier est encore présent (en attente ou échec à réessayer).
-   - Réécris `_archive_queue.json` avec le tableau résultant ([] si tout a été archivé).
+1. PURGE DU MANIFESTE — avant toute autre action, en trois sous-étapes STRICTEMENT dans cet ordre :
+
+   a) SYNC VÉRIFIÉE (garde-fou)
+      Run: `git fetch origin`
+      Then compare local HEAD to origin/main:
+        `git rev-list --count HEAD..origin/main`  (commits remote has that local doesn't)
+        `git rev-list --count origin/main..HEAD`  (commits local has that remote doesn't)
+      If EITHER count is non-zero → local is behind, ahead, or diverged.
+      → DO NOT PURGE. Print exactly:
+          "Purge sautée : repo local non synchronisé avec origin/main — synchroniser d'abord."
+        Then skip to step 2 without touching `_archive_queue.json`.
+      Only proceed to (b) if both counts are 0 (perfectly aligned).
+
+      Note for /sync runs: the `git pull` in sync step 1 must have completed as a fast-forward
+      BEFORE this check is reached. If the pull was a no-op or failed, treat as not aligned.
+
+   b) PURGE SUR DISQUE RÉEL (only if sync confirmed)
+      Read `_archive_queue.json` (start from [] if missing).
+      For EACH entry, physically test whether the file at `path` exists on disk in `raw/`:
+        - ABSENT  → remove entry (already archived by n8n)
+        - PRESENT → keep entry (pending or failed, must retry)
+      Rewrite `_archive_queue.json` with the resulting array (write [] if all were removed).
+
+   c) TRACE
+      Print each entry with its status: "présent" or "absent".
+      Then print: manifeste avant (N entrées) → après (M entrées).
+
+   Règle d'or : ne JAMAIS purger sur la base du nombre d'entrées ou d'une hypothèse —
+   toujours lire le système de fichiers APRÈS une sync confirmée.
+
 2. Read `CLAUDE.md`, `index.md`, and the tail of `log.md` to load the conventions and see what
    has already been ingested.
 2. Scan `raw/` and identify what is new or changed since the last log entry.
