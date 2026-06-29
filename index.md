@@ -19,6 +19,9 @@ updated: 2026-06-29
 ### Automation & Intégrations
 - [[concept-oauth2-automation]] — patron OAuth2 universel (3 étapes, 3 erreurs classiques) applicable à tout outil d'automation · status: draft
 - [[concept-n8n-credentials]] — gestion des credentials n8n (API Key, OAuth2, rotation, sécurité) · status: draft
+- [[concept-intake-source-git]] — pattern idempotent & blindé Write→Verify→Delete-if-confirmed pour drainer une source vers Git · status: active
+- [[concept-archivage-n8n-idempotent]] — pattern post-compilation : manifeste → archive → suppression sécurisée (4 garde-fous, pièges) · status: active
+- [[concept-pipeline-memoire-wiki-git]] — hub parallèle wiki Git → base vectorielle (agents) + outil de doc (humains) · status: active
 
 ## Synthèses (wiki/)
 
@@ -48,6 +51,10 @@ updated: 2026-06-29
 
 ### Générique (réutilisable)
 - [[sop/sop-generique-pipeline-source-vers-vues]] — patron d'ingestion inbox→store + publication idempotente upsert-par-clé (status: active)
+
+### Lumina — Pipeline d'archivage & mémoire
+- [[sop/sop-lumina-archive-raw-vers-drive]] — workflow LUMINA Archive Raw→Drive : build, garde-fous, exploitation, incidents (status: active)
+- [[sop/sop-creer-memoire-agents-humains]] — SOP Lumina mémoire agents+humains : pgvector + Notion + Obsidian Git, 4 parties + erreurs (status: active)
 
 ### n8n & connexions API
 - [[sop/Guide-Connexion-Agents-AI-n8n]] — créer les clés API (Anthropic/OpenAI/Gemini), auto-héberger n8n, faire dialoguer les agents (status: active)

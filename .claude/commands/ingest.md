@@ -36,8 +36,20 @@ Steps:
 8. ARCHIVE MANIFEST — for EVERY `raw/` source you actually compiled in this run, append an entry
    to `_archive_queue.json` at the repo root (create the file if missing; keep it a valid JSON
    array). Each entry:
-       { "path": "<exact raw/ path>", "category": "<the wiki category/theme you filed it under>",
+       { "path": "<exact raw/ path>", "category": "<see controlled vocabulary below>",
          "processed_at": "<YYYY-MM-DD>" }
+
+   VOCABULAIRE CONTRÔLÉ — champ "category" (valeur EXACTE, accents/casse/parenthèses compris) :
+     - IA & LLM
+     - Agents & MCP
+     - Automatisation (n8n)
+     - Mémoire & Connaissance
+     - Infrastructure
+     - Architecture & Stratégie
+     - Méthodes & SOP
+   Règle : choisir la MEILLEURE correspondance unique parmi ces 7 valeurs. Si aucune ne colle
+   parfaitement, prendre la plus proche. Ne jamais créer une nouvelle catégorie hors liste.
+
    This is the handoff to the n8n `LUMINA — Archive — Raw→Drive` workflow: it tells n8n which raw
    files are safe to move to Google Drive (into the matching category folder) and then remove
    from raw/. Only list files you genuinely compiled — leave anything still pending OUT of the

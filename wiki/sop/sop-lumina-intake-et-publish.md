@@ -5,9 +5,16 @@ status: active
 publish: notion
 vault: ai-automation
 brand: null
-sources: ["raw/2026-06-24--sop-lumina-intake-et-publish.md"]
-related: ["synthese-lumina-systeme-reference", "sop/sop-generique-pipeline-source-vers-vues", "sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n"]
-updated: 2026-06-24
+sources:
+  - "raw/2026-06-24--sop-lumina-intake-et-publish.md"
+  - "raw/2026-06-29--sop-intake-github-idempotent-blinde.md"
+related:
+  - "synthese-lumina-systeme-reference"
+  - "sop/sop-generique-pipeline-source-vers-vues"
+  - "sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n"
+  - "concept-intake-source-git"
+  - "sop/sop-lumina-archive-raw-vers-drive"
+updated: 2026-06-29
 ---
 
 # SOP Lumina — Intake (Drive→GitHub) & Publication Notion idempotente

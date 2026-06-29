@@ -25,3 +25,15 @@
 ## [2026-06-29] ingest | Stubs créés pour concepts référencés manquants : wiki/concept-gestion-erreurs-429.md · wiki/concept-n8n-credentials.md
 ## [2026-06-29] ingest | Backlinks ajoutés : synthese-oauth2-n8n-google → concept-oauth2-automation + concept-n8n-credentials ; concept-prompt-caching → concept-gestion-erreurs-429
 ## [2026-06-29] ingest | _archive_queue.json créé (13 entrées : 11 runs précédents + 2 de ce run) — exclut raw/2026-06-22--marketing-psychologie-du-consommateur.md (hors périmètre, vault: personal)
+## [2026-06-29] ingest | Pull git : 12 nouvelles sources raw/ 2026-06-29 → batch ingest ci-dessous
+## [2026-06-29] ingest | brief-claudecode-montage-vaults-obsidian (re-export) → sources + related mis à jour dans wiki/architecture/brief-montage-vaults.md
+## [2026-06-29] ingest | guide-connexion-agents-ai-n8n (re-export, même contenu) → sources mis à jour dans wiki/sop/Guide-Connexion-Agents-AI-n8n.md
+## [2026-06-29] ingest | sop-installer-pgvector-sur-postgres-coolify (re-export) → sources + related mis à jour dans wiki/sop/SOP_installer-pgvector-sur-postgres-coolify.md
+## [2026-06-29] ingest | sop-systeme-multi-agents-memoire-centrale-mcp-n8n (re-export) → sources + related mis à jour dans wiki/sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n.md
+## [2026-06-29] ingest | sop-intake-github-idempotent-blinde → sources + related mis à jour dans wiki/sop/sop-lumina-intake-et-publish.md ; concept-intake-source-git + sop-lumina-archive-raw-vers-drive ajoutés en related
+## [2026-06-29] ingest | howto-generique-archiver + sop-generique-workflow-archivage → CRÉÉ wiki/concept-archivage-n8n-idempotent.md (status: active)
+## [2026-06-29] ingest | howto-generique-intake-source-vers-git → CRÉÉ wiki/concept-intake-source-git.md (status: active)
+## [2026-06-29] ingest | howto-generique-creer-la-memoire-agents-et-humains → CRÉÉ wiki/concept-pipeline-memoire-wiki-git.md (status: active)
+## [2026-06-29] ingest | howto-archive-raw-vers-drive-lumina + sop-lumina-archive-raw-vers-drive → CRÉÉ wiki/sop/sop-lumina-archive-raw-vers-drive.md (status: active)
+## [2026-06-29] ingest | sop-creer-la-memoire-agents-et-humains → CRÉÉ wiki/sop/sop-creer-memoire-agents-humains.md (status: active)
+## [2026-06-29] ingest | index.md mis à jour : +3 concepts Automation, +2 SOPs Lumina pipeline archivage/mémoire ; _archive_queue.json étendu (+12 entrées)

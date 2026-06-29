@@ -13,7 +13,8 @@ Steps:
    into clean, deduplicated `wiki/` pages, with FULL backlinks (reciprocal links, no broken/red
    links, and a backlink audit so no page is left orphaned), update `index.md` and `log.md`, and
    append every compiled raw file to `_archive_queue.json` (path + category + processed_at) for
-   the n8n archiver. `raw/` stays read-only; only write inside `wiki/`, `index.md`, `log.md`, and
+   the n8n archiver. The "category" field MUST be one of the 7 controlled values defined in
+   `/ingest` step 8 — verbatim, never a new value. `raw/` stays read-only; only write inside `wiki/`, `index.md`, `log.md`, and
    `_archive_queue.json`. Do NOT delete anything from `raw/` — n8n handles the move to Drive +
    deletion.
 3. Do NOT git commit or push — I handle versioning via the Obsidian Git plugin.

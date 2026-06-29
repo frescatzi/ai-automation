@@ -5,9 +5,16 @@ status: active
 publish: notion
 vault: ai-automation
 brand: null
-sources: ["raw/2026-06-24--sop-systeme-multi-agents-memoire-centrale-mcp-n8n.md"]
-related: ["synthese-lumina-systeme-reference", "sop/SOP_installer-pgvector-sur-postgres-coolify", "sop/sop-lumina-intake-et-publish"]
-updated: 2026-06-24
+sources:
+  - "raw/2026-06-24--sop-systeme-multi-agents-memoire-centrale-mcp-n8n.md"
+  - "raw/2026-06-29--sop-systeme-multi-agents-memoire-centrale-mcp-n8n.md"
+related:
+  - "synthese-lumina-systeme-reference"
+  - "sop/SOP_installer-pgvector-sur-postgres-coolify"
+  - "sop/sop-lumina-intake-et-publish"
+  - "sop/sop-creer-memoire-agents-humains"
+  - "concept-pipeline-memoire-wiki-git"
+updated: 2026-06-29
 ---
 
 # SOP — Système multi-agents avec mémoire centrale & serveur MCP (n8n)

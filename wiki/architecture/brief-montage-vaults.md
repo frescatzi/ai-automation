@@ -5,9 +5,14 @@ status: active
 publish: notion
 vault: ai-automation
 brand: null
-sources: ["raw/2026-06-24--brief-claudecode-montage-vaults-obsidian.md"]
-related: ["synthese-lumina-systeme-reference", "architecture/Instructions_Projet_ChatGPT_n8n_v2"]
-updated: 2026-06-24
+sources:
+  - "raw/2026-06-24--brief-claudecode-montage-vaults-obsidian.md"
+  - "raw/2026-06-29--brief-claudecode-montage-vaults-obsidian.md"
+related:
+  - "synthese-lumina-systeme-reference"
+  - "architecture/Instructions_Projet_ChatGPT_n8n_v2"
+  - "concept-intake-source-git"
+updated: 2026-06-29
 ---
 
 # Architecture — Montage des 3 vaults Obsidian

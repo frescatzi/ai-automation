@@ -5,9 +5,14 @@ status: active
 publish: notion
 vault: ai-automation
 brand: null
-sources: ["raw/2026-06-24--guide-connexion-agents-ai-n8n.md"]
-related: ["sop/n8n-Brancher-API-et-Premier-Workflow", "concept-limites-api-claude", "synthese-lumina-systeme-reference"]
-updated: 2026-06-24
+sources:
+  - "raw/2026-06-24--guide-connexion-agents-ai-n8n.md"
+  - "raw/2026-06-29--guide-connexion-agents-ai-n8n.md"
+related:
+  - "sop/n8n-Brancher-API-et-Premier-Workflow"
+  - "concept-limites-api-claude"
+  - "synthese-lumina-systeme-reference"
+updated: 2026-06-29
 ---
 
 # Guide : connecter Claude, ChatGPT et Gemini dans n8n

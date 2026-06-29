@@ -5,9 +5,14 @@ status: active
 publish: notion
 vault: ai-automation
 brand: null
-sources: ["raw/2026-06-24--sop-installer-pgvector-sur-postgres-coolify.md"]
-related: ["sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n", "synthese-lumina-systeme-reference"]
-updated: 2026-06-24
+sources:
+  - "raw/2026-06-24--sop-installer-pgvector-sur-postgres-coolify.md"
+  - "raw/2026-06-29--sop-installer-pgvector-sur-postgres-coolify.md"
+related:
+  - "sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n"
+  - "sop/sop-creer-memoire-agents-humains"
+  - "synthese-lumina-systeme-reference"
+updated: 2026-06-29
 ---
 
 # SOP — Installer pgvector sur un Postgres géré par Coolify
