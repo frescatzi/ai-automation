@@ -9,7 +9,9 @@ Steps:
 1. PULL: at the repo root, run `git pull` so the local vault matches GitHub. Report what changed
    (files added/updated). If there are local uncommitted changes that would block the pull, stop
    and tell me instead of forcing anything.
-2. INGEST: then run the project's `/ingest` workflow — compile everything still waiting in `raw/`
+2. PURGE DU MANIFESTE: immediately after the pull, apply the purge defined in `/ingest` step 1
+   (remove from `_archive_queue.json` any entry whose `path` no longer exists in `raw/`).
+3. INGEST: then run the project's `/ingest` workflow — compile everything still waiting in `raw/`
    into clean, deduplicated `wiki/` pages, with FULL backlinks (reciprocal links, no broken/red
    links, and a backlink audit so no page is left orphaned), update `index.md` and `log.md`, and
    append every compiled raw file to `_archive_queue.json` (path + category + processed_at) for

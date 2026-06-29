@@ -13,7 +13,13 @@ Rules:
 - You only write inside `wiki/`, `index.md`, `log.md`, and `_archive_queue.json`.
 
 Steps:
-1. Read `CLAUDE.md`, `index.md`, and the tail of `log.md` to load the conventions and see what
+1. PURGE DU MANIFESTE — avant toute autre action, nettoie `_archive_queue.json` :
+   - Lis le tableau JSON (ou pars d'un tableau vide si le fichier n'existe pas).
+   - Pour chaque entrée, vérifie si le fichier `path` existe encore dans `raw/`.
+   - Supprime toute entrée dont le fichier est absent (déjà archivé par n8n).
+   - Conserve les entrées dont le fichier est encore présent (en attente ou échec à réessayer).
+   - Réécris `_archive_queue.json` avec le tableau résultant ([] si tout a été archivé).
+2. Read `CLAUDE.md`, `index.md`, and the tail of `log.md` to load the conventions and see what
    has already been ingested.
 2. Scan `raw/` and identify what is new or changed since the last log entry.
 3. For each new/changed source: extract the durable facts and fold them into the right `wiki/`
