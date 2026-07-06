@@ -158,6 +158,17 @@ return entries.map(e => ({ json: e }));
 
 ## 10. Évolutions prévues
 
-- **v2** : rangement par catégorie `Archive-Raw/<category>/`.
-- Nettoyage éventuel du manifeste (entrées périmées croissantes à chaque run).
+- **v2** : rangement par catégorie `Archive-Raw/<category>/` — le `category` du manifeste devient le nom du sous-dossier Drive. Le workflow cherche le sous-dossier par nom et le crée s'il est absent (node Google Drive Search → si 404 → Create folder). À déclencher sur filtre `_archive_queue.json` (push GitHub) plutôt que cron pour plus de réactivité.
+- Nettoyage optionnel du manifeste (write-back du JSON sans les entrées traitées) — l'idempotence du Node 4 (404 = skip) rend ce step non bloquant.
 - Activer le workflow en **Active** pour que le cron tourne en production.
+
+## 11. Spec de référence (v2 sous-dossiers)
+
+*(Sources : `spec-obsidian-workflow-n8n` + `passation-build-du-obsidian-workflow-n8n` — voir `raw/` pour les fichiers originaux)*
+
+- **Déclencheur recommandé MVP** : Schedule Trigger (toutes les heures) — simple, robuste, pas de boucle.
+- **Arborescence Drive** : un seul niveau `Archive-Raw/<category>/` — catégories en miroir du vocabulaire contrôlé du manifeste (`IA & LLM`, `Agents & MCP`, `Automatisation (n8n)`, `Mémoire & Connaissance`, `Infrastructure`, `Architecture & Stratégie`, `Méthodes & SOP`).
+- **Idempotence v2** : Get file → 404 = skip (le fichier `raw/` a déjà été supprimé lors d'un run précédent). Entrées périmées inoffensives — on ne nettoie pas le manifeste en v1.
+- **Garde-fou identique à l'intake** : Delete branché **uniquement sur Success** de l'Upload (upload confirmé = id Drive non vide).
+- **Dossier Archive-Raw HORS de l'Inbox** (`1gjuB438pW7NKo4A-wbjaud_PH7ijnNUW`) — risque de boucle infinie si archive ré-aspirée par l'intake.
+- **La suppression dans `raw/` ne déclenche PAS pgvector/Notion** — ces workflows filtrent sur `wiki/`. À vérifier au branchement du webhook push.

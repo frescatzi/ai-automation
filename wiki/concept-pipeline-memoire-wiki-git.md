@@ -6,14 +6,16 @@ publish: none
 vault: ai-automation
 brand: null
 sources:
-  - "raw/2026-06-29--howto-generique-creer-la-memoire-agents-et-humains.md"
+  - raw/2026-06-29--howto-generique-creer-la-memoire-agents-et-humains.md
+  - raw/2026-07-02--session-2026-06-25-pipeline-raw-wiki-commandes-claude-code.md
 related:
-  - "sop/sop-creer-memoire-agents-humains"
-  - "sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n"
-  - "concept-archivage-n8n-idempotent"
-  - "concept-intake-source-git"
-  - "synthese-lumina-systeme-reference"
-updated: 2026-06-29
+  - sop/sop-creer-memoire-agents-humains
+  - sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n
+  - concept-archivage-n8n-idempotent
+  - concept-intake-source-git
+  - synthese-lumina-systeme-reference
+  - synthese-lumina-ai-os
+updated: 2026-07-06
 ---
 
 # Concept — Pipeline mémoire depuis wiki Git (hub parallèle agents + humains)
@@ -110,6 +112,30 @@ Chaîne type :
 Les deux cibles étant idempotentes, re-déclencher à chaque push est totalement sûr.
 
 ---
+
+## Où le LLM intervient dans la chaîne (clarification)
+
+*(Source : `raw/2026-07-02--session-2026-06-25-pipeline-raw-wiki-commandes-claude-code.md`)*
+
+**Obsidian n'exécute aucun LLM.** C'est un éditeur de fichiers `.md` posé au-dessus du dépôt Git. Stockage et calcul sont séparés.
+
+| # | Étape | LLM | Où | Auto / manuel |
+|---|-------|-----|----|---------------|
+| 1 | Dépôt d'un doc dans Drive (Lumina Inbox) | — | Google Drive | manuel |
+| 2 | Intake : tri + Drive→GitHub | gpt-4o-mini | n8n | ✅ auto |
+| 3 | `raw/ → wiki/` : compiler les notes | **Claude (Claude Code)** | Mac local | ⚠️ **manuel** |
+| 4 | Push `wiki/` sur GitHub | — | GitHub | semi-auto |
+| 5 | Ingestion `wiki/ → pgvector` | embeddings OpenAI | n8n | ✅ auto (cross-trigger) |
+| 6 | Publication `wiki/ → Notion` | — | n8n | ✅ auto (cross-trigger) |
+| 7 | Réponses des agents | Claude | n8n, via MCP `search_brand_memory` | ✅ auto |
+
+L'étape 3 est le **seul maillon manuel** — c'est Claude Code en local, pas Obsidian.
+
+**`raw/ → wiki/` n'est pas une copie** : Claude Code lit `raw/`, comprend, et rédige des pages propres dans `wiki/` (un fichier `raw/` peut nourrir plusieurs pages wiki, et inversement). `raw/` reste immutable.
+
+**Boucle complète :** `git pull` → `/ingest` → commit+push (Obsidian Git) → cross-trigger → pgvector + Notion se rafraîchissent. Tout reconverge. `/sync` = `git pull` + `/ingest` en une commande.
+
+⚠️ **pgvector ne reflète que `wiki/`**, pas `raw/`. Des fichiers dans `raw/` non encore compilés ne sont pas en mémoire agents.
 
 ## Erreurs fréquentes
 
