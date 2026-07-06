@@ -1,0 +1,13 @@
+---
+type: raw
+title: "Test Auto-Ingest 2 (déclencheur n8n)"
+source_url: "note-manuelle"
+captured: 2026-07-06
+vault: ai-automation
+brand: null
+immutable: true
+---
+
+# Test Auto-Ingest 2
+
+Deuxième note de test : valider que le push GitHub déclenche automatiquement n8n → runner → compilation → push. À supprimer ensuite.
