@@ -1,10 +1,10 @@
 ---
 type: wiki
-title: "Credentials n8n — gestion et bonnes pratiques"
-status: draft
-publish: none
+title: Credentials n8n — gestion et bonnes pratiques
+status: active
+publish: notion
 vault: ai-automation
-brand: null
+brand:
 sources: []
 related:
   - wiki/synthese-oauth2-n8n-google.md

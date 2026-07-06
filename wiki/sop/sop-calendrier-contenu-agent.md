@@ -1,10 +1,10 @@
 ---
 type: wiki
-title: "SOP — Générateur de calendrier de contenu (agent → base, draft-only)"
-status: draft
-publish: none
+title: SOP — Générateur de calendrier de contenu (agent → base, draft-only)
+status: active
+publish: notion
 vault: ai-automation
-brand: null
+brand:
 sources:
   - raw/2026-07-06--pos-generique-calendrier-contenu-agent-base-20260705.md
 related:

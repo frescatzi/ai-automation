@@ -1,10 +1,10 @@
 ---
 type: wiki
-title: "Standard de classification des workflows n8n (process-flow)"
-status: draft
-publish: none
+title: Standard de classification des workflows n8n (process-flow)
+status: active
+publish: notion
 vault: ai-automation
-brand: null
+brand:
 sources:
   - raw/2026-07-02--pos-generique-classification-workflows-n8n-process-flow-2026-07-02.md
   - raw/2026-07-06--pos-generique-classification-workflows-n8n-process-flow-2026-07-02.md

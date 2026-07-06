@@ -1,10 +1,10 @@
 ---
 type: wiki
-title: "Gestion des erreurs 429 — API Claude (et APIs REST)"
-status: draft
-publish: none
+title: Gestion des erreurs 429 — API Claude (et APIs REST)
+status: active
+publish: notion
 vault: ai-automation
-brand: null
+brand:
 sources: []
 related:
   - wiki/concept-limites-api-claude.md

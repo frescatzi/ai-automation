@@ -1,10 +1,10 @@
 ---
 type: wiki
-title: "Mémoire vectorielle multi-marques (banque partagée + tables par marque)"
-status: draft
-publish: none
+title: Mémoire vectorielle multi-marques (banque partagée + tables par marque)
+status: active
+publish: notion
 vault: ai-automation
-brand: null
+brand:
 sources:
   - raw/2026-07-02--lumina-marche-a-suivre-generique-concevoir-une-memoire-vectorielle-multi-marques-banque-partagee-tables-par-marque.md
   - raw/2026-07-02--lumina-ai-os-passation.md

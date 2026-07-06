@@ -1,10 +1,10 @@
 ---
 type: wiki
-title: "Mémoire vivante pour agents (épisodique + consolidation + RAG)"
-status: draft
-publish: none
+title: Mémoire vivante pour agents (épisodique + consolidation + RAG)
+status: active
+publish: notion
 vault: ai-automation
-brand: null
+brand:
 sources:
   - raw/2026-07-02--pos-generique-memoire-vivante-agents-episodique-consolidation-rag.md
   - raw/2026-07-06--pos-generique-memoire-vivante-agents-episodique-consolidation-rag.md

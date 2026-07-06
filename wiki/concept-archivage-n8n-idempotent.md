@@ -1,17 +1,17 @@
 ---
 type: wiki
-title: "Concept — Archivage idempotent post-compilation (pattern n8n)"
+title: Concept — Archivage idempotent post-compilation (pattern n8n)
 status: active
-publish: none
+publish: notion
 vault: ai-automation
-brand: null
+brand:
 sources:
-  - "raw/2026-06-29--howto-generique-archiver-source-apres-compilation-idempotent-n8n.md"
-  - "raw/2026-06-29--sop-generique-workflow-archivage-idempotent-n8n.md"
+  - raw/2026-06-29--howto-generique-archiver-source-apres-compilation-idempotent-n8n.md
+  - raw/2026-06-29--sop-generique-workflow-archivage-idempotent-n8n.md
 related:
-  - "sop/sop-lumina-archive-raw-vers-drive"
-  - "concept-intake-source-git"
-  - "synthese-lumina-systeme-reference"
+  - sop/sop-lumina-archive-raw-vers-drive
+  - concept-intake-source-git
+  - synthese-lumina-systeme-reference
 updated: 2026-06-29
 ---
 

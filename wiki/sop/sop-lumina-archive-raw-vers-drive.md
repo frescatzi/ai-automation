@@ -1,18 +1,18 @@
 ---
 type: wiki
-title: "SOP Lumina — Archive Raw→Drive (n8n)"
+title: SOP Lumina — Archive Raw→Drive (n8n)
 status: active
-publish: none
+publish: notion
 vault: ai-automation
-brand: null
+brand:
 sources:
-  - "raw/2026-06-29--howto-archive-raw-vers-drive-workflow-n8n-lumina.md"
-  - "raw/2026-06-29--sop-lumina-archive-raw-vers-drive-n8n.md"
+  - raw/2026-06-29--howto-archive-raw-vers-drive-workflow-n8n-lumina.md
+  - raw/2026-06-29--sop-lumina-archive-raw-vers-drive-n8n.md
 related:
-  - "concept-archivage-n8n-idempotent"
-  - "synthese-lumina-systeme-reference"
-  - "sop/sop-lumina-intake-et-publish"
-  - "sop/sop-creer-memoire-agents-humains"
+  - concept-archivage-n8n-idempotent
+  - synthese-lumina-systeme-reference
+  - sop/sop-lumina-intake-et-publish
+  - sop/sop-creer-memoire-agents-humains
 updated: 2026-06-29
 ---
 

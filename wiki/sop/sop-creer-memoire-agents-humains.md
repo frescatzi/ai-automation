@@ -1,18 +1,18 @@
 ---
 type: wiki
-title: "SOP Lumina — Créer la mémoire (agents + humains) depuis le wiki Git"
+title: SOP Lumina — Créer la mémoire (agents + humains) depuis le wiki Git
 status: active
-publish: none
+publish: notion
 vault: ai-automation
-brand: null
+brand:
 sources:
-  - "raw/2026-06-29--sop-creer-la-memoire-agents-et-humains.md"
+  - raw/2026-06-29--sop-creer-la-memoire-agents-et-humains.md
 related:
-  - "concept-pipeline-memoire-wiki-git"
-  - "sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n"
-  - "sop/SOP_installer-pgvector-sur-postgres-coolify"
-  - "synthese-lumina-systeme-reference"
-  - "sop/sop-lumina-intake-et-publish"
+  - concept-pipeline-memoire-wiki-git
+  - sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n
+  - sop/SOP_installer-pgvector-sur-postgres-coolify
+  - synthese-lumina-systeme-reference
+  - sop/sop-lumina-intake-et-publish
 updated: 2026-06-29
 ---
 

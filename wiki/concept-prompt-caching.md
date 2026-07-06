@@ -2,7 +2,7 @@
 type: wiki
 title: Prompt caching — impact sur le débit effectif (API Claude)
 status: active
-publish: none
+publish: notion
 vault: ai-automation
 brand:
 sources:

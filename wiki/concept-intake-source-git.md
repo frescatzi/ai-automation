@@ -1,17 +1,17 @@
 ---
 type: wiki
-title: "Concept — Intake source → Git (pattern idempotent & blindé)"
+title: Concept — Intake source → Git (pattern idempotent & blindé)
 status: active
-publish: none
+publish: notion
 vault: ai-automation
-brand: null
+brand:
 sources:
-  - "raw/2026-06-29--howto-generique-intake-source-vers-git-idempotent-blinde.md"
+  - raw/2026-06-29--howto-generique-intake-source-vers-git-idempotent-blinde.md
 related:
-  - "sop/sop-lumina-intake-et-publish"
-  - "concept-archivage-n8n-idempotent"
-  - "concept-pipeline-memoire-wiki-git"
-  - "synthese-lumina-systeme-reference"
+  - sop/sop-lumina-intake-et-publish
+  - concept-archivage-n8n-idempotent
+  - concept-pipeline-memoire-wiki-git
+  - synthese-lumina-systeme-reference
 updated: 2026-06-29
 ---
 

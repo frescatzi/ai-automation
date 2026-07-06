@@ -2,7 +2,7 @@
 type: wiki
 title: Limites de débit et de dépenses — API Claude
 status: active
-publish: none
+publish: notion
 vault: ai-automation
 brand:
 sources:

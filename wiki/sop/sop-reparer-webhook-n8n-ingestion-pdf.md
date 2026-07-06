@@ -1,10 +1,10 @@
 ---
 type: wiki
-title: "SOP — Réparer un webhook n8n (last-node) + ingérer un PDF Drive dans une banque vectorielle"
-status: draft
-publish: none
+title: SOP — Réparer un webhook n8n (last-node) + ingérer un PDF Drive dans une banque vectorielle
+status: active
+publish: notion
 vault: ai-automation
-brand: null
+brand:
 sources:
   - raw/2026-07-02--lumina-marche-a-suivre-generique-reparer-une-recuperation-webhook-n8n-last-node-ingerer-un-pdf-google-drive-dans-une-banque-vectorielle.md
   - raw/2026-07-02--lumina-pos-generique-runbook-ingestion-pdf-drive-vers-banque-vectorielle-recuperation-webhook-last-node.md

@@ -1,10 +1,10 @@
 ---
 type: wiki
-title: "SOP — Ingestion multi-format (texte/markdown + PDF/dossier) vers banque vectorielle"
-status: draft
-publish: none
+title: SOP — Ingestion multi-format (texte/markdown + PDF/dossier) vers banque vectorielle
+status: active
+publish: notion
 vault: ai-automation
-brand: null
+brand:
 sources:
   - raw/2026-07-02--pos-generique-ingestion-multi-format-vers-banque-vectorielle.md
   - raw/2026-07-06--pos-generique-ingestion-multi-format-vers-banque-vectorielle.md

@@ -1,10 +1,10 @@
 ---
 type: wiki
-title: "SOP — Brancher un agent n8n sur un service web avec auth par cookie"
-status: draft
-publish: none
+title: SOP — Brancher un agent n8n sur un service web avec auth par cookie
+status: active
+publish: notion
 vault: ai-automation
-brand: null
+brand:
 sources:
   - raw/2026-07-02--pos-generique-agent-n8n-vers-service-cookie-auth-sans-exposer-secret.md
   - raw/2026-07-06--pos-generique-agent-n8n-vers-service-cookie-auth-sans-exposer-secret.md

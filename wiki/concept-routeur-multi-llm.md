@@ -1,10 +1,10 @@
 ---
 type: wiki
-title: "Routeur multi-LLM par task_type (passerelle OpenAI-compatible)"
-status: draft
-publish: none
+title: Routeur multi-LLM par task_type (passerelle OpenAI-compatible)
+status: active
+publish: notion
 vault: ai-automation
-brand: null
+brand:
 sources:
   - raw/2026-07-02--lumina-ai-os-passation.md
   - raw/2026-07-02--pos-generique-routeur-multi-llm-par-task-type-passerelle-openai-compatible.md

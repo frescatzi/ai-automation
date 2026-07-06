@@ -1,10 +1,10 @@
 ---
 type: wiki
 title: "SOP — Backfill : intégrer des contacts déjà démarchés manuellement dans un outreach automatisé"
-status: draft
-publish: none
+status: active
+publish: notion
 vault: ai-automation
-brand: null
+brand:
 sources:
   - raw/2026-07-06--pos-generique-backfill-outreach-manuel-20260705.md
 related:

@@ -1,10 +1,10 @@
 ---
 type: wiki
-title: "SOP — Diagnostiquer/réparer un pipeline de mémoire vectorielle (n8n + pgvector)"
-status: draft
-publish: none
+title: SOP — Diagnostiquer/réparer un pipeline de mémoire vectorielle (n8n + pgvector)
+status: active
+publish: notion
 vault: ai-automation
-brand: null
+brand:
 sources:
   - raw/2026-07-02--lumina-marche-a-suivre-generique-diagnostiquer-et-reparer-un-pipeline-memoire-vectorielle-n8n-etat-des-lieux-multi-agents.md
 related:

@@ -1,10 +1,10 @@
 ---
 type: wiki
-title: "Concept — Pipeline mémoire depuis wiki Git (hub parallèle agents + humains)"
+title: Concept — Pipeline mémoire depuis wiki Git (hub parallèle agents + humains)
 status: active
-publish: none
+publish: notion
 vault: ai-automation
-brand: null
+brand:
 sources:
   - raw/2026-06-29--howto-generique-creer-la-memoire-agents-et-humains.md
   - raw/2026-07-02--session-2026-06-25-pipeline-raw-wiki-commandes-claude-code.md

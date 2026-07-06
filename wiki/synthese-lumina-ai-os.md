@@ -1,10 +1,10 @@
 ---
 type: wiki
-title: "LUMINA AI OS — Système multi-agents & multi-LLM"
-status: draft
-publish: none
+title: LUMINA AI OS — Système multi-agents & multi-LLM
+status: active
+publish: notion
 vault: ai-automation
-brand: null
+brand:
 sources:
   - raw/2026-07-02--lumina-ai-os-passation.md
   - raw/2026-07-02--lumina-playbook-v1-2026-07-02.md

@@ -1,10 +1,10 @@
 ---
 type: wiki
-title: "SOP — Auditer/éditer un n8n self-hosté par son API interne (sans clé API)"
-status: draft
-publish: none
+title: SOP — Auditer/éditer un n8n self-hosté par son API interne (sans clé API)
+status: active
+publish: notion
 vault: ai-automation
-brand: null
+brand:
 sources:
   - raw/2026-07-02--pos-generique-audit-edition-workflows-n8n-via-api-interne.md
   - raw/2026-07-06--pos-generique-audit-edition-workflows-n8n-via-api-interne.md

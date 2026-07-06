@@ -1,10 +1,10 @@
 ---
 type: wiki
-title: "SOP — Clonage d'un roster d'agents vers une nouvelle marque"
-status: draft
-publish: none
+title: SOP — Clonage d'un roster d'agents vers une nouvelle marque
+status: active
+publish: notion
 vault: ai-automation
-brand: null
+brand:
 sources:
   - raw/2026-07-02--pos-generique-clonage-roster-agents-multimarques.md
   - raw/2026-07-06--pos-generique-clonage-roster-agents-multimarques.md

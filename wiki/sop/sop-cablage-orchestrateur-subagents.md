@@ -1,10 +1,10 @@
 ---
 type: wiki
-title: "SOP — Câbler un orchestrateur AI Agent à des sub-agents et un routeur LLM (n8n)"
-status: draft
-publish: none
+title: SOP — Câbler un orchestrateur AI Agent à des sub-agents et un routeur LLM (n8n)
+status: active
+publish: notion
 vault: ai-automation
-brand: null
+brand:
 sources:
   - raw/2026-07-02--pos-generique-cablage-orchestrateur-subagents-router-n8n.md
   - raw/2026-07-06--pos-generique-cablage-orchestrateur-subagents-router-n8n.md

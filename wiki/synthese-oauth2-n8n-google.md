@@ -2,7 +2,7 @@
 type: wiki
 title: Configurer OAuth2 Google dans n8n
 status: active
-publish: none
+publish: notion
 vault: ai-automation
 brand:
 sources:

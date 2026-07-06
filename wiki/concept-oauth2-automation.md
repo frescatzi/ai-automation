@@ -1,10 +1,10 @@
 ---
 type: wiki
-title: "OAuth2 — patron universel automation ↔ service cloud"
-status: draft
-publish: none
+title: OAuth2 — patron universel automation ↔ service cloud
+status: active
+publish: notion
 vault: ai-automation
-brand: null
+brand:
 sources:
   - raw/2026-06-22--concept-configurer-oauth2-automation.md
 related:
