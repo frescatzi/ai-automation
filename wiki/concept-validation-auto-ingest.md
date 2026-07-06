@@ -9,6 +9,7 @@ sources:
   - raw/raw/2026-07-06--test-auto-ingest.md
   - raw/raw/2026-07-06--test-auto-ingest-2.md
   - raw/2026-07-06--test-auto-ingest-2.md
+  - raw/2026-07-06--test-3.md
 related:
   - concept-pipeline-memoire-wiki-git
   - concept-intake-source-git
@@ -33,6 +34,8 @@ Le test vérifie que la chaîne **auto-ingest** fonctionne sans intervention man
 La production de *cette* page `wiki/` — reliée au wiki et journalisée — est donc le **signal de succès** du test.
 
 Le second test (`test-auto-ingest-2`) ajoute une garantie sur le **déclencheur** lui-même : ce n'est pas seulement la compilation qui marche, c'est le fait qu'un simple `push` sur `main` suffit à démarrer toute la chaîne (webhook GitHub → n8n → runner). Le corps des deux notes diffère légèrement mais elles valident le **même maillon** — d'où une page unique enrichie plutôt qu'un doublon. Une **re-capture** de `test-auto-ingest-2` est ensuite arrivée à la racine `raw/` (`raw/2026-07-06--test-auto-ingest-2.md`), au corps **identique** à la copie déjà compilée sous `raw/raw/` : elle a simplement été ajoutée aux `sources:` (provenance préservée) et mise en file d'archivage, sans page nouvelle — application directe de la règle de dédup.
+
+Une troisième note (`test-3`) reformule le même test de déclencheur (« valider que le push GitHub déclenche automatiquement n8n → runner → compilation → push ») — même maillon que `test-auto-ingest-2`, donc simple ajout aux `sources:` plutôt qu'une page distincte.
 
 ## Rattachement au pipeline
 
