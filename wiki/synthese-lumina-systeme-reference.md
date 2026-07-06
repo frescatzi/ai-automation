@@ -5,9 +5,22 @@ status: active
 publish: notion
 vault: ai-automation
 brand: null
-sources: ["raw/2026-06-24--synthese-lumina-systeme-reference.md"]
-related: ["sop/sop-lumina-intake-et-publish", "sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n", "concept-limites-api-claude", "architecture/Instructions_Projet_ChatGPT_n8n_v2"]
-updated: 2026-06-24
+sources:
+  - raw/2026-06-24--synthese-lumina-systeme-reference.md
+  - raw/2026-07-02--lumina-ai-os-passation.md
+  - raw/2026-07-02--lumina-playbook-v1-2026-07-02.md
+  - raw/2026-07-02--milestone-cablage-maestro-router-2026-07-02.md
+related:
+  - sop/sop-lumina-intake-et-publish
+  - sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n
+  - concept-limites-api-claude
+  - architecture/Instructions_Projet_ChatGPT_n8n_v2
+  - synthese-lumina-ai-os
+  - concept-routeur-multi-llm
+  - concept-memoire-vectorielle-multi-marques
+  - concept-memoire-vivante-agents
+  - concept-classification-workflows-n8n
+updated: 2026-07-06
 ---
 
 # LUMINA — Système de connaissance (référence complète)
@@ -79,7 +92,54 @@ Trigger → Query Notion DB → HTTP GitHub Trees → Split Out1 (tree) → Filt
 
 ---
 
-## 6. ⏭️ À faire (prochaines étapes)
+## 6. Évolution — Lumina AI OS v2 (multi-LLM, multi-brand, multi-agents)
+
+*(Sources ingérées 2026-07-02. Synthèse complète → [[synthese-lumina-ai-os]])*
+
+### Architecture cible
+
+```
+[Orchestrateur Maestro] ─── toolWorkflow ──→ Sub-agents (secrétariat, recherche, copy…)
+        │                ─── toolWorkflow ──→ LUMINA-AI-Router (task_type → modèle)
+        └────────────── Knowledge ──────────→ <code>_memory (pgvector, par marque)
+```
+
+### Routeur LLM multi-modèle
+
+- Un seul credential OpenRouter (passerelle OpenAI-compatible) → 1 node HTTP → N modèles.
+- Table task_type → modèle : `reasoning` → o3-mini · `copy_writing` → Claude Sonnet · `research` → Perplexity · `quick_answer` → GPT-4o-mini · `local_sensitive` → Hermes (local).
+- Alias anti-churn (`~…-latest`) pour ne pas rééditer à chaque release modèle.
+- Ne jamais router du PII vers le cloud (`local_sensitive` bloqué à Hermes).
+
+→ Détail : [[concept-routeur-multi-llm]]
+
+### Mémoire vectorielle multi-marques
+
+- **Frontière physique** : `lumina_memory` (partagé) + `<code>_memory` (par marque) dans la même instance pgvector.
+- **`memory_registry`** : table de routage source de vérité (brand_code → table + collection).
+- Provisioning : `LUMINA-BRAND-PROVISION {code, brand_name, tone_voice, forbidden_words}` → crée table + index HNSW + ligne registry.
+- Onboarding d'une nouvelle marque : provisionner → ingérer le canon → cloner le roster d'agents.
+
+→ Détail : [[concept-memoire-vectorielle-multi-marques]] · [[sop/sop-clonage-roster-agents]]
+
+### Mémoire vivante
+
+- **WRITE** (Hermes, gratuit) : épisodique systématique après chaque exécution.
+- **READ/RAG** : embed la question → cosinus → injecte dans `context_raw` avant appel LLM premium.
+- **CONSOLIDATE** : cron nocturne → 3-5 insights distillés → `collection=insights`.
+
+→ Détail : [[concept-memoire-vivante-agents]]
+
+### Classification n8n
+
+- Dossiers numérotés `01-INTAKE → 05-CONNECT` · 4 axes de tags (domaine, statut, déclencheur, marque).
+- Maestro en `03-BRAIN` · sous-agents en `03-BRAIN/Sub-Agents` · infra partagée en `01-LUMINA`.
+
+→ Détail : [[concept-classification-workflows-n8n]]
+
+---
+
+## 7. ⏭️ À faire (prochaines étapes)
 
 1. ✅ **Dédup / idempotence du publish Notion** — FAIT (2026-06-24).
 2. **Automatiser les déclencheurs** : webhook GitHub push → ingestion pgvector + publish Notion auto.

@@ -2,7 +2,7 @@
 type: index
 title: "Index — ai-automation"
 vault: ai-automation
-updated: 2026-06-29
+updated: 2026-07-06
 ---
 
 # Index - coffre `ai-automation`
@@ -21,7 +21,13 @@ updated: 2026-06-29
 - [[concept-n8n-credentials]] — gestion des credentials n8n (API Key, OAuth2, rotation, sécurité) · status: draft
 - [[concept-intake-source-git]] — pattern idempotent & blindé Write→Verify→Delete-if-confirmed pour drainer une source vers Git · status: active
 - [[concept-archivage-n8n-idempotent]] — pattern post-compilation : manifeste → archive → suppression sécurisée (4 garde-fous, pièges) · status: active
-- [[concept-pipeline-memoire-wiki-git]] — hub parallèle wiki Git → base vectorielle (agents) + outil de doc (humains) · status: active
+- [[concept-pipeline-memoire-wiki-git]] — hub parallèle wiki Git → base vectorielle (agents) + outil de doc (humains) ; table LLM dans la chaîne · status: active
+- [[concept-classification-workflows-n8n]] — standard de rangement n8n : dossiers numérotés 01→05, 4 axes de tags, nommage, onboarding multi-marques · status: draft
+
+### IA & Agents
+- [[concept-routeur-multi-llm]] — routeur multi-LLM via OpenRouter : table task_type → modèle, 3-node architecture, règles de routage · status: draft
+- [[concept-memoire-vectorielle-multi-marques]] — frontière physique multi-marques en pgvector, memory_registry, provisioning · status: draft
+- [[concept-memoire-vivante-agents]] — mémoire vivante : 3 types, primitives WRITE/READ/CONSOLIDATE, boucle procédurale, LoRA · status: draft
 
 ## Synthèses (wiki/)
 
@@ -30,6 +36,7 @@ updated: 2026-06-29
 
 ### Système Lumina
 - [[synthese-lumina-systeme-reference]] — référence complète du système Lumina : 4 couches (intake, wiki, pgvector, Notion), décisions figées (status: active)
+- [[synthese-lumina-ai-os]] — Lumina AI OS : stack multi-LLM/multi-agents/multi-marques, routeur, mémoire vivante, playbook v1 (status: draft)
 
 ## Architecture (wiki/architecture/)
 
@@ -59,6 +66,21 @@ updated: 2026-06-29
 ### n8n & connexions API
 - [[sop/Guide-Connexion-Agents-AI-n8n]] — créer les clés API (Anthropic/OpenAI/Gemini), auto-héberger n8n, faire dialoguer les agents (status: active)
 - [[sop/n8n-Brancher-API-et-Premier-Workflow]] — brancher les 3 credentials dans n8n.aftersunpeople.com, premier workflow Claude→ChatGPT→Gemini (status: active)
+
+### Agents & orchestration
+- [[sop/sop-cablage-orchestrateur-subagents]] — câbler Maestro → sub-agents + routeur LLM dans n8n, pièges, prompt orchestrateur (status: draft)
+- [[sop/sop-audit-edition-n8n-api-interne]] — auditer/éditer n8n via API interne /rest (sans clé API), endpoints, template JS (status: draft)
+- [[sop/sop-clonage-roster-agents]] — cloner un roster d'agents pour une nouvelle marque : 3 transforms, procédure complète (status: draft)
+- [[sop/sop-agent-n8n-cookie-auth]] — brancher un agent n8n sur un service web avec auth cookie, Custom Auth credential (status: draft)
+
+### Mémoire vectorielle
+- [[sop/sop-diagnostiquer-pipeline-memoire-vectorielle]] — diagnostiquer/réparer un pipeline RAG n8n+pgvector, SQL paramétré (status: draft)
+- [[sop/sop-reparer-webhook-n8n-ingestion-pdf]] — réparer un webhook last-node + ingérer un PDF Drive dans une banque vectorielle (status: draft)
+- [[sop/sop-ingestion-multi-format-banque-vectorielle]] — ingestion multi-format texte/PDF/dossier récursif vers pgvector (status: draft)
+
+### Automation & contenus
+- [[sop/sop-outreach-backfill]] — backfill de contacts manuels dans un pipeline d'outreach automatisé (status: draft)
+- [[sop/sop-calendrier-contenu-agent]] — générateur de calendrier de contenu via agent → base, draft-only (status: draft)
 
 ## À compléter (trous repérés au lint)
 
