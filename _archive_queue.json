@@ -49,5 +49,6 @@
   { "path": "raw/2026-07-02--passation-build-du-obsidian-workflow-n8n.md", "category": "Méthodes & SOP", "processed_at": "2026-07-06" },
   { "path": "raw/2026-07-02--howto-archive-raw-vers-drive-workflow-n8n-lumina.md", "category": "Méthodes & SOP", "processed_at": "2026-07-06" },
   { "path": "raw/2026-07-02--sop-lumina-archive-raw-vers-drive-n8n.md", "category": "Méthodes & SOP", "processed_at": "2026-07-06" },
-  { "path": "raw/2026-07-06--pos-generique-backfill-outreach-manuel-20260705.md", "category": "Méthodes & SOP", "processed_at": "2026-07-06" }
+  { "path": "raw/2026-07-06--pos-generique-backfill-outreach-manuel-20260705.md", "category": "Méthodes & SOP", "processed_at": "2026-07-06" },
+  { "path": "raw/raw/2026-07-06--test-auto-ingest.md", "category": "Méthodes & SOP", "processed_at": "2026-07-06" }
 ]
