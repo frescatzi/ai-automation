@@ -23,7 +23,7 @@ updated: 2026-07-06
 - [[concept-archivage-n8n-idempotent]] — pattern post-compilation : manifeste → archive → suppression sécurisée (4 garde-fous, pièges) · status: active
 - [[concept-pipeline-memoire-wiki-git]] — hub parallèle wiki Git → base vectorielle (agents) + outil de doc (humains) ; table LLM dans la chaîne · status: active
 - [[concept-classification-workflows-n8n]] — standard de rangement n8n : dossiers numérotés 01→05, 4 axes de tags, nommage, onboarding multi-marques · status: draft
-- [[concept-validation-auto-ingest]] — validation de bout en bout du runner auto-ingest (raw → wiki → Git) ; artefact de test · status: draft
+- [[concept-validation-auto-ingest]] — validation de bout en bout du runner auto-ingest (raw → wiki → Git) + du déclenchement auto (push → n8n) ; artefact de test · status: draft
 
 ### IA & Agents
 - [[concept-routeur-multi-llm]] — routeur multi-LLM via OpenRouter : table task_type → modèle, 3-node architecture, règles de routage · status: draft

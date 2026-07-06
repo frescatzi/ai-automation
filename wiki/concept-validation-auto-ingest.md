@@ -7,6 +7,7 @@ vault: ai-automation
 brand: null
 sources:
   - raw/raw/2026-07-06--test-auto-ingest.md
+  - raw/raw/2026-07-06--test-auto-ingest-2.md
 related:
   - concept-pipeline-memoire-wiki-git
   - concept-intake-source-git
@@ -16,7 +17,7 @@ updated: 2026-07-06
 
 # Concept — Validation de l'auto-ingest (raw → wiki → Git)
 
-> **Origine :** cette page est née d'une note de test (`raw/raw/2026-07-06--test-auto-ingest.md`) déposée pour valider le runner d'auto-ingest **de bout en bout**. Elle est en `draft` et peut être retirée après revue.
+> **Origine :** cette page est née d'une note de test (`raw/raw/2026-07-06--test-auto-ingest.md`) déposée pour valider le runner d'auto-ingest **de bout en bout**. Une seconde note (`raw/raw/2026-07-06--test-auto-ingest-2.md`) a confirmé le **déclenchement automatique** : un push GitHub réveille n8n → runner → compilation → push, sans intervention. Elle est en `draft` et peut être retirée après revue.
 
 ---
 
@@ -30,6 +31,8 @@ Le test vérifie que la chaîne **auto-ingest** fonctionne sans intervention man
 
 La production de *cette* page `wiki/` — reliée au wiki et journalisée — est donc le **signal de succès** du test.
 
+Le second test (`test-auto-ingest-2`) ajoute une garantie sur le **déclencheur** lui-même : ce n'est pas seulement la compilation qui marche, c'est le fait qu'un simple `push` sur `main` suffit à démarrer toute la chaîne (webhook GitHub → n8n → runner). Le corps des deux notes diffère légèrement mais elles valident le **même maillon** — d'où une page unique enrichie plutôt qu'un doublon.
+
 ## Rattachement au pipeline
 
 Ce test valide concrètement le maillon amont du pipeline décrit dans
@@ -42,4 +45,4 @@ l'archivage post-compilation suit [[concept-archivage-n8n-idempotent]].
 
 - **Aucune connaissance métier réutilisable** ici : c'est un artefact de validation. La note source précise « À supprimer ensuite ».
 - La page reste en `status: draft` / `publish: none` : promotion = décision humaine.
-- Le fichier source est **immuable** ; il sera drainé par le service d'archivage (queue), pas supprimé par le LLM.
+- Les fichiers sources sont **immuables** ; ils seront drainés par le service d'archivage (queue), pas supprimés par le LLM.

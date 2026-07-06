@@ -15,6 +15,7 @@ related:
   - concept-intake-source-git
   - synthese-lumina-systeme-reference
   - synthese-lumina-ai-os
+  - concept-validation-auto-ingest
 updated: 2026-07-06
 ---
 
@@ -110,6 +111,8 @@ Chaîne type :
 - **2× Execute Workflow** — lance en **parallèle** Ingestion (Partie 2) et Publish (Partie 3).
 
 Les deux cibles étant idempotentes, re-déclencher à chaque push est totalement sûr.
+
+> **Voir aussi :** [[concept-validation-auto-ingest]] — validation de bout en bout de ce déclencheur (push → n8n → runner → push).
 
 ---
 
