@@ -16,7 +16,9 @@ related:
   - synthese-lumina-systeme-reference
   - synthese-lumina-ai-os
   - concept-validation-auto-ingest
-updated: 2026-07-06
+  - sop/sop-lumina-auto-ingest-raw-vers-wiki
+  - sop/sop-generique-runner-llm-headless-webhook
+updated: 2026-07-07
 ---
 
 # Concept — Pipeline mémoire depuis wiki Git (hub parallèle agents + humains)
@@ -126,17 +128,17 @@ Les deux cibles étant idempotentes, re-déclencher à chaque push est totalemen
 |---|-------|-----|----|---------------|
 | 1 | Dépôt d'un doc dans Drive (Lumina Inbox) | — | Google Drive | manuel |
 | 2 | Intake : tri + Drive→GitHub | gpt-4o-mini | n8n | ✅ auto |
-| 3 | `raw/ → wiki/` : compiler les notes | **Claude (Claude Code)** | Mac local | ⚠️ **manuel** |
+| 3 | `raw/ → wiki/` : compiler les notes | **Claude (Claude Code)** | runner headless (Coolify) | ✅ auto (webhook push → [[sop/sop-lumina-auto-ingest-raw-vers-wiki]]) |
 | 4 | Push `wiki/` sur GitHub | — | GitHub | semi-auto |
 | 5 | Ingestion `wiki/ → pgvector` | embeddings OpenAI | n8n | ✅ auto (cross-trigger) |
 | 6 | Publication `wiki/ → Notion` | — | n8n | ✅ auto (cross-trigger) |
 | 7 | Réponses des agents | Claude | n8n, via MCP `search_brand_memory` | ✅ auto |
 
-L'étape 3 est le **seul maillon manuel** — c'est Claude Code en local, pas Obsidian.
+L'étape 3, historiquement le **seul maillon manuel**, est désormais **automatisée** par un runner Claude headless déclenché par webhook GitHub — voir [[sop/sop-lumina-auto-ingest-raw-vers-wiki]] (implémentation Lumina) et [[sop/sop-generique-runner-llm-headless-webhook]] (patron générique). `/ingest`/`/sync` restent utilisables en local pour du travail manuel ponctuel.
 
-**`raw/ → wiki/` n'est pas une copie** : Claude Code lit `raw/`, comprend, et rédige des pages propres dans `wiki/` (un fichier `raw/` peut nourrir plusieurs pages wiki, et inversement). `raw/` reste immutable.
+**`raw/ → wiki/` n'est pas une copie** : Claude lit `raw/`, comprend, et rédige des pages propres dans `wiki/` (un fichier `raw/` peut nourrir plusieurs pages wiki, et inversement). `raw/` reste immutable.
 
-**Boucle complète :** `git pull` → `/ingest` → commit+push (Obsidian Git) → cross-trigger → pgvector + Notion se rafraîchissent. Tout reconverge. `/sync` = `git pull` + `/ingest` en une commande.
+**Boucle complète :** push `raw/**` → webhook n8n → runner (`git reset --hard` → compile → commit+push) → cross-trigger → pgvector + Notion se rafraîchissent. Tout reconverge. En local, `/sync` = `git pull` + `/ingest` en une commande.
 
 ⚠️ **pgvector ne reflète que `wiki/`**, pas `raw/`. Des fichiers dans `raw/` non encore compilés ne sont pas en mémoire agents.
 
