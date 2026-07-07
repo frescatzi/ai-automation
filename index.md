@@ -63,6 +63,8 @@ updated: 2026-07-06
 ### Lumina — Pipeline d'archivage & mémoire
 - [[sop/sop-lumina-archive-raw-vers-drive]] — workflow LUMINA Archive Raw→Drive : build, garde-fous, exploitation, incidents (status: active)
 - [[sop/sop-creer-memoire-agents-humains]] — SOP Lumina mémoire agents+humains : pgvector + Notion + Obsidian Git, 4 parties + erreurs (status: active)
+- [[sop/sop-lumina-auto-ingest-raw-vers-wiki]] — runner Claude headless (Coolify) déclenché par webhook, multi-coffres : automatise raw/ → wiki/ · status: draft
+- [[sop/sop-generique-runner-llm-headless-webhook]] — patron générique réutilisable : orchestrateur no-code + runner LLM agentique headless · status: draft
 
 ### n8n & connexions API
 - [[sop/Guide-Connexion-Agents-AI-n8n]] — créer les clés API (Anthropic/OpenAI/Gemini), auto-héberger n8n, faire dialoguer les agents (status: active)
