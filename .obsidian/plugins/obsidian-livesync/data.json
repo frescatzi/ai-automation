@@ -59,7 +59,7 @@
   "deleteMetadataOfDeletedFiles": false,
   "syncIgnoreRegEx": "",
   "syncOnlyRegEx": "",
-  "customChunkSize": 0,
+  "customChunkSize": 60,
   "readChunksOnline": true,
   "watchInternalFileChanges": true,
   "automaticallyDeleteMetadataOfDeletedFiles": 0,
@@ -94,7 +94,7 @@
   "settingSyncFile": "",
   "writeCredentialsForSettingSync": false,
   "notifyAllSettingSyncFile": false,
-  "isConfigured": false,
+  "isConfigured": true,
   "settingVersion": 10,
   "enableCompression": false,
   "accessKey": "",
@@ -145,7 +145,7 @@
   "P2P_turnUsername": "",
   "P2P_turnCredential": "",
   "P2P_useDiagRTC": false,
-  "doctorProcessedVersion": "",
+  "doctorProcessedVersion": "0.25.27",
   "bucketCustomHeaders": "",
   "couchDB_CustomHeaders": "",
   "useJWT": false,
@@ -162,5 +162,6 @@
   "forcePathStyle": true,
   "syncInternalFileOverwritePatterns": "",
   "useOnlyLocalChunk": false,
-  "maxMTimeForReflectEvents": 0
+  "maxMTimeForReflectEvents": 0,
+  "tweakModified": 1783468498487
 }
