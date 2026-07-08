@@ -55,7 +55,7 @@
   "syncInternalFilesInterval": 60,
   "additionalSuffixOfDatabaseName": "3c57d5c49dec957b",
   "ignoreVersionCheck": false,
-  "lastReadUpdates": 0,
+  "lastReadUpdates": 25,
   "deleteMetadataOfDeletedFiles": false,
   "syncIgnoreRegEx": "",
   "syncOnlyRegEx": "",
