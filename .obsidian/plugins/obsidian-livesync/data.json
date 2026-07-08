@@ -69,10 +69,17 @@
   "syncAfterMerge": false,
   "configPassphraseStore": "",
   "encryptedPassphrase": "",
-  "encryptedCouchDBConnection": "",
+  "encryptedCouchDBConnection": "%$7994c1h44kD43ldRCAUy2DRTIigZEwfGpall1vp5KIAzCKhXNtJXD2nmKHUPYeHz4i0q4SHDNzBaDCjGp7wysE+DR5dLI66zQEVeCBv3jz9q5J5qR7LK7Z3Ff6np/Pr3f/ftaFyEOQiZYVp3WW33zwgI3iA/LbWhSBqtjyPk6h6IjopmktIL4TfNAkKFrYa1OhtiSShuu1f8vEDJbGFuYMnA8t+Qactzls4hOguBvZsVnoWdFj6fwZpCoVC+a7sXr7rlaNDyCQB7+JNhpi1lgSigwQjk06nqgWg0t1gmdaPnFoqENwyN9qlH/nHEl99a0l489MeB73HFNkBdPQ/PG4fi2Q97vqbyRwZ4iTeplYXwI640UXGluyyLyapcfHb5J27+/g57dmhzf+wwAz6tO6OWekkqrGnkY7Q/241Hc2NxtIHbINH9Zw8w6zax3rN4a75nfBoeI2YHgUlQegXp9MvpNnbB0j4TboE8fAMFmhKpMinhcesecicT0LJNzYK32Wxz/MO/3u9wJ6b/AgQ0Fmp3i7U90XDoDRPM5ECCEoV79tFQWHXxpaA1V3MqaaDnBTAbMj+1JOf/eWytf8bjmDYTGAwrV0TVd9Qn/0iIYlRTaUhtsQ+YvefVtq/6eD02KAlF7r9klo7bgjb7tXRjXX+yyVs9C8xzO8nweEfIYCGVjUBp8VdD5sHA7jUbsGsv1auIuJfLD6D5jXXi",
   "permitEmptyPassphrase": false,
-  "remoteConfigurations": {},
-  "activeConfigurationId": "",
+  "remoteConfigurations": {
+    "remote-mrbctj50-x2xvqy": {
+      "id": "remote-mrbctj50-x2xvqy",
+      "name": "lumina couch",
+      "uri": "%$7994c1h44kD43ldRCAUy2DRTIigZEwfGpall1vp5KICTdN2yHm97HbtGUcVzo2CjvEpm3m9vNQq8xg1WRXCbRzetTTfpt5LA9u3EpCVQWizQP+MEBrHUTwkPbEDYAA4+njfA8nffTEV7fNFAYvZNqPtxu5gATrbeGCsbyvKbu69XgIyMsJmuXKNUrvEeGQ0XeGIxrDUOJ8+u6p5mUBMLu0On5xssN3O2j+utrJD6pRVykXDBHTGx0ne+ow==",
+      "isEncrypted": true
+    }
+  },
+  "activeConfigurationId": "remote-mrbctj50-x2xvqy",
   "P2P_ActiveRemoteConfigurationId": "",
   "useIndexedDBAdapter": false,
   "useTimeouts": false,
@@ -100,7 +107,7 @@
   "accessKey": "",
   "bucket": "",
   "endpoint": "",
-  "region": "auto",
+  "region": "",
   "secretKey": "",
   "useEden": false,
   "maxChunksInEden": 10,
@@ -154,7 +161,7 @@
   "jwtKid": "",
   "jwtSub": "",
   "jwtExpDuration": 5,
-  "useRequestAPI": false,
+  "useRequestAPI": true,
   "bucketPrefix": "",
   "chunkSplitterVersion": "v3-rabin-karp",
   "E2EEAlgorithm": "v2",
