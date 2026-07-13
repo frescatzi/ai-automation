@@ -2,7 +2,7 @@
 type: index
 title: "Index — ai-automation"
 vault: ai-automation
-updated: 2026-07-06
+updated: 2026-07-13
 ---
 
 # Index - coffre `ai-automation`
@@ -31,6 +31,9 @@ updated: 2026-07-06
 - [[concept-memoire-vectorielle-multi-marques]] — frontière physique multi-marques en pgvector, memory_registry, provisioning · status: draft
 - [[concept-memoire-vivante-agents]] — mémoire vivante : 3 types, primitives WRITE/READ/CONSOLIDATE, boucle procédurale, LoRA · status: draft
 - [[concept-bibliotheque-skills-apprenante]] — skills réutilisables à maturité (supervised→autonomous), 2 stockages, boucle consulter/journaliser/graduer/créer · status: draft
+
+### Mémoire & Connaissance
+- [[concept-capture-connaissance-debrief]] — débrief post-projet → mémoire (`collection=insights`) : modèle deux temps, gate humain, idempotence double garde · status: draft
 
 ## Synthèses (wiki/)
 
@@ -77,6 +80,7 @@ updated: 2026-07-06
 - [[sop/sop-audit-edition-n8n-api-interne]] — auditer/éditer n8n via API interne /rest (sans clé API), endpoints, template JS (status: draft)
 - [[sop/sop-clonage-roster-agents]] — cloner un roster d'agents pour une nouvelle marque : 3 transforms, procédure complète (status: draft)
 - [[sop/sop-agent-n8n-cookie-auth]] — brancher un agent n8n sur un service web avec auth cookie, Custom Auth credential (status: draft)
+- [[sop/sop-apprendre-skill-a-hermes]] — écrire un skill directement dans la bibliothèque d'Hermès, contrat WRITE, test de trouvabilité (status: draft)
 
 ### Mémoire vectorielle
 - [[sop/sop-diagnostiquer-pipeline-memoire-vectorielle]] — diagnostiquer/réparer un pipeline RAG n8n+pgvector, SQL paramétré (status: draft)

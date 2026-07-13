@@ -12,7 +12,8 @@ related:
   - sop/sop-lumina-archive-raw-vers-drive
   - concept-intake-source-git
   - synthese-lumina-systeme-reference
-updated: 2026-06-29
+  - concept-capture-connaissance-debrief
+updated: 2026-07-13
 ---
 
 # Concept — Archivage idempotent post-compilation (pattern n8n)
@@ -115,3 +116,7 @@ return JSON.parse(decoded).map(e => ({ json: e }));
 
 - **Nominal** : fetch Success = N, Error = 0 ; upload = N ; suppression = N. Fichiers dans l'archive, source vidée.
 - **À vide** (déjà archivés) : fetch Success = 0, Error = N ; upload = 0 ; suppression = 0. **Comportement attendu.**
+
+## Voir aussi
+
+- [[concept-capture-connaissance-debrief]] — même famille de patron (statut pilote + garde-fous d'idempotence), appliquée à la capture de connaissance plutôt qu'à l'archivage de fichiers.

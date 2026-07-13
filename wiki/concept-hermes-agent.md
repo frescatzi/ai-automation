@@ -14,7 +14,8 @@ related:
   - "sop/sop-cablage-orchestrateur-subagents"
   - "sop/sop-agent-n8n-cookie-auth"
   - "synthese-lumina-ai-os"
-updated: 2026-07-12
+  - "sop/sop-apprendre-skill-a-hermes"
+updated: 2026-07-13
 ---
 
 # Concept — Hermes-Agent (bras d'exécution apprenant de LUMINA OS)
@@ -66,3 +67,4 @@ Le câblage « orchestrateur → sous-agents → outil Hermes » est détaillé 
 - [[sop/sop-cablage-orchestrateur-subagents]] — comment Maestro et les sous-agents appellent Hermes.
 - [[sop/sop-agent-n8n-cookie-auth]] — le patron cookie-auth utilisé par le moteur Hermes.
 - [[synthese-lumina-ai-os]] — place de Hermes dans le stack LUMINA AI OS.
+- [[sop/sop-apprendre-skill-a-hermes]] — procédure vérifiée pour écrire un skill directement dans sa bibliothèque.

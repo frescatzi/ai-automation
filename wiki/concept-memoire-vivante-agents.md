@@ -18,7 +18,9 @@ related:
   - wiki/sop/SOP_installer-pgvector-sur-postgres-coolify.md
   - wiki/concept-routeur-multi-llm.md
   - wiki/synthese-lumina-ai-os.md
-updated: 2026-07-06
+  - wiki/concept-capture-connaissance-debrief.md
+  - wiki/sop/sop-apprendre-skill-a-hermes.md
+updated: 2026-07-13
 ---
 
 # Mémoire vivante pour agents (épisodique + consolidation + RAG)
@@ -89,3 +91,5 @@ Webhook ou sous-workflow `{brand, question, collection?, limit?}` → embed la q
 - [[concept-routeur-multi-llm]] — le routeur lit la mémoire via `task_payload.context_raw`.
 - [[concept-hermes-agent]] — le principal consommateur/producteur de cette mémoire (recherche skills < 0.35, journalise, consolide la nuit).
 - [[synthese-lumina-ai-os]] — Hermes comme hippocampe du système Lumina.
+- [[concept-capture-connaissance-debrief]] — capture volontaire/validée par l'humain (collection `insights`), en complément de la consolidation nocturne automatique.
+- [[sop/sop-apprendre-skill-a-hermes]] — application concrète de la primitive WRITE pour `collection=skills`.

@@ -13,7 +13,9 @@ related:
   - sop/SOP_installer-pgvector-sur-postgres-coolify
   - synthese-lumina-systeme-reference
   - sop/sop-lumina-intake-et-publish
-updated: 2026-06-29
+  - concept-capture-connaissance-debrief
+  - sop/sop-apprendre-skill-a-hermes
+updated: 2026-07-13
 ---
 
 # SOP Lumina — Créer la mémoire (agents + humains) depuis le wiki Git
@@ -134,3 +136,8 @@ Idempotents → re-déclencher à chaque push est totalement sûr. Résultat : �
 - **Embedding figé** à 1536 dim (`text-embedding-3-small`).
 - Ne **jamais** éditer pgvector ou Notion à la main.
 - Adaptation à une autre marque : changer owner/repo, base Notion, collection. Pipelines réutilisables.
+
+## Voir aussi
+
+- [[concept-capture-connaissance-debrief]] — capture volontaire de connaissance (collection `insights`) qui écrit dans cette même couche mémoire.
+- [[sop/sop-apprendre-skill-a-hermes]] — écriture manuelle d'un skill (`collection=skills`) via le sous-workflow WRITE dédié.

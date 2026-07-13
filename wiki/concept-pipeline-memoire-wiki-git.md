@@ -18,7 +18,8 @@ related:
   - concept-validation-auto-ingest
   - sop/sop-lumina-auto-ingest-raw-vers-wiki
   - sop/sop-generique-runner-llm-headless-webhook
-updated: 2026-07-07
+  - concept-capture-connaissance-debrief
+updated: 2026-07-13
 ---
 
 # Concept — Pipeline mémoire depuis wiki Git (hub parallèle agents + humains)
@@ -160,3 +161,7 @@ L'étape 3, historiquement le **seul maillon manuel**, est désormais **automati
 - **Modèle d'embedding figé** (changer = tout ré-encoder).
 - Ne **jamais** éditer les sorties (base vectorielle, outil de doc) à la main — ce sont des dérivés.
 - Adapter le pattern à chaque entité : changer owner/repo, la base, la collection. Mêmes pipelines réutilisables.
+
+## Voir aussi
+
+- [[concept-capture-connaissance-debrief]] — pendant « connaissance en base mémoire » (collection `insights`) de ce pipeline « connaissance versionnée en wiki ».

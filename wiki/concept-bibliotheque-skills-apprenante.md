@@ -12,7 +12,8 @@ related:
   - "concept-memoire-vivante-agents"
   - "sop/sop-clonage-roster-agents"
   - "synthese-lumina-ai-os"
-updated: 2026-07-06
+  - "sop/sop-apprendre-skill-a-hermes"
+updated: 2026-07-13
 ---
 
 # Concept — Bibliothèque de skills apprenante (maturité & graduation)
@@ -65,3 +66,4 @@ Insérer 1-2 skills (contenu + registre) → confier à l'agent une tâche qui l
 - [[concept-memoire-vivante-agents]] — mémoire épisodique + consolidation (le pendant « expérience » de cette mémoire « procédure »).
 - [[sop/sop-clonage-roster-agents]] — réplication d'un roster d'agents par marque (les skills spécifiques suivent la marque).
 - [[synthese-lumina-ai-os]] — place de la bibliothèque de skills dans le PLAYBOOK et l'AI OS.
+- [[sop/sop-apprendre-skill-a-hermes]] — procédure concrète « créer » (étape 4 de la boucle) : écrire un skill à la main dans la bibliothèque et vérifier sa trouvabilité.
