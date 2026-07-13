@@ -12,6 +12,7 @@ sources:
   - raw/2026-07-02--howto-generique-creer-la-memoire-agents-et-humains.md
   - raw/2026-07-02--sop-creer-la-memoire-agents-et-humains.md
 related:
+  - wiki/concept-hermes-agent.md
   - wiki/concept-memoire-vectorielle-multi-marques.md
   - wiki/sop/sop-creer-memoire-agents-humains.md
   - wiki/sop/SOP_installer-pgvector-sur-postgres-coolify.md
@@ -86,4 +87,5 @@ Webhook ou sous-workflow `{brand, question, collection?, limit?}` → embed la q
 - [[sop/sop-creer-memoire-agents-humains]] — SOP complète de construction de la couche mémoire.
 - [[sop/SOP_installer-pgvector-sur-postgres-coolify]] — setup de la base vectorielle.
 - [[concept-routeur-multi-llm]] — le routeur lit la mémoire via `task_payload.context_raw`.
+- [[concept-hermes-agent]] — le principal consommateur/producteur de cette mémoire (recherche skills < 0.35, journalise, consolide la nuit).
 - [[synthese-lumina-ai-os]] — Hermes comme hippocampe du système Lumina.

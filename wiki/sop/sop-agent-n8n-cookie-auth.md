@@ -9,6 +9,7 @@ sources:
   - raw/2026-07-02--pos-generique-agent-n8n-vers-service-cookie-auth-sans-exposer-secret.md
   - raw/2026-07-06--pos-generique-agent-n8n-vers-service-cookie-auth-sans-exposer-secret.md
 related:
+  - wiki/concept-hermes-agent.md
   - wiki/sop/sop-cablage-orchestrateur-subagents.md
   - wiki/sop/sop-audit-edition-n8n-api-interne.md
   - wiki/sop/Guide-Connexion-Agents-AI-n8n.md
@@ -88,6 +89,7 @@ Les cookies ne sont **pas partagés automatiquement** entre les nodes HTTP Reque
 
 ## Voir aussi
 
+- [[concept-hermes-agent]] — consommateur concret de ce patron : le moteur Hermes est appelé en cookie-auth (Custom Auth).
 - [[sop/sop-cablage-orchestrateur-subagents]] — câbler un outil (toolWorkflow) à l'orchestrateur.
 - [[sop/sop-audit-edition-n8n-api-interne]] — tester par API interne (`triggerToStartFrom`).
 - [[sop/Guide-Connexion-Agents-AI-n8n]] — créer et gérer les credentials dans n8n.

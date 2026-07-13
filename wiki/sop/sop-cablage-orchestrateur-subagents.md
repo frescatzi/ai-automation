@@ -9,6 +9,7 @@ sources:
   - raw/2026-07-02--pos-generique-cablage-orchestrateur-subagents-router-n8n.md
   - raw/2026-07-06--pos-generique-cablage-orchestrateur-subagents-router-n8n.md
 related:
+  - wiki/concept-hermes-agent.md
   - wiki/concept-routeur-multi-llm.md
   - wiki/synthese-lumina-ai-os.md
   - wiki/sop/sop-audit-edition-n8n-api-interne.md
@@ -84,6 +85,7 @@ AUTHORITY: Actions critiques (dépense, envoi, suppression) → validation humai
 ## Voir aussi
 
 - [[concept-routeur-multi-llm]] — table task_type → modèle, passerelle OpenRouter.
+- [[concept-hermes-agent]] — l'outil `Call 'Hermes (Ops)'` que les sous-agents Secretary/Marketing appellent pour exécuter.
 - [[synthese-lumina-ai-os]] — architecture Maestro + sub-agents en contexte Lumina.
 - [[sop/sop-audit-edition-n8n-api-interne]] — éditer les workflows par API si l'éditeur est capricieux.
 - [[sop/sop-agent-n8n-cookie-auth]] — brancher un outil vers un service web protégé par cookie.

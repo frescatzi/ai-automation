@@ -158,4 +158,19 @@ Trigger → Query Notion DB → HTTP GitHub Trees → Split Out1 (tree) → Filt
 - Nommage : `LUMINA — <Process> — <Détail>` (infra) ; `AFTRSN — …` (marque).
 - Sécurité : workflow planifié+publié obsolète = **dépublier**. Tâches critiques → gate CEO.
 
+---
+
+## Voir aussi — Architecture & fondations
+
+Documents fondateurs (dossier `wiki/architecture/`) qui sous-tendent cette référence :
+
+- [[architecture/Instructions_Projet_ChatGPT_n8n_v2]] — rôles des outils, stack, gouvernance, topologie hub-and-spoke.
+- [[architecture/brief-montage-vaults]] — structure des 3 vaults Obsidian/Git et routeur de tri.
+- [[architecture/Architecture_Connaissance_Obsidian_Centric]] — architecture de la connaissance centrée Obsidian.
+- [[architecture/Claude_Review_Knowledge_Governance_Layer_v1]] — revue de la couche de gouvernance de la connaissance (v1).
+- [[architecture/Memoire_Centrale_ASP_Brief_Construction]] — brief de construction de la mémoire centrale (ASP).
+- [[architecture/Plan_Demarrage_Memoire_Centrale_MVP]] — plan de démarrage de la mémoire centrale (MVP).
+
+---
+
 *v1.1 — 2026-06-24 (dédup Notion idempotente terminée).*

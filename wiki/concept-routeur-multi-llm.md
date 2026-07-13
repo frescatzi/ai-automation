@@ -12,6 +12,7 @@ sources:
   - raw/2026-07-02--lumina-pos-generique-routeur-multi-llm-par-task-type-via-passerelle-openai-compatible.md
   - raw/2026-07-02--aftrsn-lumina-pos-exact-lumina-ai-router-routage-multi-llm-via-openrouter-2026-07-01.md
 related:
+  - wiki/concept-hermes-agent.md
   - wiki/synthese-lumina-ai-os.md
   - wiki/sop/sop-cablage-orchestrateur-subagents.md
   - wiki/concept-memoire-vivante-agents.md
@@ -92,6 +93,7 @@ HTTP Request (POST <gateway>/chat/completions)
 
 ## Voir aussi
 
+- [[concept-hermes-agent]] — composant frère : le routeur choisit le modèle, Hermes exécute la tâche (à ne pas confondre).
 - [[synthese-lumina-ai-os]] — contexte complet du système Lumina et du rôle du routeur.
 - [[sop/sop-cablage-orchestrateur-subagents]] — comment brancher le routeur comme outil d'agent.
 - [[concept-memoire-vivante-agents]] — la mémoire RAG injectée dans `task_payload.context_raw`.

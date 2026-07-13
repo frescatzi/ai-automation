@@ -13,6 +13,7 @@ sources:
   - raw/2026-07-06--milestone-cablage-maestro-router-2026-07-02.md
   - raw/2026-07-02--aftrsn-lumina-pos-exact-lumina-ai-router-routage-multi-llm-via-openrouter-2026-07-01.md
 related:
+  - wiki/concept-hermes-agent.md
   - wiki/concept-routeur-multi-llm.md
   - wiki/concept-memoire-vivante-agents.md
   - wiki/concept-memoire-vectorielle-multi-marques.md
@@ -132,6 +133,7 @@ Voir [[concept-memoire-vivante-agents]] pour le détail du pattern.
 
 ## Voir aussi
 
+- [[concept-hermes-agent]] — le bras d'exécution apprenant (ex-Hermes-Exec) : exécute les tâches, consulte les skills, journalise.
 - [[concept-routeur-multi-llm]] — matrice task_type → modèle, runbook routeur.
 - [[concept-memoire-vivante-agents]] — WRITE/READ/CONSOLIDATE, fine-tuning LoRA.
 - [[concept-memoire-vectorielle-multi-marques]] — pattern banque partagée + tables par marque.

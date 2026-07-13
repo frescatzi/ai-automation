@@ -1,7 +1,12 @@
 [
   {
-    "path": "raw/2026-07-07--pos-lumina-auto-ingest-raw-vers-wiki-2026-07-07.md",
-    "category": "Automatisation (n8n)",
-    "processed_at": "2026-07-07"
+    "path": "raw/2026-07-12--canon-lumina-hermes-agent-2026-07-12.md",
+    "category": "IA & Agents",
+    "processed_at": "2026-07-13"
+  },
+  {
+    "path": "raw/2026-07-06--pos-generique-bibliotheque-de-skills-apprenante-agents.md",
+    "category": "IA & Agents",
+    "processed_at": "2026-07-13"
   }
 ]
