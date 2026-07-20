@@ -7,13 +7,14 @@ vault: ai-automation
 brand: null
 sources:
   - "raw/2026-07-06--pos-generique-bibliotheque-de-skills-apprenante-agents.md"
+  - "raw/2026-07-20--pos-generique-bibliotheque-de-skills-apprenante-agents.md"
 related:
   - "concept-hermes-agent"
   - "concept-memoire-vivante-agents"
   - "sop/sop-clonage-roster-agents"
   - "synthese-lumina-ai-os"
   - "sop/sop-apprendre-skill-a-hermes"
-updated: 2026-07-13
+updated: 2026-07-20
 ---
 
 # Concept — Bibliothèque de skills apprenante (maturité & graduation)
@@ -67,3 +68,5 @@ Insérer 1-2 skills (contenu + registre) → confier à l'agent une tâche qui l
 - [[sop/sop-clonage-roster-agents]] — réplication d'un roster d'agents par marque (les skills spécifiques suivent la marque).
 - [[synthese-lumina-ai-os]] — place de la bibliothèque de skills dans le PLAYBOOK et l'AI OS.
 - [[sop/sop-apprendre-skill-a-hermes]] — procédure concrète « créer » (étape 4 de la boucle) : écrire un skill à la main dans la bibliothèque et vérifier sa trouvabilité.
+
+*Re-capturé le 2026-07-20 (même patron, corps identique à la source du 2026-07-06) — aucun changement de contenu.*
