@@ -19,7 +19,8 @@ related:
   - sop/sop-lumina-auto-ingest-raw-vers-wiki
   - sop/sop-generique-runner-llm-headless-webhook
   - concept-capture-connaissance-debrief
-updated: 2026-07-13
+  - concept-memoire-vectorielle-multi-marques
+updated: 2026-07-21
 ---
 
 # Concept — Pipeline mémoire depuis wiki Git (hub parallèle agents + humains)
@@ -165,3 +166,4 @@ L'étape 3, historiquement le **seul maillon manuel**, est désormais **automati
 ## Voir aussi
 
 - [[concept-capture-connaissance-debrief]] — pendant « connaissance en base mémoire » (collection `insights`) de ce pipeline « connaissance versionnée en wiki ».
+- [[concept-memoire-vectorielle-multi-marques]] — mapping coffre Obsidian (amont) → banque pgvector (aval) : `ai-automation` → `lumina_memory`, `brands` (1 dossier/marque) → 1 table/marque, `personal` → non ingéré.

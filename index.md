@@ -29,7 +29,7 @@ updated: 2026-07-21
 ### IA & Agents
 - [[concept-hermes-agent]] — Hermes-Agent (ex-Hermes-Exec) : bras d'exécution apprenant de LUMINA OS, cookie-auth, skills < 0.35, distinct du Router/Maestro · status: draft
 - [[concept-routeur-multi-llm]] — routeur multi-LLM via OpenRouter : table task_type → modèle, 3-node architecture, règles de routage · status: draft
-- [[concept-memoire-vectorielle-multi-marques]] — frontière physique multi-marques en pgvector, memory_registry, provisioning · status: draft
+- [[concept-memoire-vectorielle-multi-marques]] — frontière physique multi-marques en pgvector, memory_registry, mapping coffre→banque, provisioning · status: active
 - [[concept-memoire-vivante-agents]] — mémoire vivante : 3 types, primitives WRITE/READ/CONSOLIDATE, boucle procédurale, LoRA · status: draft
 - [[concept-bibliotheque-skills-apprenante]] — skills réutilisables à maturité (supervised→autonomous), 2 stockages, boucle consulter/journaliser/graduer/créer · status: draft
 

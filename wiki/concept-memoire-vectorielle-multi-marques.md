@@ -9,16 +9,22 @@ sources:
   - raw/2026-07-02--lumina-marche-a-suivre-generique-concevoir-une-memoire-vectorielle-multi-marques-banque-partagee-tables-par-marque.md
   - raw/2026-07-02--lumina-ai-os-passation.md
   - raw/2026-07-02--lumina-playbook-v1-2026-07-02.md
+  - raw/2026-07-21--aftrsn-lumina-marche-a-suivre-exacte-etape-1-architecture-memoire-multi-banques-schema-nommage-registre-2026-06-29.md
 related:
   - wiki/concept-memoire-vivante-agents.md
   - wiki/sop/SOP_installer-pgvector-sur-postgres-coolify.md
   - wiki/sop/sop-diagnostiquer-pipeline-memoire-vectorielle.md
   - wiki/sop/sop-clonage-roster-agents.md
   - wiki/synthese-lumina-ai-os.md
-updated: 2026-07-06
+  - wiki/concept-pipeline-memoire-wiki-git.md
+updated: 2026-07-21
 ---
 
 # Mémoire vectorielle multi-marques (banque partagée + tables par marque)
+
+## Origine de la décision
+
+Décidé le 2026-06-29 (décideur : Katel/Karter) pour résoudre un problème constaté : la mémoire était **une seule table `asp_memory`** mélangeant contenu système/automation (dominant) et contenu de marque (rare), interrogée par un simple `ORDER BY embedding <=> vec LIMIT 5` **sans filtre** — le Gardien-marque était noyé dans les docs système et ne trouvait pas les faits de marque (ex. il ignorait que le genre est Afro House / Afro Tech / Melodic Afro House). D'où la frontière physique ci-dessous. `asp_memory` est devenue `lumina_memory` (rename/repurpose, pas une nouvelle table).
 
 ## Idée centrale
 
@@ -69,6 +75,8 @@ Frontières **dures** = la table (entité). Frontières **douces** = tags `colle
 
 Filtrer `collection` dans les recherches : exclure par défaut `episodic` pour ne pas polluer les recherches de référence.
 
+> **Évolution de la taxonomie :** la spec figée du 2026-06-29 proposait un starter différent — `canon | voice | ops | process | history` côté marque, `automation | ai_os | pattern` côté `lumina_memory`. La table ci-dessus (`canon | episodic | insights | docs | skills`) est la version qui a suivi (2026-07-02) et qui fait foi aujourd'hui. Les deux partagent le même principe (frontière dure = table, frontière douce = `collection`).
+
 ## Registre de routage (`memory_registry`)
 
 Table de config = source unique de vérité :
@@ -78,6 +86,18 @@ memory_registry(code, table_name, display_name, kind, active)
 ```
 
 Les workflows reçoivent un **code** → résolvent la **table** via le registre. **Sécurité :** valider le nom de table contre le registre (allowlist) avant tout SQL. Ne jamais interpoler un nom de table arbitraire → risque d'injection SQL.
+
+## Mapping amont (coffre Obsidian) → banque pgvector (aval)
+
+La séparation par entité existe déjà **en amont**, au niveau des coffres/dossiers Obsidian ; l'architecture ci-dessus l'aligne **en aval**, au niveau des tables :
+
+| Coffre / vault Obsidian (amont) | → `wiki/` → ingestion → | Banque pgvector (aval) |
+|---|---|---|
+| `ai-automation` (IA, API, MCP, agents, automation) | pipeline | `lumina_memory` |
+| `brands` (1 **dossier par marque**) | pipeline | **1 table par marque** (`<code>_memory`, ex. `aftrsn_memory`) |
+| `personal` (perso/business/général) | — | **non ingéré** (les agents n'y touchent pas) |
+
+Le **dossier-par-marque** en amont mappe proprement sur la **table-par-marque** en aval. Point ouvert (à confirmer) : que les **codes de dossier de marque** dans le coffre `brands` correspondent bien aux **codes du `memory_registry`** → routage cohérent de bout en bout (dossier → `wiki/` → table). Voir [[concept-pipeline-memoire-wiki-git]] pour le détail du pipeline `wiki/` → base vectorielle.
 
 ## Workflows paramétrés (éviter N pipelines)
 
@@ -94,8 +114,9 @@ Recherche : k-NN `ORDER BY embedding <=> q LIMIT k`, éventuellement filtré par
 ## Conventions de nommage
 
 - Banque partagée : `<infra>_memory` (ex. `lumina_memory`).
-- Banque par entité : `<code>_memory` (code lowercase court et stable).
-- Outil MCP/n8n : 1 outil routé `search_entity_memory(entity, question)` pour toutes les entités.
+- Banque par entité : `<code>_memory` (code lowercase court et stable, ex. AFTRSN → `aftrsn`).
+- Workflows infra (templates partagés) : préfixe `LUMINA-` (ex. `LUMINA-MEMORY-INGESTION/...`).
+- Outil MCP/n8n : la spec figée du 2026-06-29 distinguait 2 outils — `search_brand_memory(brand, question)` (routé par marque) et `search_process_memory(question)` → toujours `lumina_memory`. En pratique, viser 1 outil routé `search_entity_memory(entity, question)` pour toutes les entités (marque ou partagé) plutôt que deux noms distincts. **Le nom retenu doit être identique entre le node n8n et les prompts des agents.**
 
 ## Pièges & leçons
 
@@ -112,3 +133,4 @@ Recherche : k-NN `ORDER BY embedding <=> q LIMIT k`, éventuellement filtré par
 - [[sop/sop-diagnostiquer-pipeline-memoire-vectorielle]] — réparer un pipeline mémoire cassé.
 - [[sop/sop-clonage-roster-agents]] — provisionner une nouvelle banque marque + cloner les agents.
 - [[synthese-lumina-ai-os]] — le contexte système Lumina.
+- [[concept-pipeline-memoire-wiki-git]] — le pipeline `wiki/` (Git) → cette base vectorielle (Partie 2), qui alimente le mapping coffre → banque ci-dessus.
