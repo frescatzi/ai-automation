@@ -8,6 +8,7 @@ brand:
 sources:
   - raw/2026-06-29--howto-generique-creer-la-memoire-agents-et-humains.md
   - raw/2026-07-02--session-2026-06-25-pipeline-raw-wiki-commandes-claude-code.md
+  - raw/2026-07-21--howto-generique-creer-la-memoire-agents-et-humains.md
 related:
   - sop/sop-creer-memoire-agents-humains
   - sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n
@@ -26,6 +27,8 @@ updated: 2026-07-21
 # Concept — Pipeline mémoire depuis wiki Git (hub parallèle agents + humains)
 
 > **Règle d'or :** Git = source unique. Les sorties (base vectorielle, outil de doc) se **régénèrent** depuis Git. On ne les édite jamais directement.
+
+> Re-capture 2026-07-21 (`raw/2026-07-21--howto-generique-creer-la-memoire-agents-et-humains.md`) — même corps que la source du 2026-06-29, aucune information nouvelle, ajoutée aux sources pour traçabilité.
 
 Voir [[sop/sop-creer-memoire-agents-humains]] pour l'implémentation Lumina (pgvector + Notion + Obsidian Git).
 
