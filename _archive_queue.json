@@ -8,5 +8,10 @@
     "path": "raw/2026-07-21--pos-generique-backfill-outreach-manuel-20260705.md",
     "category": "Méthodes & SOP",
     "processed_at": "2026-07-21"
+  },
+  {
+    "path": "raw/2026-07-21--pos-generique-meta-ads-systemuser-token-n8n-20260705.md",
+    "category": "Automatisation (n8n)",
+    "processed_at": "2026-07-21"
   }
 ]

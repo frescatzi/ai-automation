@@ -11,7 +11,8 @@ related:
   - wiki/synthese-oauth2-n8n-google.md
   - wiki/sop/Guide-Connexion-Agents-AI-n8n.md
   - wiki/concept-n8n-credentials.md
-updated: 2026-06-29
+  - wiki/sop/sop-token-systemuser-meta-ads-n8n.md
+updated: 2026-07-21
 ---
 
 # OAuth2 — patron universel automation ↔ service cloud
@@ -50,3 +51,7 @@ Connecter un outil d'automation (n8n, Make, Zapier…) à un service cloud (Goog
 ## Exemple concret (Lumina)
 
 La connexion **n8n (`n8n.aftersunpeople.com`) ↔ Google Drive** qui alimente le robot d'ingestion Lumina a utilisé exactement ce patron. Voir [[synthese-oauth2-n8n-google]] pour le détail spécifique Google et [[sop/Guide-Connexion-Agents-AI-n8n]] pour la configuration des credentials dans n8n.
+
+## Contre-exemple : Meta Ads ne suit pas ce patron
+
+Le token System User Meta Ads est **volontairement hors de ce patron OAuth2** : pas de flux Authorization Code, pas de Client ID/Secret côté n8n, expiration « Jamais » au lieu d'un refresh token. Voir [[sop/sop-token-systemuser-meta-ads-n8n]] pour la procédure spécifique (et son propre piège n°1 : le rôle applicatif à affecter à l'utilisateur système).

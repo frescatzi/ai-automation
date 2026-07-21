@@ -12,7 +12,8 @@ related:
   - "sop/n8n-Brancher-API-et-Premier-Workflow"
   - "concept-limites-api-claude"
   - "synthese-lumina-systeme-reference"
-updated: 2026-06-29
+  - "sop/sop-token-systemuser-meta-ads-n8n"
+updated: 2026-07-21
 ---
 
 # Guide : connecter Claude, ChatGPT et Gemini dans n8n
@@ -194,3 +195,9 @@ Oui, **à condition que n8n tourne sur un serveur** (votre choix d'auto-héberge
 ---
 
 *Prochaine étape possible : on peut faire ensemble, pas à pas, soit la création des clés API, soit l'installation de n8n sur le serveur (fichier Docker Compose prêt à copier), soit la construction du premier workflow à 2 agents.*
+
+---
+
+## Voir aussi
+
+- [[sop/sop-token-systemuser-meta-ads-n8n]] — même logique de credential n8n dédié, mais pour Meta Ads (token System User, pas une clé API classique).

@@ -5,6 +5,7 @@ vault: ai-automation
 updated: 2026-07-21
 ---
 
+
 # Index - coffre `ai-automation`
 
 > Carte de navigation du `wiki/`. **Maintenue par le LLM** à chaque ingest.
@@ -91,6 +92,7 @@ updated: 2026-07-21
 ### Automation & contenus
 - [[sop/sop-outreach-backfill]] — backfill de contacts manuels dans un pipeline d'outreach automatisé (status: active)
 - [[sop/sop-calendrier-contenu-agent]] — générateur de calendrier de contenu via agent → base, draft-only (status: draft)
+- [[sop/sop-token-systemuser-meta-ads-n8n]] — token System User Meta Ads pour n8n : procédure, rôle applicatif piège n°1, credential natif « Facebook Graph API » · status: draft
 
 ## À compléter (trous repérés au lint)
 

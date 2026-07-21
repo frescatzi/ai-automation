@@ -12,6 +12,7 @@ related:
   - wiki/sop/Guide-Connexion-Agents-AI-n8n.md
   - wiki/sop/n8n-Brancher-API-et-Premier-Workflow.md
   - wiki/sop/sop-reparer-credential-postgres-partagee-n8n.md
+  - wiki/sop/sop-token-systemuser-meta-ads-n8n.md
 updated: 2026-07-21
 ---
 
@@ -28,6 +29,7 @@ n8n centralise tous les accès aux services externes dans des **credentials** r�
 - **API Key** : clé statique (ex. `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`). Simple, risquée si exposée.
 - **OAuth2** : flux Authorization Code. n8n agit comme client OAuth — voir [[concept-oauth2-automation]] et [[synthese-oauth2-n8n-google]] pour la procédure Google.
 - **HTTP Header Auth / Basic Auth** : pour APIs sans SDK dédié.
+- **Token System User longue durée** (ex. Meta Ads) : ni clé API statique ni flux OAuth2 Authorization Code — un token généré côté fournisseur pour un « utilisateur système », expiration « Jamais », collé directement dans un credential natif. Voir [[sop/sop-token-systemuser-meta-ads-n8n]].
 
 ## Bonnes pratiques
 
@@ -52,3 +54,4 @@ Une credential Postgres unique câblée dans de nombreux workflows (mémoire + C
 - [[concept-oauth2-automation]] — patron OAuth2 générique utilisé par les credentials de type Google.
 - [[synthese-oauth2-n8n-google]] — guide spécifique Google Drive / Gmail dans n8n.
 - [[sop/sop-reparer-credential-postgres-partagee-n8n]] — runbook de réparation d'une credential Postgres partagée fantôme.
+- [[sop/sop-token-systemuser-meta-ads-n8n]] — token System User Meta Ads : procédure, pièges, credential natif « Facebook Graph API ».
