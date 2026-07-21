@@ -7,17 +7,20 @@ vault: ai-automation
 brand: null
 sources:
   - "raw/2026-07-07--pos-lumina-apprendre-un-skill-a-hermes-20260705.md"
+  - "raw/2026-07-21--pos-lumina-apprendre-un-skill-a-hermes-20260705.md"
 related:
   - "concept-bibliotheque-skills-apprenante"
   - "concept-hermes-agent"
   - "concept-memoire-vivante-agents"
   - "sop/sop-creer-memoire-agents-humains"
-updated: 2026-07-13
+updated: 2026-07-21
 ---
 
 # SOP — Apprendre un skill à Hermès (écriture directe dans la bibliothèque)
 
 > Procédure vérifiée le 2026-07-05 — premier skill appris à Hermès sur décision Karter (« Hermès est l'exécutant et l'apprenant ; les spécialistes sont là pour le guider ») : skill n°990 « Recherche d'historique email envoyé (Gmail) ». Générique par nature (architecture LUMINA OS) — pas de version spécifique par marque.
+>
+> Re-capture identique du 2026-07-21 (`raw/2026-07-21--pos-lumina-apprendre-un-skill-a-hermes-20260705.md`) — même contenu, ajoutée aux sources.
 
 ## Principe
 
