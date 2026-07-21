@@ -14,7 +14,8 @@ related:
   - wiki/sop/sop-ingestion-multi-format-banque-vectorielle.md
   - wiki/sop/SOP_installer-pgvector-sur-postgres-coolify.md
   - wiki/sop/sop-cablage-orchestrateur-subagents.md
-updated: 2026-07-06
+  - wiki/sop/sop-reparer-credential-postgres-partagee-n8n.md
+updated: 2026-07-21
 ---
 
 # SOP — Diagnostiquer/réparer un pipeline de mémoire vectorielle (n8n + pgvector)
@@ -131,3 +132,4 @@ Toujours re-tester par le **point d'entrée réel** (MCP/webhook), pas seulement
 - [[sop/sop-ingestion-multi-format-banque-vectorielle]] — ingestion texte + PDF + récursion.
 - [[sop/SOP_installer-pgvector-sur-postgres-coolify]] — setup de la base vectorielle.
 - [[sop/sop-cablage-orchestrateur-subagents]] — audit du câblage orchestrateur.
+- [[sop/sop-reparer-credential-postgres-partagee-n8n]] — cas limite détaillé : credential Postgres **partagée** fantôme (24 workflows, mémoire + tous les agents), repoint en masse + piège republication.

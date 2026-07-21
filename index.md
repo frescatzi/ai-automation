@@ -2,7 +2,7 @@
 type: index
 title: "Index — ai-automation"
 vault: ai-automation
-updated: 2026-07-13
+updated: 2026-07-21
 ---
 
 # Index - coffre `ai-automation`
@@ -58,6 +58,7 @@ updated: 2026-07-13
 ### Infrastructure pgvector & agents
 - [[sop/SOP_installer-pgvector-sur-postgres-coolify]] — installer pgvector sur Postgres Coolify, HNSW index, pièges (status: active)
 - [[sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n]] — système multi-agents hub-and-spoke + mémoire centrale + serveur MCP (status: active)
+- [[sop/sop-reparer-credential-postgres-partagee-n8n]] — réparer une credential Postgres partagée fantôme (mémoire + tous les agents), repoint API en masse, piège republication `/activate` · status: draft
 
 ### Lumina (spécifique AFTRSN)
 - [[sop/sop-lumina-intake-et-publish]] — robot intake Drive→GitHub + publish Notion idempotent, tous les pièges résolus (status: active)

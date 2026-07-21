@@ -12,7 +12,8 @@ related:
   - "sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n"
   - "sop/sop-creer-memoire-agents-humains"
   - "synthese-lumina-systeme-reference"
-updated: 2026-06-29
+  - "sop/sop-reparer-credential-postgres-partagee-n8n"
+updated: 2026-07-21
 ---
 
 # SOP — Installer pgvector sur un Postgres géré par Coolify
@@ -99,3 +100,7 @@ CREATE INDEX IF NOT EXISTS ma_table_embedding_idx
 - **Identifiants** : dans le conteneur, le superuser est la valeur de `$POSTGRES_USER` (le rôle `postgres` peut ne pas exister). Utiliser `psql -U "$POSTGRES_USER" -d "$POSTGRES_DB"` pour éviter les erreurs de saisie (I/l, O/0).
 - **Dimension du vecteur figée** : ne pas mélanger des embeddings de modèles différents dans une même colonne `VECTOR(n)`.
 - **Coupure** : changer l'image redémarre la base → courte indisponibilité de toute app qui l'utilise.
+
+## Voir aussi
+
+- [[sop/sop-reparer-credential-postgres-partagee-n8n]] — si cette base sert aussi la mémoire/Chat Memory des agents, une credential Postgres corrompue est un point unique de défaillance distinct (panne côté n8n, pas côté pgvector) : procédure de réparation.

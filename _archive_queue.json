@@ -3,5 +3,10 @@
     "path": "raw/2026-07-20--pos-generique-bibliotheque-de-skills-apprenante-agents.md",
     "category": "Agents & MCP",
     "processed_at": "2026-07-20"
+  },
+  {
+    "path": "raw/2026-07-21--pos-lumina-reparation-credential-postgres-partagee-20260706.md",
+    "category": "Infrastructure",
+    "processed_at": "2026-07-21"
   }
 ]

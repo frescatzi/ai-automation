@@ -16,7 +16,8 @@ related:
   - wiki/sop/sop-cablage-orchestrateur-subagents.md
   - wiki/sop/sop-clonage-roster-agents.md
   - wiki/sop/Guide-Connexion-Agents-AI-n8n.md
-updated: 2026-07-06
+  - wiki/sop/sop-reparer-credential-postgres-partagee-n8n.md
+updated: 2026-07-21
 ---
 
 # SOP — Auditer/éditer un n8n self-hosté par son API interne (sans clé API)
@@ -98,3 +99,4 @@ Pour chaque workflow récupérer : `type` des nodes · `options.systemMessage` (
 - [[sop/sop-cablage-orchestrateur-subagents]] — câbler les outils et vérifier les connexions.
 - [[sop/sop-clonage-roster-agents]] — cloner un roster par API.
 - [[sop/Guide-Connexion-Agents-AI-n8n]] — créer et gérer les credentials dans n8n.
+- [[sop/sop-reparer-credential-postgres-partagee-n8n]] — cas d'usage concret de PATCH+activate : repointer en masse une credential Postgres fantôme.

@@ -11,7 +11,8 @@ related:
   - wiki/concept-oauth2-automation.md
   - wiki/sop/Guide-Connexion-Agents-AI-n8n.md
   - wiki/sop/n8n-Brancher-API-et-Premier-Workflow.md
-updated: 2026-06-29
+  - wiki/sop/sop-reparer-credential-postgres-partagee-n8n.md
+updated: 2026-07-21
 ---
 
 # Credentials n8n — gestion et bonnes pratiques
@@ -40,9 +41,14 @@ n8n centralise tous les accès aux services externes dans des **credentials** r�
 - Procédure de rotation d'une clé API Anthropic dans n8n sans interrompre les workflows actifs.
 - Export/import de credentials entre instances n8n.
 
+## Panne : credential Postgres partagée fantôme
+
+Une credential Postgres unique câblée dans de nombreux workflows (mémoire + Chat Memory de tous les agents) est un point unique de défaillance : si elle se corrompt (« credential fantôme » — listée mais 404 au chargement), tout le système mémoire/agents tombe. Procédure complète de diagnostic, repoint en masse par API et republication : [[sop/sop-reparer-credential-postgres-partagee-n8n]].
+
 ## Voir aussi
 
 - [[sop/Guide-Connexion-Agents-AI-n8n]] — créer les credentials Anthropic / OpenAI / Gemini pas à pas.
 - [[sop/n8n-Brancher-API-et-Premier-Workflow]] — brancher et tester le premier workflow avec ces credentials.
 - [[concept-oauth2-automation]] — patron OAuth2 générique utilisé par les credentials de type Google.
 - [[synthese-oauth2-n8n-google]] — guide spécifique Google Drive / Gmail dans n8n.
+- [[sop/sop-reparer-credential-postgres-partagee-n8n]] — runbook de réparation d'une credential Postgres partagée fantôme.
