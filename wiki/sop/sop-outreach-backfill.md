@@ -7,10 +7,11 @@ vault: ai-automation
 brand:
 sources:
   - raw/2026-07-06--pos-generique-backfill-outreach-manuel-20260705.md
+  - raw/2026-07-21--pos-generique-backfill-outreach-manuel-20260705.md
 related:
   - wiki/sop/sop-calendrier-contenu-agent.md
   - wiki/synthese-lumina-ai-os.md
-updated: 2026-07-06
+updated: 2026-07-21
 ---
 
 # SOP — Backfill : intégrer des contacts déjà démarchés manuellement dans un outreach automatisé
@@ -42,6 +43,8 @@ S'applique à toute marque LUMINA dont l'outreach a commencé manuellement avant
 2. Un backfill est un test de bord gratuit : il exerce des états que le chemin nominal ne produit jamais et révèle les défauts de conditions temporelles. **Relire les conditions de cadence avant d'injecter des données anciennes.**
 3. Les intervalles d'une séquence se calculent toujours sur l'**événement précédent de la séquence** — règle générale.
 4. Toujours récupérer l'**identifiant de fil** : relancer dans la conversation d'origine préserve le contexte côté destinataire et augmente les taux de réponse.
+
+> Re-capture 2026-07-21 : nouvelle source identique (même patron, même corps) à celle du 2026-07-06 — aucune information nouvelle, source ajoutée à `sources:` pour la traçabilité.
 
 ## Voir aussi
 

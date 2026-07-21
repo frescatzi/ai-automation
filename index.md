@@ -89,7 +89,7 @@ updated: 2026-07-21
 - [[sop/sop-ingestion-multi-format-banque-vectorielle]] — ingestion multi-format texte/PDF/dossier récursif vers pgvector (status: draft)
 
 ### Automation & contenus
-- [[sop/sop-outreach-backfill]] — backfill de contacts manuels dans un pipeline d'outreach automatisé (status: draft)
+- [[sop/sop-outreach-backfill]] — backfill de contacts manuels dans un pipeline d'outreach automatisé (status: active)
 - [[sop/sop-calendrier-contenu-agent]] — générateur de calendrier de contenu via agent → base, draft-only (status: draft)
 
 ## À compléter (trous repérés au lint)
