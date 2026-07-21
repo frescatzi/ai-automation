@@ -13,6 +13,7 @@ related:
   - wiki/sop/n8n-Brancher-API-et-Premier-Workflow.md
   - wiki/sop/sop-reparer-credential-postgres-partagee-n8n.md
   - wiki/sop/sop-token-systemuser-meta-ads-n8n.md
+  - wiki/sop/sop-repondeur-email-drafts-agent.md
 updated: 2026-07-21
 ---
 
@@ -47,6 +48,10 @@ n8n centralise tous les accès aux services externes dans des **credentials** r�
 
 Une credential Postgres unique câblée dans de nombreux workflows (mémoire + Chat Memory de tous les agents) est un point unique de défaillance : si elle se corrompt (« credential fantôme » — listée mais 404 au chargement), tout le système mémoire/agents tombe. Procédure complète de diagnostic, repoint en masse par API et republication : [[sop/sop-reparer-credential-postgres-partagee-n8n]].
 
+## Piège : `403 Forbidden` malgré une credential valide
+
+Un `403 Forbidden` sur une API externe (ex. API email) alors que la credential n8n est correctement configurée n'est pas forcément un problème de credential — c'est souvent un **prérequis d'infrastructure manquant côté fournisseur** (API non activée dans sa console cloud). Vérifier l'activation de l'API avant de déboguer le credential ou le workflow. Cas rencontré : [[sop/sop-repondeur-email-drafts-agent]].
+
 ## Voir aussi
 
 - [[sop/Guide-Connexion-Agents-AI-n8n]] — créer les credentials Anthropic / OpenAI / Gemini pas à pas.
@@ -55,3 +60,4 @@ Une credential Postgres unique câblée dans de nombreux workflows (mémoire + C
 - [[synthese-oauth2-n8n-google]] — guide spécifique Google Drive / Gmail dans n8n.
 - [[sop/sop-reparer-credential-postgres-partagee-n8n]] — runbook de réparation d'une credential Postgres partagée fantôme.
 - [[sop/sop-token-systemuser-meta-ads-n8n]] — token System User Meta Ads : procédure, pièges, credential natif « Facebook Graph API ».
+- [[sop/sop-repondeur-email-drafts-agent]] — piège API désactivée côté fournisseur mimant une credential invalide.

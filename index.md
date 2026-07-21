@@ -93,6 +93,7 @@ updated: 2026-07-21
 - [[sop/sop-outreach-backfill]] — backfill de contacts manuels dans un pipeline d'outreach automatisé (status: active)
 - [[sop/sop-calendrier-contenu-agent]] — générateur de calendrier de contenu via agent → base, draft-only (status: draft)
 - [[sop/sop-token-systemuser-meta-ads-n8n]] — token System User Meta Ads pour n8n : procédure, rôle applicatif piège n°1, credential natif « Facebook Graph API » · status: draft
+- [[sop/sop-repondeur-email-drafts-agent]] — répondeur email à brouillons via agent : chaîne 10 nodes, draft-only, gate humain sur l'envoi · status: draft
 
 ## À compléter (trous repérés au lint)
 

@@ -12,7 +12,8 @@ related:
   - wiki/sop/sop-cablage-orchestrateur-subagents.md
   - wiki/concept-memoire-vivante-agents.md
   - wiki/synthese-lumina-ai-os.md
-updated: 2026-07-06
+  - wiki/sop/sop-repondeur-email-drafts-agent.md
+updated: 2026-07-21
 ---
 
 # SOP — Générateur de calendrier de contenu (agent → base, draft-only)
@@ -77,3 +78,4 @@ Trigger {cible}
 - [[sop/sop-cablage-orchestrateur-subagents]] — câbler l'agent rédacteur comme sous-workflow.
 - [[concept-memoire-vivante-agents]] — écriture mémoire après génération (`ExecuteWorkflow Mémoire`).
 - [[synthese-lumina-ai-os]] — contexte LUMINA OS, agents hub-and-spoke.
+- [[sop/sop-repondeur-email-drafts-agent]] — autre patron draft-only : agent qui rédige, humain qui envoie/publie.

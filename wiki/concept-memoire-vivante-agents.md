@@ -20,7 +20,8 @@ related:
   - wiki/synthese-lumina-ai-os.md
   - wiki/concept-capture-connaissance-debrief.md
   - wiki/sop/sop-apprendre-skill-a-hermes.md
-updated: 2026-07-13
+  - wiki/sop/sop-repondeur-email-drafts-agent.md
+updated: 2026-07-21
 ---
 
 # Mémoire vivante pour agents (épisodique + consolidation + RAG)
@@ -93,3 +94,4 @@ Webhook ou sous-workflow `{brand, question, collection?, limit?}` → embed la q
 - [[synthese-lumina-ai-os]] — Hermes comme hippocampe du système Lumina.
 - [[concept-capture-connaissance-debrief]] — capture volontaire/validée par l'humain (collection `insights`), en complément de la consolidation nocturne automatique.
 - [[sop/sop-apprendre-skill-a-hermes]] — application concrète de la primitive WRITE pour `collection=skills`.
+- [[sop/sop-repondeur-email-drafts-agent]] — journalisation mémoire (étape 9) pour chaque run utile d'un répondeur email draft-only.
