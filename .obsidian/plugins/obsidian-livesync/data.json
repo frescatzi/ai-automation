@@ -69,13 +69,13 @@
   "syncAfterMerge": false,
   "configPassphraseStore": "",
   "encryptedPassphrase": "%$7994c1h44kD43ldRCAUy2DRTIigZEwfGpall1vp5KID7E213zJDll7+7i88zZGrYn0BpuueCPmUPP6Ce5dqS438JHOaPIs/GTZCy2vPuL2sCzUrpJR0PY+IRaQYRM8rx4Q02qlz4XNWUFxixJrM2t+zj",
-  "encryptedCouchDBConnection": "%$KZzavj0+I0grv+yUqm7CrF2eZ4qP7sbRy5SGidAIeFzSkDsP4el7AShZoMF18gklY3Ra6LXMuTVlYd6fDxZXfHUe2MSQtlsJdusOaakb9/drbjpNeDTal9aHWqS5TVc6cY+gRYUDyhIxnpWOTOaXqt89NGlp95j4kxAVKTg9zgrgJC8UMwfNzgSWDScZdTQ9wdgNtvICHajoMAUtABkE+TM4/dRQk9YM5VtFRDlySu1/po4tMRoNiPLVM7IYhW+SVijjbr/5dAnCuaddHgMS+hA9PkS0yi22gFHtrk0obyeKwGvx2YvzxBvXjc7K0alliLwMKVcGgl6YO+BQpXmHBuQmEPakcUtcPej4qW3wAMM5vdBJDIkQvLtm+i+ROZyLqsACCUF8Cw+CapEVmr5aPOJPs8hS8bGsnll7nhcO8/DCxCpFsRPIv0lLERtv1SaVm8nxtPjT9gGOeNYofFDd/fZQTp05U60gA4jM3CG9KVT/VwRIEQJ4RFGcytAHwckxNFj/xXspI+SvBIC/TMdk6qsfpRKxcsm+k4WT2pQ5hGrXcRoAYYImVr+9BSFugIuPB+uQfSAXWqXEzUdWnjR/PWHE9KmwHKT2c/chFGUwfm0yD1CEtfzCJZ0fRp5uyvcKERLaRRz97Va9XvaUx6sNxG1u7+i48K2DXmrOBkhKYtxcj3CH5qVppDmympQK4NkmKsLEIMsAKGmlqaV2",
+  "encryptedCouchDBConnection": "%$KZzavj0+I0grv+yUqm7CrF2eZ4qP7sbRy5SGidAIeFxsiHHO1o0XWTjwlxGGqGECG8VhhFyNHzizH3nWcC5df2WNkuo+6RyBj3Dt75iu8KmRCZMGL+HgwTFigyl89UI7OMAK9/eZuo2rjyPUmbJH9kd9HwHpeR6qX4zJXCWLLEyxiKx/gChpkGz0sqLbMY3m4qI/E/eOUdl1TyCcO7vStmtkQp6Xb8XZ5BzcK7d3ge3qATTI4wYymmYCf3bMGIjSvY5CDIZNMYC3xK0M8BXrEsjIxmY2Y2E+i9B0qU5rW//ui/6/4QP7ByomTC9ZrUcXgPolqQpNqDFQf0aT9Jmb2LKu5ZOx/aRtoGG6e8e/VYxmYlrkDte+1pv0oieiJVmD4kKZ0Yz8zssU7MkYdPxPaLYF9qOZNXmUhshmPCHbm4ImouTnrovj7kvBCmvyxE2VaDqM1BFCuhd8rP2NqMwlT73eEu96VDXl4t1CBV7LWjllT541R+wfK2AtqW73TvqwK1bSDLItj4NX042/Qo2WfqcsDi+e8vTHQ0LMooCtjy3bRshPnTRf99fQCVeH14Xzgthh6mz8QWoxN/iyI27w34VDDkoB2wgNqpkUoEqKuXoZbTkT2tdGDGuPfkpKdJ3+3ee+QNGQw2cECKiX+YYVgVMUsM/RuEitAsj3pn7z6p1H68JJcga7gyEU6gjD7vJybV2MIr0ca99GlYjb",
   "permitEmptyPassphrase": false,
   "remoteConfigurations": {
     "remote-mrbctj50-x2xvqy": {
       "id": "remote-mrbctj50-x2xvqy",
       "name": "lumina couch",
-      "uri": "%$KZzavj0+I0grv+yUqm7CrF2eZ4qP7sbRy5SGidAIeFxY7Z+8ZmGdBL618Ra/bBzrpVpHk3DPJLGuSZYdgy6tik8HB3G0+s+2I69Nse0lzDjXvEtoI+aLsMVM2zBP1d73+1hcWAEyaUft8hoUvewOPXX05yqaHGG+Z39zRWQ36BpA4w3U5W0pmWVoRnufxCwkRQNxhDgn3bTSqLA5pB0/zTsi/yuN34fTYq1XZc8Tq4XLokvgfuUxLG57cw==",
+      "uri": "%$KZzavj0+I0grv+yUqm7CrF2eZ4qP7sbRy5SGidAIeFyXgHJ4EwDJSD8SCJhOCfXwVLkIlMpvaTn2mBld9eORoNWpsQxCQbpxCdvhIHC/9D8qjzi4ytR+fzCeG2Z+239WbM/b4I0rphBZPvtd5vbp4HOLfMlOVpOscmeN/zgOBspd/oMW4wkpfTUlALtrwqAPcY38yuLu1C0H7Vn8hLEqjnlQr+S2cytBF0yEBcYKCVCXlLo0vciEAVY5OQ==",
       "isEncrypted": true
     }
   },
@@ -126,7 +126,7 @@
   "sendChunksBulk": false,
   "sendChunksBulkMaxSize": 1,
   "useSegmenter": false,
-  "useAdvancedMode": false,
+  "useAdvancedMode": true,
   "usePowerUserMode": false,
   "useEdgeCaseMode": false,
   "enableDebugTools": false,
