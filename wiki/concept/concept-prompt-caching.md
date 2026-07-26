@@ -7,10 +7,8 @@ vault: ai-automation
 brand:
 sources:
   - raw/2026-06-22--claude-api-rate-limits.md
-related:
-  - wiki/concept-limites-api-claude.md
-  - wiki/concept-gestion-erreurs-429.md
 updated: 2026-06-29
+related: ["concept-gestion-erreurs-429", "concept-limites-api-claude"]
 ---
 
 # Prompt caching — impact sur le débit effectif
@@ -34,3 +32,9 @@ Le cache de prompt côté API Claude ne sert pas qu'à réduire les coûts (lect
 
 
 <!-- test déclencheur croisé 2026-06-24 -->
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[concept-gestion-erreurs-429]] : Gestion des erreurs 429 · API Claude (et APIs REST)
+- [[concept-limites-api-claude]] : Limites de débit et de dépenses · API Claude
+<!-- AUTO-LIENS:fin -->

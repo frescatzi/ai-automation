@@ -9,19 +9,8 @@ sources:
   - raw/2026-06-29--howto-generique-creer-la-memoire-agents-et-humains.md
   - raw/2026-07-02--session-2026-06-25-pipeline-raw-wiki-commandes-claude-code.md
   - raw/2026-07-21--howto-generique-creer-la-memoire-agents-et-humains.md
-related:
-  - sop/sop-creer-memoire-agents-humains
-  - sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n
-  - concept-archivage-n8n-idempotent
-  - concept-intake-source-git
-  - synthese-lumina-systeme-reference
-  - synthese-lumina-ai-os
-  - concept-validation-auto-ingest
-  - sop/sop-lumina-auto-ingest-raw-vers-wiki
-  - sop/sop-generique-runner-llm-headless-webhook
-  - concept-capture-connaissance-debrief
-  - concept-memoire-vectorielle-multi-marques
 updated: 2026-07-21
+related: ["SOP_systeme-multi-agents-memoire-centrale-mcp-n8n", "concept-archivage-n8n-idempotent", "concept-capture-connaissance-debrief", "concept-intake-source-git", "concept-memoire-vectorielle-multi-marques", "concept-validation-auto-ingest", "sop-creer-memoire-agents-humains", "sop-generique-runner-llm-headless-webhook"]
 ---
 
 # Concept — Pipeline mémoire depuis wiki Git (hub parallèle agents + humains)
@@ -170,3 +159,15 @@ L'étape 3, historiquement le **seul maillon manuel**, est désormais **automati
 
 - [[concept-capture-connaissance-debrief]] — pendant « connaissance en base mémoire » (collection `insights`) de ce pipeline « connaissance versionnée en wiki ».
 - [[concept-memoire-vectorielle-multi-marques]] — mapping coffre Obsidian (amont) → banque pgvector (aval) : `ai-automation` → `lumina_memory`, `brands` (1 dossier/marque) → 1 table/marque, `personal` → non ingéré.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[SOP_systeme-multi-agents-memoire-centrale-mcp-n8n]] : SOP · Système multi-agents avec mémoire centrale & serveur MCP (n8n)
+- [[concept-archivage-n8n-idempotent]] : Concept · Archivage idempotent post-compilation (pattern n8n)
+- [[concept-capture-connaissance-debrief]] : Concept · Capture de connaissance post-projet (débrief → mémoire)
+- [[concept-intake-source-git]] : Concept · Intake source → Git (pattern idempotent & blindé)
+- [[concept-memoire-vectorielle-multi-marques]] : Mémoire vectorielle multi-marques (banque partagée + tables par marque)
+- [[concept-validation-auto-ingest]] : Concept · Validation du runner auto-ingest (raw → wiki → Git)
+- [[sop-creer-memoire-agents-humains]] : SOP Lumina · Créer la mémoire (agents + humains) depuis le wiki Git
+- [[sop-generique-runner-llm-headless-webhook]] : SOP générique · Runner LLM agentique headless déclenché par webhook
+<!-- AUTO-LIENS:fin -->

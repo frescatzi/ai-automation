@@ -6,8 +6,8 @@ publish: notion
 vault: ai-automation
 brand: null
 sources: []
-related: ["synthese-lumina-systeme-reference", "architecture/brief-montage-vaults", "architecture/Memoire_Centrale_ASP_Brief_Construction"]
 updated: 2026-06-20
+related: ["Memoire_Centrale_ASP_Brief_Construction", "brief-montage-vaults", "synthese-lumina-systeme-reference"]
 ---
 
 # Architecture de la Connaissance — Modèle Git-hub (Obsidian + LLM Wiki)
@@ -175,3 +175,10 @@ C'est le document qui dit au LLM : comment le wiki est structuré, les conventio
 ## Version
 v2.1 — Architecture Git-hub + découpage 3 vaults — 2026-06-20
 *(supersède v1.0 Obsidian-centric en chaîne)*
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[Memoire_Centrale_ASP_Brief_Construction]] : Mémoire Centrale ASP · Brief de construction (MVP)
+- [[brief-montage-vaults]] : Architecture · Montage des 3 vaults Obsidian (brief de référence)
+- [[synthese-lumina-systeme-reference]] : Lumina · Système de connaissance (référence complète)
+<!-- AUTO-LIENS:fin -->

@@ -7,12 +7,8 @@ vault: ai-automation
 brand:
 sources:
   - raw/2026-06-22--concept-configurer-oauth2-automation.md
-related:
-  - wiki/synthese-oauth2-n8n-google.md
-  - wiki/sop/Guide-Connexion-Agents-AI-n8n.md
-  - wiki/concept-n8n-credentials.md
-  - wiki/sop/sop-token-systemuser-meta-ads-n8n.md
 updated: 2026-07-21
+related: ["Guide-Connexion-Agents-AI-n8n", "concept-n8n-credentials", "sop-token-systemuser-meta-ads-n8n", "synthese-oauth2-n8n-google"]
 ---
 
 # OAuth2 — patron universel automation ↔ service cloud
@@ -55,3 +51,11 @@ La connexion **n8n (`n8n.aftersunpeople.com`) ↔ Google Drive** qui alimente le
 ## Contre-exemple : Meta Ads ne suit pas ce patron
 
 Le token System User Meta Ads est **volontairement hors de ce patron OAuth2** : pas de flux Authorization Code, pas de Client ID/Secret côté n8n, expiration « Jamais » au lieu d'un refresh token. Voir [[sop/sop-token-systemuser-meta-ads-n8n]] pour la procédure spécifique (et son propre piège n°1 : le rôle applicatif à affecter à l'utilisateur système).
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[Guide-Connexion-Agents-AI-n8n]] : Guide · Connecter Claude, ChatGPT et Gemini dans n8n
+- [[concept-n8n-credentials]] : Credentials n8n · gestion et bonnes pratiques
+- [[sop-token-systemuser-meta-ads-n8n]] : SOP · Token System User Meta Ads pour n8n (création de campagnes)
+- [[synthese-oauth2-n8n-google]] : Configurer OAuth2 Google dans n8n
+<!-- AUTO-LIENS:fin -->

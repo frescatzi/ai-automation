@@ -8,13 +8,8 @@ brand: null
 sources:
   - "raw/2026-06-24--sop-lumina-intake-et-publish.md"
   - "raw/2026-06-29--sop-intake-github-idempotent-blinde.md"
-related:
-  - "synthese-lumina-systeme-reference"
-  - "sop/sop-generique-pipeline-source-vers-vues"
-  - "sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n"
-  - "concept-intake-source-git"
-  - "sop/sop-lumina-archive-raw-vers-drive"
 updated: 2026-06-29
+related: ["SOP_systeme-multi-agents-memoire-centrale-mcp-n8n", "concept-intake-source-git", "sop-creer-memoire-agents-humains", "sop-generique-pipeline-source-vers-vues", "sop-lumina-archive-raw-vers-drive", "synthese-lumina-systeme-reference", "synthese-oauth2-n8n-google"]
 ---
 
 # SOP Lumina — Intake (Drive→GitHub) & Publication Notion idempotente
@@ -114,3 +109,14 @@ Chaîne : `Trigger → Query Notion DB → HTTP GitHub Trees → Split Out1 (tre
 - **Jamais** de PAT/token dans le chat ; jamais d'édition manuelle de pgvector/Notion.
 
 *SOP Lumina v1.0 — 2026-06-24.*
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[SOP_systeme-multi-agents-memoire-centrale-mcp-n8n]] : SOP · Système multi-agents avec mémoire centrale & serveur MCP (n8n)
+- [[concept-intake-source-git]] : Concept · Intake source → Git (pattern idempotent & blindé)
+- [[sop-creer-memoire-agents-humains]] : SOP Lumina · Créer la mémoire (agents + humains) depuis le wiki Git
+- [[sop-generique-pipeline-source-vers-vues]] : SOP générique · Pipeline d'ingestion & publication idempotente (n8n)
+- [[sop-lumina-archive-raw-vers-drive]] : SOP Lumina · Archive Raw→Drive (n8n)
+- [[synthese-lumina-systeme-reference]] : Lumina · Système de connaissance (référence complète)
+- [[synthese-oauth2-n8n-google]] : Configurer OAuth2 Google dans n8n
+<!-- AUTO-LIENS:fin -->

@@ -6,10 +6,8 @@ publish: notion
 vault: ai-automation
 brand:
 sources: []
-related:
-  - wiki/concept-limites-api-claude.md
-  - wiki/concept-prompt-caching.md
 updated: 2026-06-29
+related: ["concept-limites-api-claude", "concept-prompt-caching"]
 ---
 
 # Gestion des erreurs 429 — API Claude (et APIs REST)
@@ -37,3 +35,9 @@ Une erreur **HTTP 429 (Too Many Requests)** signale que la limite de débit a é
 
 - [[concept-limites-api-claude]] — système complet de quotas RPM/ITPM/OTPM, niveaux, modes.
 - [[concept-prompt-caching]] — réduire la pression ITPM via le cache.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[concept-limites-api-claude]] : Limites de débit et de dépenses · API Claude
+- [[concept-prompt-caching]] : Prompt caching · impact sur le débit effectif (API Claude)
+<!-- AUTO-LIENS:fin -->

@@ -7,11 +7,8 @@ vault: ai-automation
 brand: null
 sources:
   - raw/2026-07-21--pos-generique-repondeur-email-drafts-agent-20260704.md
-related:
-  - wiki/sop/sop-calendrier-contenu-agent.md
-  - wiki/concept-memoire-vivante-agents.md
-  - wiki/concept-n8n-credentials.md
 updated: 2026-07-21
+related: ["concept-memoire-vivante-agents", "concept-n8n-credentials", "sop-calendrier-contenu-agent"]
 ---
 
 # SOP — Répondeur email à brouillons via agent (pattern draft-only)
@@ -60,3 +57,10 @@ Comportement à vide : 0 email → arrêt silencieux après la lecture (pas de n
 - [[sop/sop-calendrier-contenu-agent]] — autre patron draft-only : génération de contenu en base, publication toujours humaine.
 - [[concept-memoire-vivante-agents]] — primitive WRITE utilisée à l'étape 9 (journalisation mémoire).
 - [[concept-n8n-credentials]] — piège « API désactivée côté fournisseur mime une credential invalide » à rapprocher des pannes de credentials.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[concept-memoire-vivante-agents]] : Mémoire vivante pour agents (épisodique + consolidation + RAG)
+- [[concept-n8n-credentials]] : Credentials n8n · gestion et bonnes pratiques
+- [[sop-calendrier-contenu-agent]] : SOP · Générateur de calendrier de contenu (agent → base, draft-only)
+<!-- AUTO-LIENS:fin -->

@@ -8,12 +8,8 @@ brand: null
 sources:
   - "raw/2026-06-24--guide-connexion-agents-ai-n8n.md"
   - "raw/2026-06-29--guide-connexion-agents-ai-n8n.md"
-related:
-  - "sop/n8n-Brancher-API-et-Premier-Workflow"
-  - "concept-limites-api-claude"
-  - "synthese-lumina-systeme-reference"
-  - "sop/sop-token-systemuser-meta-ads-n8n"
 updated: 2026-07-21
+related: ["concept-classification-workflows-n8n", "concept-limites-api-claude", "concept-n8n-credentials", "concept-oauth2-automation", "concept-routeur-multi-llm", "n8n-Brancher-API-et-Premier-Workflow", "sop-agent-n8n-cookie-auth", "sop-audit-edition-n8n-api-interne"]
 ---
 
 # Guide : connecter Claude, ChatGPT et Gemini dans n8n
@@ -201,3 +197,15 @@ Oui, **à condition que n8n tourne sur un serveur** (votre choix d'auto-héberge
 ## Voir aussi
 
 - [[sop/sop-token-systemuser-meta-ads-n8n]] — même logique de credential n8n dédié, mais pour Meta Ads (token System User, pas une clé API classique).
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[concept-classification-workflows-n8n]] : Standard de classification des workflows n8n (process-flow)
+- [[concept-limites-api-claude]] : Limites de débit et de dépenses · API Claude
+- [[concept-n8n-credentials]] : Credentials n8n · gestion et bonnes pratiques
+- [[concept-oauth2-automation]] : OAuth2 · patron universel automation ↔ service cloud
+- [[concept-routeur-multi-llm]] : Routeur multi-LLM par task_type (passerelle OpenAI-compatible)
+- [[n8n-Brancher-API-et-Premier-Workflow]] : n8n · Brancher les 3 API et créer le premier workflow multi-agents
+- [[sop-agent-n8n-cookie-auth]] : SOP · Brancher un agent n8n sur un service web avec auth par cookie
+- [[sop-audit-edition-n8n-api-interne]] : SOP · Auditer/éditer un n8n self-hosté par son API interne (sans clé API)
+<!-- AUTO-LIENS:fin -->

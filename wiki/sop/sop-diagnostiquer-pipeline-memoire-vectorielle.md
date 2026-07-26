@@ -7,15 +7,8 @@ vault: ai-automation
 brand:
 sources:
   - raw/2026-07-02--lumina-marche-a-suivre-generique-diagnostiquer-et-reparer-un-pipeline-memoire-vectorielle-n8n-etat-des-lieux-multi-agents.md
-related:
-  - wiki/concept-memoire-vectorielle-multi-marques.md
-  - wiki/concept-memoire-vivante-agents.md
-  - wiki/sop/sop-reparer-webhook-n8n-ingestion-pdf.md
-  - wiki/sop/sop-ingestion-multi-format-banque-vectorielle.md
-  - wiki/sop/SOP_installer-pgvector-sur-postgres-coolify.md
-  - wiki/sop/sop-cablage-orchestrateur-subagents.md
-  - wiki/sop/sop-reparer-credential-postgres-partagee-n8n.md
 updated: 2026-07-21
+related: ["SOP_installer-pgvector-sur-postgres-coolify", "concept-memoire-vectorielle-multi-marques", "concept-memoire-vivante-agents", "sop-cablage-orchestrateur-subagents", "sop-ingestion-multi-format-banque-vectorielle", "sop-reparer-credential-postgres-partagee-n8n", "sop-reparer-webhook-n8n-ingestion-pdf"]
 ---
 
 # SOP — Diagnostiquer/réparer un pipeline de mémoire vectorielle (n8n + pgvector)
@@ -133,3 +126,14 @@ Toujours re-tester par le **point d'entrée réel** (MCP/webhook), pas seulement
 - [[sop/SOP_installer-pgvector-sur-postgres-coolify]] — setup de la base vectorielle.
 - [[sop/sop-cablage-orchestrateur-subagents]] — audit du câblage orchestrateur.
 - [[sop/sop-reparer-credential-postgres-partagee-n8n]] — cas limite détaillé : credential Postgres **partagée** fantôme (24 workflows, mémoire + tous les agents), repoint en masse + piège republication.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[SOP_installer-pgvector-sur-postgres-coolify]] : SOP · Installer pgvector sur un Postgres géré par Coolify
+- [[concept-memoire-vectorielle-multi-marques]] : Mémoire vectorielle multi-marques (banque partagée + tables par marque)
+- [[concept-memoire-vivante-agents]] : Mémoire vivante pour agents (épisodique + consolidation + RAG)
+- [[sop-cablage-orchestrateur-subagents]] : SOP · Câbler un orchestrateur AI Agent à des sub-agents et un routeur LLM (n8n)
+- [[sop-ingestion-multi-format-banque-vectorielle]] : SOP · Ingestion multi-format (texte/markdown + PDF/dossier) vers banque vectorielle
+- [[sop-reparer-credential-postgres-partagee-n8n]] : SOP · Réparer une credential Postgres partagée fantôme (n8n / mémoire agents)
+- [[sop-reparer-webhook-n8n-ingestion-pdf]] : SOP · Réparer un webhook n8n (last-node) + ingérer un PDF Drive dans une banque vectorielle
+<!-- AUTO-LIENS:fin -->

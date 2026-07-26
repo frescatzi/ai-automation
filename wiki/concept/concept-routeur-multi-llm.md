@@ -11,13 +11,8 @@ sources:
   - raw/2026-07-06--pos-generique-routeur-multi-llm-par-task-type-passerelle-openai-compatible.md
   - raw/2026-07-02--lumina-pos-generique-routeur-multi-llm-par-task-type-via-passerelle-openai-compatible.md
   - raw/2026-07-02--aftrsn-lumina-pos-exact-lumina-ai-router-routage-multi-llm-via-openrouter-2026-07-01.md
-related:
-  - wiki/concept-hermes-agent.md
-  - wiki/synthese-lumina-ai-os.md
-  - wiki/sop/sop-cablage-orchestrateur-subagents.md
-  - wiki/concept-memoire-vivante-agents.md
-  - wiki/sop/Guide-Connexion-Agents-AI-n8n.md
 updated: 2026-07-06
+related: ["Guide-Connexion-Agents-AI-n8n", "concept-hermes-agent", "concept-memoire-vivante-agents", "sop-cablage-orchestrateur-subagents", "synthese-lumina-ai-os", "synthese-lumina-systeme-reference"]
 ---
 
 # Routeur multi-LLM par task_type (passerelle OpenAI-compatible)
@@ -98,3 +93,13 @@ HTTP Request (POST <gateway>/chat/completions)
 - [[sop/sop-cablage-orchestrateur-subagents]] — comment brancher le routeur comme outil d'agent.
 - [[concept-memoire-vivante-agents]] — la mémoire RAG injectée dans `task_payload.context_raw`.
 - [[sop/Guide-Connexion-Agents-AI-n8n]] — créer et gérer les clés API dans n8n.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[Guide-Connexion-Agents-AI-n8n]] : Guide · Connecter Claude, ChatGPT et Gemini dans n8n
+- [[concept-hermes-agent]] : Concept · Hermes-Agent (bras d'exécution apprenant de LUMINA OS)
+- [[concept-memoire-vivante-agents]] : Mémoire vivante pour agents (épisodique + consolidation + RAG)
+- [[sop-cablage-orchestrateur-subagents]] : SOP · Câbler un orchestrateur AI Agent à des sub-agents et un routeur LLM (n8n)
+- [[synthese-lumina-ai-os]] : LUMINA AI OS · Système multi-agents & multi-LLM
+- [[synthese-lumina-systeme-reference]] : Lumina · Système de connaissance (référence complète)
+<!-- AUTO-LIENS:fin -->

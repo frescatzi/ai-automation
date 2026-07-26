@@ -8,12 +8,8 @@ brand: null
 sources:
   - "raw/2026-07-07--pos-lumina-apprendre-un-skill-a-hermes-20260705.md"
   - "raw/2026-07-21--pos-lumina-apprendre-un-skill-a-hermes-20260705.md"
-related:
-  - "concept-bibliotheque-skills-apprenante"
-  - "concept-hermes-agent"
-  - "concept-memoire-vivante-agents"
-  - "sop/sop-creer-memoire-agents-humains"
 updated: 2026-07-21
+related: ["concept-bibliotheque-skills-apprenante", "concept-hermes-agent", "concept-memoire-vivante-agents", "sop-creer-memoire-agents-humains"]
 ---
 
 # SOP — Apprendre un skill à Hermès (écriture directe dans la bibliothèque)
@@ -54,3 +50,11 @@ La capacité d'[[concept-hermes-agent]] n'est pas définie par ses nodes n8n mai
 - [[concept-hermes-agent]] — l'agent qui consulte, exécute et gradue ce skill une fois écrit.
 - [[concept-memoire-vivante-agents]] — la primitive WRITE générique que ce sous-workflow implémente pour `collection=skills`.
 - [[sop/sop-creer-memoire-agents-humains]] — construction de la couche mémoire (pgvector) qui héberge la bibliothèque de skills.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[concept-bibliotheque-skills-apprenante]] : Concept · Bibliothèque de skills apprenante (maturité & graduation)
+- [[concept-hermes-agent]] : Concept · Hermes-Agent (bras d'exécution apprenant de LUMINA OS)
+- [[concept-memoire-vivante-agents]] : Mémoire vivante pour agents (épisodique + consolidation + RAG)
+- [[sop-creer-memoire-agents-humains]] : SOP Lumina · Créer la mémoire (agents + humains) depuis le wiki Git
+<!-- AUTO-LIENS:fin -->

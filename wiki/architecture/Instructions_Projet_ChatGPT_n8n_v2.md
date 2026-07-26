@@ -6,8 +6,8 @@ publish: notion
 vault: ai-automation
 brand: null
 sources: ["raw/2026-06-24--instructions-projet-chatgpt-n8n-v2.md"]
-related: ["synthese-lumina-systeme-reference", "architecture/brief-montage-vaults"]
 updated: 2026-06-24
+related: ["Claude_Review_Knowledge_Governance_Layer_v1", "brief-montage-vaults", "synthese-lumina-systeme-reference"]
 ---
 
 # Projet ChatGPT — Idéation, Architecture & Pré-analyse de l'écosystème IA / n8n
@@ -303,3 +303,10 @@ Objectif : bâtir progressivement une base de connaissances solide, exploitable 
 ## Version
 
 v3.1 — Version définitive (addendum Obsidian « Thinking Brain ») — 2026-06-19
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[Claude_Review_Knowledge_Governance_Layer_v1]] : Analyse critique · Knowledge Governance Layer v1
+- [[brief-montage-vaults]] : Architecture · Montage des 3 vaults Obsidian (brief de référence)
+- [[synthese-lumina-systeme-reference]] : Lumina · Système de connaissance (référence complète)
+<!-- AUTO-LIENS:fin -->

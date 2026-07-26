@@ -6,8 +6,8 @@ publish: notion
 vault: ai-automation
 brand: null
 sources: []
-related: ["synthese-lumina-systeme-reference", "sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n", "architecture/Plan_Demarrage_Memoire_Centrale_MVP", "architecture/Architecture_Connaissance_Obsidian_Centric"]
 updated: 2026-06-19
+related: ["Architecture_Connaissance_Obsidian_Centric", "Plan_Demarrage_Memoire_Centrale_MVP", "SOP_systeme-multi-agents-memoire-centrale-mcp-n8n", "synthese-lumina-systeme-reference"]
 ---
 
 # Mémoire Centrale ASP — Brief de construction (MVP)
@@ -165,3 +165,11 @@ LIMIT 5;
 
 ## Version
 v1.0 — Brief de construction Mémoire Centrale ASP — 2026-06-19
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[Architecture_Connaissance_Obsidian_Centric]] : Architecture de la Connaissance · Modèle Git-hub (Obsidian + LLM Wiki)
+- [[Plan_Demarrage_Memoire_Centrale_MVP]] : Plan de démarrage · Mémoire Centrale (MVP)
+- [[SOP_systeme-multi-agents-memoire-centrale-mcp-n8n]] : SOP · Système multi-agents avec mémoire centrale & serveur MCP (n8n)
+- [[synthese-lumina-systeme-reference]] : Lumina · Système de connaissance (référence complète)
+<!-- AUTO-LIENS:fin -->

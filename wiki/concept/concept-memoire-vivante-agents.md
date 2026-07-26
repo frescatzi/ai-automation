@@ -11,17 +11,8 @@ sources:
   - raw/2026-07-02--lumina-ai-os-passation.md
   - raw/2026-07-02--howto-generique-creer-la-memoire-agents-et-humains.md
   - raw/2026-07-02--sop-creer-la-memoire-agents-et-humains.md
-related:
-  - wiki/concept-hermes-agent.md
-  - wiki/concept-memoire-vectorielle-multi-marques.md
-  - wiki/sop/sop-creer-memoire-agents-humains.md
-  - wiki/sop/SOP_installer-pgvector-sur-postgres-coolify.md
-  - wiki/concept-routeur-multi-llm.md
-  - wiki/synthese-lumina-ai-os.md
-  - wiki/concept-capture-connaissance-debrief.md
-  - wiki/sop/sop-apprendre-skill-a-hermes.md
-  - wiki/sop/sop-repondeur-email-drafts-agent.md
 updated: 2026-07-21
+related: ["SOP_installer-pgvector-sur-postgres-coolify", "concept-bibliotheque-skills-apprenante", "concept-capture-connaissance-debrief", "concept-hermes-agent", "concept-memoire-vectorielle-multi-marques", "concept-routeur-multi-llm", "sop-apprendre-skill-a-hermes", "sop-calendrier-contenu-agent"]
 ---
 
 # Mémoire vivante pour agents (épisodique + consolidation + RAG)
@@ -95,3 +86,15 @@ Webhook ou sous-workflow `{brand, question, collection?, limit?}` → embed la q
 - [[concept-capture-connaissance-debrief]] — capture volontaire/validée par l'humain (collection `insights`), en complément de la consolidation nocturne automatique.
 - [[sop/sop-apprendre-skill-a-hermes]] — application concrète de la primitive WRITE pour `collection=skills`.
 - [[sop/sop-repondeur-email-drafts-agent]] — journalisation mémoire (étape 9) pour chaque run utile d'un répondeur email draft-only.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[SOP_installer-pgvector-sur-postgres-coolify]] : SOP · Installer pgvector sur un Postgres géré par Coolify
+- [[concept-bibliotheque-skills-apprenante]] : Concept · Bibliothèque de skills apprenante (maturité & graduation)
+- [[concept-capture-connaissance-debrief]] : Concept · Capture de connaissance post-projet (débrief → mémoire)
+- [[concept-hermes-agent]] : Concept · Hermes-Agent (bras d'exécution apprenant de LUMINA OS)
+- [[concept-memoire-vectorielle-multi-marques]] : Mémoire vectorielle multi-marques (banque partagée + tables par marque)
+- [[concept-routeur-multi-llm]] : Routeur multi-LLM par task_type (passerelle OpenAI-compatible)
+- [[sop-apprendre-skill-a-hermes]] : SOP · Apprendre un skill à Hermès (écriture directe dans la bibliothèque)
+- [[sop-calendrier-contenu-agent]] : SOP · Générateur de calendrier de contenu (agent → base, draft-only)
+<!-- AUTO-LIENS:fin -->

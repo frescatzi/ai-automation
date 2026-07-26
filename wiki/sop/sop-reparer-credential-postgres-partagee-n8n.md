@@ -7,12 +7,8 @@ vault: ai-automation
 brand: null
 sources:
   - raw/2026-07-21--pos-lumina-reparation-credential-postgres-partagee-20260706.md
-related:
-  - concept-n8n-credentials
-  - sop/sop-audit-edition-n8n-api-interne
-  - sop/sop-diagnostiquer-pipeline-memoire-vectorielle
-  - sop/SOP_installer-pgvector-sur-postgres-coolify
 updated: 2026-07-21
+related: ["SOP_installer-pgvector-sur-postgres-coolify", "concept-n8n-credentials", "sop-audit-edition-n8n-api-interne", "sop-diagnostiquer-pipeline-memoire-vectorielle"]
 ---
 
 # SOP — Réparer une credential Postgres partagée fantôme (n8n / mémoire agents)
@@ -101,3 +97,11 @@ Construire un health-check mémoire planifié (`LUMINA-HEALTHCHECK-MEMOIRE`) : S
 - [[sop/sop-audit-edition-n8n-api-interne]] — mécanique API interne PATCH/activate utilisée ici pour le repoint en masse.
 - [[sop/sop-diagnostiquer-pipeline-memoire-vectorielle]] — diagnostic générique d'un pipeline RAG n8n+pgvector (la « credential morte » y est un suspect classique ; cette page détaille le cas limite credential *partagée fantôme*).
 - [[sop/SOP_installer-pgvector-sur-postgres-coolify]] — setup de la base vectorielle concernée.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[SOP_installer-pgvector-sur-postgres-coolify]] : SOP · Installer pgvector sur un Postgres géré par Coolify
+- [[concept-n8n-credentials]] : Credentials n8n · gestion et bonnes pratiques
+- [[sop-audit-edition-n8n-api-interne]] : SOP · Auditer/éditer un n8n self-hosté par son API interne (sans clé API)
+- [[sop-diagnostiquer-pipeline-memoire-vectorielle]] : SOP · Diagnostiquer/réparer un pipeline de mémoire vectorielle (n8n + pgvector)
+<!-- AUTO-LIENS:fin -->

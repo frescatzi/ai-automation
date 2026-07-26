@@ -6,15 +6,8 @@ publish: notion
 vault: ai-automation
 brand:
 sources: []
-related:
-  - wiki/synthese-oauth2-n8n-google.md
-  - wiki/concept-oauth2-automation.md
-  - wiki/sop/Guide-Connexion-Agents-AI-n8n.md
-  - wiki/sop/n8n-Brancher-API-et-Premier-Workflow.md
-  - wiki/sop/sop-reparer-credential-postgres-partagee-n8n.md
-  - wiki/sop/sop-token-systemuser-meta-ads-n8n.md
-  - wiki/sop/sop-repondeur-email-drafts-agent.md
 updated: 2026-07-21
+related: ["Guide-Connexion-Agents-AI-n8n", "concept-oauth2-automation", "n8n-Brancher-API-et-Premier-Workflow", "sop-reparer-credential-postgres-partagee-n8n", "sop-repondeur-email-drafts-agent", "sop-token-systemuser-meta-ads-n8n", "synthese-oauth2-n8n-google"]
 ---
 
 # Credentials n8n — gestion et bonnes pratiques
@@ -61,3 +54,14 @@ Un `403 Forbidden` sur une API externe (ex. API email) alors que la credential n
 - [[sop/sop-reparer-credential-postgres-partagee-n8n]] — runbook de réparation d'une credential Postgres partagée fantôme.
 - [[sop/sop-token-systemuser-meta-ads-n8n]] — token System User Meta Ads : procédure, pièges, credential natif « Facebook Graph API ».
 - [[sop/sop-repondeur-email-drafts-agent]] — piège API désactivée côté fournisseur mimant une credential invalide.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[Guide-Connexion-Agents-AI-n8n]] : Guide · Connecter Claude, ChatGPT et Gemini dans n8n
+- [[concept-oauth2-automation]] : OAuth2 · patron universel automation ↔ service cloud
+- [[n8n-Brancher-API-et-Premier-Workflow]] : n8n · Brancher les 3 API et créer le premier workflow multi-agents
+- [[sop-reparer-credential-postgres-partagee-n8n]] : SOP · Réparer une credential Postgres partagée fantôme (n8n / mémoire agents)
+- [[sop-repondeur-email-drafts-agent]] : SOP · Répondeur email à brouillons via agent (pattern draft-only)
+- [[sop-token-systemuser-meta-ads-n8n]] : SOP · Token System User Meta Ads pour n8n (création de campagnes)
+- [[synthese-oauth2-n8n-google]] : Configurer OAuth2 Google dans n8n
+<!-- AUTO-LIENS:fin -->

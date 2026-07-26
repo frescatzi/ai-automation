@@ -8,12 +8,8 @@ brand:
 sources:
   - raw/2026-06-29--howto-archive-raw-vers-drive-workflow-n8n-lumina.md
   - raw/2026-06-29--sop-lumina-archive-raw-vers-drive-n8n.md
-related:
-  - concept-archivage-n8n-idempotent
-  - synthese-lumina-systeme-reference
-  - sop/sop-lumina-intake-et-publish
-  - sop/sop-creer-memoire-agents-humains
 updated: 2026-06-29
+related: ["concept-archivage-n8n-idempotent", "sop-creer-memoire-agents-humains", "sop-generique-runner-llm-headless-webhook", "sop-lumina-auto-ingest-raw-vers-wiki", "sop-lumina-intake-et-publish", "synthese-lumina-systeme-reference"]
 ---
 
 # SOP Lumina — Archive Raw→Drive (n8n)
@@ -172,3 +168,13 @@ return entries.map(e => ({ json: e }));
 - **Garde-fou identique à l'intake** : Delete branché **uniquement sur Success** de l'Upload (upload confirmé = id Drive non vide).
 - **Dossier Archive-Raw HORS de l'Inbox** (`1gjuB438pW7NKo4A-wbjaud_PH7ijnNUW`) — risque de boucle infinie si archive ré-aspirée par l'intake.
 - **La suppression dans `raw/` ne déclenche PAS pgvector/Notion** — ces workflows filtrent sur `wiki/`. À vérifier au branchement du webhook push.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[concept-archivage-n8n-idempotent]] : Concept · Archivage idempotent post-compilation (pattern n8n)
+- [[sop-creer-memoire-agents-humains]] : SOP Lumina · Créer la mémoire (agents + humains) depuis le wiki Git
+- [[sop-generique-runner-llm-headless-webhook]] : SOP générique · Runner LLM agentique headless déclenché par webhook
+- [[sop-lumina-auto-ingest-raw-vers-wiki]] : SOP Lumina · Auto-Ingest raw→wiki (runner Claude headless, multi-coffres)
+- [[sop-lumina-intake-et-publish]] : SOP Lumina · Intake (Drive→GitHub) & Publication Notion idempotente
+- [[synthese-lumina-systeme-reference]] : Lumina · Système de connaissance (référence complète)
+<!-- AUTO-LIENS:fin -->

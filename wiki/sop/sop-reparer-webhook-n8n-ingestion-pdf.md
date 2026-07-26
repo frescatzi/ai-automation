@@ -8,12 +8,8 @@ brand:
 sources:
   - raw/2026-07-02--lumina-marche-a-suivre-generique-reparer-une-recuperation-webhook-n8n-last-node-ingerer-un-pdf-google-drive-dans-une-banque-vectorielle.md
   - raw/2026-07-02--lumina-pos-generique-runbook-ingestion-pdf-drive-vers-banque-vectorielle-recuperation-webhook-last-node.md
-related:
-  - wiki/sop/sop-diagnostiquer-pipeline-memoire-vectorielle.md
-  - wiki/sop/sop-ingestion-multi-format-banque-vectorielle.md
-  - wiki/concept-memoire-vectorielle-multi-marques.md
-  - wiki/concept-memoire-vivante-agents.md
 updated: 2026-07-06
+related: ["concept-memoire-vectorielle-multi-marques", "concept-memoire-vivante-agents", "sop-diagnostiquer-pipeline-memoire-vectorielle", "sop-ingestion-multi-format-banque-vectorielle"]
 ---
 
 # SOP — Réparer un webhook n8n (last-node) + ingérer un PDF Drive dans une banque vectorielle
@@ -94,3 +90,11 @@ Champs à mapper dans **Set Document** :
 - [[sop/sop-ingestion-multi-format-banque-vectorielle]] — ingestion texte + PDF + récursion complète.
 - [[concept-memoire-vectorielle-multi-marques]] — schéma banque, registre, multi-marques.
 - [[concept-memoire-vivante-agents]] — primitives WRITE/READ/CONSOLIDATE.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[concept-memoire-vectorielle-multi-marques]] : Mémoire vectorielle multi-marques (banque partagée + tables par marque)
+- [[concept-memoire-vivante-agents]] : Mémoire vivante pour agents (épisodique + consolidation + RAG)
+- [[sop-diagnostiquer-pipeline-memoire-vectorielle]] : SOP · Diagnostiquer/réparer un pipeline de mémoire vectorielle (n8n + pgvector)
+- [[sop-ingestion-multi-format-banque-vectorielle]] : SOP · Ingestion multi-format (texte/markdown + PDF/dossier) vers banque vectorielle
+<!-- AUTO-LIENS:fin -->

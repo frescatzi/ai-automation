@@ -11,13 +11,8 @@ sources:
   - raw/2026-07-02--pos-lumina-audit-edition-workflows-n8n-api-interne-2026-07-02.md
   - raw/2026-07-06--pos-lumina-audit-edition-workflows-n8n-api-interne-2026-07-02.md
   - raw/2026-07-02--pos-generique-classification-workflows-n8n-process-flow-2026-07-02.md
-related:
-  - wiki/concept-classification-workflows-n8n.md
-  - wiki/sop/sop-cablage-orchestrateur-subagents.md
-  - wiki/sop/sop-clonage-roster-agents.md
-  - wiki/sop/Guide-Connexion-Agents-AI-n8n.md
-  - wiki/sop/sop-reparer-credential-postgres-partagee-n8n.md
 updated: 2026-07-21
+related: ["Guide-Connexion-Agents-AI-n8n", "concept-classification-workflows-n8n", "sop-agent-n8n-cookie-auth", "sop-cablage-orchestrateur-subagents", "sop-clonage-roster-agents", "sop-reparer-credential-postgres-partagee-n8n", "synthese-lumina-ai-os"]
 ---
 
 # SOP — Auditer/éditer un n8n self-hosté par son API interne (sans clé API)
@@ -100,3 +95,14 @@ Pour chaque workflow récupérer : `type` des nodes · `options.systemMessage` (
 - [[sop/sop-clonage-roster-agents]] — cloner un roster par API.
 - [[sop/Guide-Connexion-Agents-AI-n8n]] — créer et gérer les credentials dans n8n.
 - [[sop/sop-reparer-credential-postgres-partagee-n8n]] — cas d'usage concret de PATCH+activate : repointer en masse une credential Postgres fantôme.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[Guide-Connexion-Agents-AI-n8n]] : Guide · Connecter Claude, ChatGPT et Gemini dans n8n
+- [[concept-classification-workflows-n8n]] : Standard de classification des workflows n8n (process-flow)
+- [[sop-agent-n8n-cookie-auth]] : SOP · Brancher un agent n8n sur un service web avec auth par cookie
+- [[sop-cablage-orchestrateur-subagents]] : SOP · Câbler un orchestrateur AI Agent à des sub-agents et un routeur LLM (n8n)
+- [[sop-clonage-roster-agents]] : SOP · Clonage d'un roster d'agents vers une nouvelle marque
+- [[sop-reparer-credential-postgres-partagee-n8n]] : SOP · Réparer une credential Postgres partagée fantôme (n8n / mémoire agents)
+- [[synthese-lumina-ai-os]] : LUMINA AI OS · Système multi-agents & multi-LLM
+<!-- AUTO-LIENS:fin -->

@@ -12,16 +12,8 @@ sources:
   - raw/2026-07-02--milestone-cablage-maestro-router-2026-07-02.md
   - raw/2026-07-06--milestone-cablage-maestro-router-2026-07-02.md
   - raw/2026-07-02--aftrsn-lumina-pos-exact-lumina-ai-router-routage-multi-llm-via-openrouter-2026-07-01.md
-related:
-  - wiki/concept-hermes-agent.md
-  - wiki/concept-routeur-multi-llm.md
-  - wiki/concept-memoire-vivante-agents.md
-  - wiki/concept-memoire-vectorielle-multi-marques.md
-  - wiki/concept-classification-workflows-n8n.md
-  - wiki/sop/sop-cablage-orchestrateur-subagents.md
-  - wiki/sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n.md
-  - wiki/synthese-lumina-systeme-reference.md
 updated: 2026-07-06
+related: ["SOP_systeme-multi-agents-memoire-centrale-mcp-n8n", "concept-bibliotheque-skills-apprenante", "concept-classification-workflows-n8n", "concept-hermes-agent", "concept-memoire-vectorielle-multi-marques", "concept-memoire-vivante-agents", "concept-pipeline-memoire-wiki-git", "concept-routeur-multi-llm"]
 ---
 
 # LUMINA AI OS — Système multi-agents & multi-LLM
@@ -146,3 +138,15 @@ Voir [[concept-memoire-vivante-agents]] pour le détail du pattern.
 - [[sop/sop-calendrier-contenu-agent]] — générer un calendrier de contenu en draft via agent.
 - [[sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n]] — SOP mémoire centrale MCP.
 - [[synthese-lumina-systeme-reference]] — vue d'ensemble du système Lumina (4 couches).
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[SOP_systeme-multi-agents-memoire-centrale-mcp-n8n]] : SOP · Système multi-agents avec mémoire centrale & serveur MCP (n8n)
+- [[concept-bibliotheque-skills-apprenante]] : Concept · Bibliothèque de skills apprenante (maturité & graduation)
+- [[concept-classification-workflows-n8n]] : Standard de classification des workflows n8n (process-flow)
+- [[concept-hermes-agent]] : Concept · Hermes-Agent (bras d'exécution apprenant de LUMINA OS)
+- [[concept-memoire-vectorielle-multi-marques]] : Mémoire vectorielle multi-marques (banque partagée + tables par marque)
+- [[concept-memoire-vivante-agents]] : Mémoire vivante pour agents (épisodique + consolidation + RAG)
+- [[concept-pipeline-memoire-wiki-git]] : Concept · Pipeline mémoire depuis wiki Git (hub parallèle agents + humains)
+- [[concept-routeur-multi-llm]] : Routeur multi-LLM par task_type (passerelle OpenAI-compatible)
+<!-- AUTO-LIENS:fin -->

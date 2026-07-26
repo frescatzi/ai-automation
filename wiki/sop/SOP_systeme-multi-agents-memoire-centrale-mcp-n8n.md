@@ -8,13 +8,8 @@ brand: null
 sources:
   - "raw/2026-06-24--sop-systeme-multi-agents-memoire-centrale-mcp-n8n.md"
   - "raw/2026-06-29--sop-systeme-multi-agents-memoire-centrale-mcp-n8n.md"
-related:
-  - "synthese-lumina-systeme-reference"
-  - "sop/SOP_installer-pgvector-sur-postgres-coolify"
-  - "sop/sop-lumina-intake-et-publish"
-  - "sop/sop-creer-memoire-agents-humains"
-  - "concept-pipeline-memoire-wiki-git"
 updated: 2026-06-29
+related: ["Memoire_Centrale_ASP_Brief_Construction", "Plan_Demarrage_Memoire_Centrale_MVP", "SOP_installer-pgvector-sur-postgres-coolify", "concept-pipeline-memoire-wiki-git", "sop-cablage-orchestrateur-subagents", "sop-clonage-roster-agents", "sop-creer-memoire-agents-humains", "sop-lumina-intake-et-publish"]
 ---
 
 # SOP — Système multi-agents avec mémoire centrale & serveur MCP (n8n)
@@ -175,3 +170,15 @@ Workflow : **Chat Trigger** → **AI Agent**, avec 3 sous-nodes :
 4. **Pool de connexions Postgres figé** après changement d'image → redémarrer n8n, ou exécuter le DDL via le terminal psql.
 5. **Hostnames partagés** (ex. `redis`, `postgres`) sur réseau Docker mutualisé → utiliser le **nom de conteneur unique**.
 6. **« Publish »** dans n8n = activer la prod.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[Memoire_Centrale_ASP_Brief_Construction]] : Mémoire Centrale ASP · Brief de construction (MVP)
+- [[Plan_Demarrage_Memoire_Centrale_MVP]] : Plan de démarrage · Mémoire Centrale (MVP)
+- [[SOP_installer-pgvector-sur-postgres-coolify]] : SOP · Installer pgvector sur un Postgres géré par Coolify
+- [[concept-pipeline-memoire-wiki-git]] : Concept · Pipeline mémoire depuis wiki Git (hub parallèle agents + humains)
+- [[sop-cablage-orchestrateur-subagents]] : SOP · Câbler un orchestrateur AI Agent à des sub-agents et un routeur LLM (n8n)
+- [[sop-clonage-roster-agents]] : SOP · Clonage d'un roster d'agents vers une nouvelle marque
+- [[sop-creer-memoire-agents-humains]] : SOP Lumina · Créer la mémoire (agents + humains) depuis le wiki Git
+- [[sop-lumina-intake-et-publish]] : SOP Lumina · Intake (Drive→GitHub) & Publication Notion idempotente
+<!-- AUTO-LIENS:fin -->

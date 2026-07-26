@@ -8,12 +8,8 @@ brand: null
 sources:
   - "raw/2026-06-24--sop-installer-pgvector-sur-postgres-coolify.md"
   - "raw/2026-06-29--sop-installer-pgvector-sur-postgres-coolify.md"
-related:
-  - "sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n"
-  - "sop/sop-creer-memoire-agents-humains"
-  - "synthese-lumina-systeme-reference"
-  - "sop/sop-reparer-credential-postgres-partagee-n8n"
 updated: 2026-07-21
+related: ["SOP_systeme-multi-agents-memoire-centrale-mcp-n8n", "concept-memoire-vectorielle-multi-marques", "concept-memoire-vivante-agents", "sop-creer-memoire-agents-humains", "sop-diagnostiquer-pipeline-memoire-vectorielle", "sop-ingestion-multi-format-banque-vectorielle", "sop-reparer-credential-postgres-partagee-n8n", "synthese-lumina-systeme-reference"]
 ---
 
 # SOP — Installer pgvector sur un Postgres géré par Coolify
@@ -104,3 +100,15 @@ CREATE INDEX IF NOT EXISTS ma_table_embedding_idx
 ## Voir aussi
 
 - [[sop/sop-reparer-credential-postgres-partagee-n8n]] — si cette base sert aussi la mémoire/Chat Memory des agents, une credential Postgres corrompue est un point unique de défaillance distinct (panne côté n8n, pas côté pgvector) : procédure de réparation.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[SOP_systeme-multi-agents-memoire-centrale-mcp-n8n]] : SOP · Système multi-agents avec mémoire centrale & serveur MCP (n8n)
+- [[concept-memoire-vectorielle-multi-marques]] : Mémoire vectorielle multi-marques (banque partagée + tables par marque)
+- [[concept-memoire-vivante-agents]] : Mémoire vivante pour agents (épisodique + consolidation + RAG)
+- [[sop-creer-memoire-agents-humains]] : SOP Lumina · Créer la mémoire (agents + humains) depuis le wiki Git
+- [[sop-diagnostiquer-pipeline-memoire-vectorielle]] : SOP · Diagnostiquer/réparer un pipeline de mémoire vectorielle (n8n + pgvector)
+- [[sop-ingestion-multi-format-banque-vectorielle]] : SOP · Ingestion multi-format (texte/markdown + PDF/dossier) vers banque vectorielle
+- [[sop-reparer-credential-postgres-partagee-n8n]] : SOP · Réparer une credential Postgres partagée fantôme (n8n / mémoire agents)
+- [[synthese-lumina-systeme-reference]] : Lumina · Système de connaissance (référence complète)
+<!-- AUTO-LIENS:fin -->

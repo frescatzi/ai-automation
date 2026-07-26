@@ -7,13 +7,8 @@ vault: ai-automation
 brand:
 sources:
   - raw/2026-07-06--pos-generique-calendrier-contenu-agent-base-20260705.md
-related:
-  - wiki/sop/sop-outreach-backfill.md
-  - wiki/sop/sop-cablage-orchestrateur-subagents.md
-  - wiki/concept-memoire-vivante-agents.md
-  - wiki/synthese-lumina-ai-os.md
-  - wiki/sop/sop-repondeur-email-drafts-agent.md
 updated: 2026-07-21
+related: ["concept-memoire-vivante-agents", "sop-cablage-orchestrateur-subagents", "sop-outreach-backfill", "sop-repondeur-email-drafts-agent", "synthese-lumina-ai-os"]
 ---
 
 # SOP — Générateur de calendrier de contenu (agent → base, draft-only)
@@ -79,3 +74,12 @@ Trigger {cible}
 - [[concept-memoire-vivante-agents]] — écriture mémoire après génération (`ExecuteWorkflow Mémoire`).
 - [[synthese-lumina-ai-os]] — contexte LUMINA OS, agents hub-and-spoke.
 - [[sop/sop-repondeur-email-drafts-agent]] — autre patron draft-only : agent qui rédige, humain qui envoie/publie.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[concept-memoire-vivante-agents]] : Mémoire vivante pour agents (épisodique + consolidation + RAG)
+- [[sop-cablage-orchestrateur-subagents]] : SOP · Câbler un orchestrateur AI Agent à des sub-agents et un routeur LLM (n8n)
+- [[sop-outreach-backfill]] : SOP · Backfill : intégrer des contacts déjà démarchés manuellement dans un outreach automatisé
+- [[sop-repondeur-email-drafts-agent]] : SOP · Répondeur email à brouillons via agent (pattern draft-only)
+- [[synthese-lumina-ai-os]] : LUMINA AI OS · Système multi-agents & multi-LLM
+<!-- AUTO-LIENS:fin -->

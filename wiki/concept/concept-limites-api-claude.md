@@ -8,13 +8,8 @@ brand:
 sources:
   - raw/2026-06-22--claude-api-rate-limits.md
   - raw/2026-06-23--concept-claude-api-rate-limits.md
-related:
-  - wiki/concept-prompt-caching.md
-  - wiki/concept-gestion-erreurs-429.md
-  - synthese-lumina-systeme-reference
-  - sop/Guide-Connexion-Agents-AI-n8n
-  - sop/n8n-Brancher-API-et-Premier-Workflow
 updated: 2026-06-29
+related: ["Guide-Connexion-Agents-AI-n8n", "concept-gestion-erreurs-429", "concept-prompt-caching", "n8n-Brancher-API-et-Premier-Workflow", "synthese-lumina-systeme-reference"]
 ---
 
 # Limites de débit et de dépenses — API Claude
@@ -61,3 +56,12 @@ Le robot d'ingestion utilise **Gemini** (gratuit) pour le tri initial → pas de
 
 
 <!-- test déclencheur croisé 2026-06-24 Test Katel -->
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[Guide-Connexion-Agents-AI-n8n]] : Guide · Connecter Claude, ChatGPT et Gemini dans n8n
+- [[concept-gestion-erreurs-429]] : Gestion des erreurs 429 · API Claude (et APIs REST)
+- [[concept-prompt-caching]] : Prompt caching · impact sur le débit effectif (API Claude)
+- [[n8n-Brancher-API-et-Premier-Workflow]] : n8n · Brancher les 3 API et créer le premier workflow multi-agents
+- [[synthese-lumina-systeme-reference]] : Lumina · Système de connaissance (référence complète)
+<!-- AUTO-LIENS:fin -->

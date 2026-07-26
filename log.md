@@ -1,58 +1,257 @@
-# log.md — coffre `ai-automation`
+# Journal : ai-automation
 
-> Append-only. Ingests, Q&A modifiant le wiki, lints. Format greppable.
-> `## [AAAA-MM-JJ] <action> | <objet>` — actions : `ingest` · `qa` · `lint` · `schema-change`.
+> Chronologie des sources ingérées (reconstituée). Append-only ensuite.
 
----
-
-## [2026-06-20] schema-change | Création du coffre ai-automation (v2.2)
-## [2026-06-22] ingest | Limites de débit/dépenses API Claude → wiki/concept-limites-api-claude.md, wiki/concept-prompt-caching.md
-## [2026-06-22] ingest | SOP OAuth2 n8n + Google → wiki/synthese-oauth2-n8n-google.md
-## [2026-06-22] lint   | raw/2026-06-22--marketing-psychologie-du-consommateur.md hors périmètre (vault: personal dans son propre frontmatter) — pas de page wiki/ créée ici, à déplacer vers le coffre personal
-## [2026-06-24] ingest | Lumina système référence complète → wiki/synthese-lumina-systeme-reference.md (status: active, publish: notion)
-## [2026-06-24] ingest | SOP Lumina intake Drive→GitHub + publish Notion idempotent → wiki/sop/sop-lumina-intake-et-publish.md
-## [2026-06-24] ingest | SOP générique pipeline ingestion & publication idempotente → wiki/sop/sop-generique-pipeline-source-vers-vues.md
-## [2026-06-24] ingest | SOP système multi-agents + MCP (existant) → frontmatter + related ajoutés à wiki/sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n.md
-## [2026-06-24] ingest | SOP installer pgvector Coolify (existant) → frontmatter + related ajoutés à wiki/sop/SOP_installer-pgvector-sur-postgres-coolify.md
-## [2026-06-24] ingest | Guide connexion agents AI n8n (existant) → frontmatter + related ajoutés à wiki/sop/Guide-Connexion-Agents-AI-n8n.md
-## [2026-06-24] ingest | n8n brancher API & premier workflow (existant) → frontmatter + related ajoutés à wiki/sop/n8n-Brancher-API-et-Premier-Workflow.md
-## [2026-06-24] ingest | Instructions projet ChatGPT n8n v2 (existant) → frontmatter + related ajoutés à wiki/architecture/Instructions_Projet_ChatGPT_n8n_v2.md
-## [2026-06-24] ingest | Brief montage vaults Obsidian → wiki/architecture/brief-montage-vaults.md
-## [2026-06-24] ingest | Batch 2026-06-24 — 9 sources raw/ traitées, index.md mis à jour (Architecture + SOP sections ajoutées)
-## [2026-06-24] lint   | Audit backlinks : synthese-oauth2-n8n-google (related vide → relié à Guide-Connexion-Agents-AI-n8n + sop-lumina-intake-et-publish) ; concept-limites-api-claude (related étendu aux 3 nouvelles pages) ; frontmatter ajouté à 4 pages architecture sans en-tête (Architecture_Connaissance_Obsidian_Centric, Claude_Review_Knowledge_Governance_Layer_v1, Memoire_Centrale_ASP_Brief_Construction, Plan_Demarrage_Memoire_Centrale_MVP)
-## [2026-06-29] ingest | OAuth2 patron universel → wiki/concept-oauth2-automation.md (CRÉÉ, draft) · source : raw/2026-06-22--concept-configurer-oauth2-automation.md
-## [2026-06-29] ingest | Limites API Claude enrichi (best-practices agents, note Lumina) → wiki/concept-limites-api-claude.md (MAJ) · source : raw/2026-06-23--concept-claude-api-rate-limits.md
-## [2026-06-29] ingest | Stubs créés pour concepts référencés manquants : wiki/concept-gestion-erreurs-429.md · wiki/concept-n8n-credentials.md
-## [2026-06-29] ingest | Backlinks ajoutés : synthese-oauth2-n8n-google → concept-oauth2-automation + concept-n8n-credentials ; concept-prompt-caching → concept-gestion-erreurs-429
-## [2026-06-29] ingest | _archive_queue.json créé (13 entrées : 11 runs précédents + 2 de ce run) — exclut raw/2026-06-22--marketing-psychologie-du-consommateur.md (hors périmètre, vault: personal)
-## [2026-06-29] ingest | Pull git : 12 nouvelles sources raw/ 2026-06-29 → batch ingest ci-dessous
-## [2026-06-29] ingest | brief-claudecode-montage-vaults-obsidian (re-export) → sources + related mis à jour dans wiki/architecture/brief-montage-vaults.md
-## [2026-06-29] ingest | guide-connexion-agents-ai-n8n (re-export, même contenu) → sources mis à jour dans wiki/sop/Guide-Connexion-Agents-AI-n8n.md
-## [2026-06-29] ingest | sop-installer-pgvector-sur-postgres-coolify (re-export) → sources + related mis à jour dans wiki/sop/SOP_installer-pgvector-sur-postgres-coolify.md
-## [2026-06-29] ingest | sop-systeme-multi-agents-memoire-centrale-mcp-n8n (re-export) → sources + related mis à jour dans wiki/sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n.md
-## [2026-06-29] ingest | sop-intake-github-idempotent-blinde → sources + related mis à jour dans wiki/sop/sop-lumina-intake-et-publish.md ; concept-intake-source-git + sop-lumina-archive-raw-vers-drive ajoutés en related
-## [2026-06-29] ingest | howto-generique-archiver + sop-generique-workflow-archivage → CRÉÉ wiki/concept-archivage-n8n-idempotent.md (status: active)
-## [2026-06-29] ingest | howto-generique-intake-source-vers-git → CRÉÉ wiki/concept-intake-source-git.md (status: active)
-## [2026-06-29] ingest | howto-generique-creer-la-memoire-agents-et-humains → CRÉÉ wiki/concept-pipeline-memoire-wiki-git.md (status: active)
-## [2026-06-29] ingest | howto-archive-raw-vers-drive-lumina + sop-lumina-archive-raw-vers-drive → CRÉÉ wiki/sop/sop-lumina-archive-raw-vers-drive.md (status: active)
-## [2026-06-29] ingest | sop-creer-la-memoire-agents-et-humains → CRÉÉ wiki/sop/sop-creer-memoire-agents-humains.md (status: active)
-## [2026-06-29] ingest | index.md mis à jour : +3 concepts Automation, +2 SOPs Lumina pipeline archivage/mémoire ; _archive_queue.json étendu (+12 entrées)
-## [2026-07-06] lint   | audit backlinks post-ingest — 2 wikilinks cassés corrigés (session-2026-06-25 + spec-obsidian pointaient vers raw/ au lieu de wiki/) · 3 orphelins reliés : sop-agent-n8n-cookie-auth (← sop-cablage-orchestrateur-subagents + synthese-lumina-ai-os) · sop-outreach-backfill et sop-calendrier-contenu-agent (← synthese-lumina-ai-os)
-## [2026-07-06] ingest | /sync batch 2026-07-02/07-06 — git pull (53 fichiers) + PURGE (0/0, queue []) + ingest complet · CRÉÉ : wiki/synthese-lumina-ai-os.md · wiki/concept-routeur-multi-llm.md · wiki/concept-memoire-vectorielle-multi-marques.md · wiki/concept-memoire-vivante-agents.md · wiki/concept-classification-workflows-n8n.md · wiki/sop/sop-cablage-orchestrateur-subagents.md · wiki/sop/sop-audit-edition-n8n-api-interne.md · wiki/sop/sop-clonage-roster-agents.md · wiki/sop/sop-agent-n8n-cookie-auth.md · wiki/sop/sop-diagnostiquer-pipeline-memoire-vectorielle.md · wiki/sop/sop-reparer-webhook-n8n-ingestion-pdf.md · wiki/sop/sop-ingestion-multi-format-banque-vectorielle.md · wiki/sop/sop-outreach-backfill.md · wiki/sop/sop-calendrier-contenu-agent.md · MAJ : wiki/synthese-lumina-systeme-reference.md (section Lumina AI OS v2) · wiki/sop/sop-lumina-archive-raw-vers-drive.md (spec v2 sous-dossiers) · wiki/concept-pipeline-memoire-wiki-git.md (table LLM dans la chaîne + /ingest vs /sync) · index.md (+11 pages) · _archive_queue.json (51 entrées, 6 catégories)
-## [2026-07-06] ingest | test-auto-ingest → wiki/concept-validation-auto-ingest.md (CRÉÉ, draft) — validation end-to-end du runner auto-ingest ; source raw/raw/2026-07-06--test-auto-ingest.md · EXCLU raw/2026-06-22--marketing-psychologie-du-consommateur.md (vault: personal, hors périmètre) · index.md +1 concept
-## [2026-07-06] ingest | /ingest — PURGE manifeste (52 entrées → 0, toutes absentes/archivées par n8n) + sync vérifiée (HEAD == origin/main, 0/0) · test-auto-ingest-2 (déclencheur n8n auto) → DEDUP vers wiki/concept-validation-auto-ingest.md (MAJ : +source, note déclenchement auto, corps) · orphelin corrigé : concept-validation-auto-ingest relié depuis concept-pipeline-memoire-wiki-git (Voir aussi + related) · EXCLU raw/2026-06-22--marketing-psychologie-du-consommateur.md (vault: personal, hors périmètre) · _archive_queue.json : +1 (test-auto-ingest-2)
-## [2026-07-06] ingest | /ingest (no-op) — 2 fichiers raw/ en attente, déjà traités : test-auto-ingest-2 déjà reflété dans wiki/concept-validation-auto-ingest.md + déjà en queue · marketing-psychologie-du-consommateur toujours EXCLU (vault: personal, à déplacer vers coffre personal — hors queue d'archivage volontairement). Aucune page wiki/ créée/modifiée, index.md et _archive_queue.json inchangés.
-## [2026-07-06] ingest | /ingest — PURGE : sync vérifiée (HEAD == origin/main, 0/0) ; manifeste 1 entrée → 1 (raw/raw/2026-07-06--test-auto-ingest-2.md PRÉSENT, conservé) · DEDUP : raw/2026-07-06--test-auto-ingest-2.md (re-capture à la racine raw/, corps IDENTIQUE à raw/raw/…-2.md déjà compilé) → PAS de page nouvelle ; ajouté aux sources: de wiki/concept-validation-auto-ingest.md + note provenance dans le corps · EXCLU raw/2026-06-22--marketing-psychologie-du-consommateur.md (vault: personal, hors périmètre) · _archive_queue.json : +1 (raw/2026-07-06--test-auto-ingest-2.md → Méthodes & SOP) · index.md inchangé (aucune page nouvelle)
-## [2026-07-06] ingest | raw/2026-07-06--test-3.md (déclencheur n8n, reformulation de test-auto-ingest-2) → DEDUP vers wiki/concept-validation-auto-ingest.md (MAJ : +source, note dans le corps) · _archive_queue.json : +1 (raw/2026-07-06--test-3.md → Méthodes & SOP) · index.md inchangé (aucune page nouvelle)
-## [2026-07-07] ingest | /ingest — PURGE manifeste (3 entrées → 0, toutes absentes/archivées par n8n) + sync vérifiée (HEAD == origin/main, 0/0) · raw/2026-07-07--pos-lumina-auto-ingest-raw-vers-wiki-2026-07-07.md (v2, multi-coffres) → CRÉÉ wiki/sop/sop-lumina-auto-ingest-raw-vers-wiki.md (status: draft) · MAJ wiki/concept-pipeline-memoire-wiki-git.md (étape 3 raw→wiki passe de ⚠️ manuel à ✅ auto, +related) · MAJ wiki/sop/sop-generique-runner-llm-headless-webhook.md (+backlink réciproque vers l'implémentation Lumina concrète) · CORRIGÉ backlink cassé : wiki/concept-validation-auto-ingest.md n'existait plus sur disque malgré 3 pages y pointant → RECONSTITUÉ (draft) depuis l'historique log.md · index.md +2 pages (SOP Lumina auto-ingest, SOP générique runner) · _archive_queue.json : +1 (raw/2026-07-07--pos-lumina-auto-ingest-raw-vers-wiki-2026-07-07.md → Automatisation (n8n)) · NON traité ce run (hors périmètre de la liste fournie) : raw/2026-07-07--pos-generique-runner-llm-headless-declenche-par-webhook-2026-07-07.md (déjà reflété dans wiki/sop/sop-generique-runner-llm-headless-webhook.md mais non loggé) et raw/2026-07-07--pos-lumina-auto-ingest-raw-vers-wiki-2026-07-06.md (v1, superseded par la v2 traitée ici, pas encore compilée)
-## [2026-07-06] ingest | Bibliothèque de skills apprenante — source restée bloquée dans l'Inbox Drive (jamais ingérée par l'intake) → CRÉÉ raw/2026-07-06--pos-generique-bibliotheque-de-skills-apprenante-agents.md + CRÉÉ wiki/concept-bibliotheque-skills-apprenante.md (status: draft) · reliée à concept-memoire-vivante-agents, sop-clonage-roster-agents, synthese-lumina-ai-os · index.md MAJ (section IA & Agents)
-## [2026-07-13] sync | git pull fa39784→d70e04b (fast-forward, 116 fichiers ; lock .git/index.lock périmé du 06-07 nettoyé ; 55 untracked identiques supprimés, edits index/log/community-plugins restashés — conflit log.md résolu en gardant les 2 blocs ; data.json livesync remplacé par la version distante, backup en scratchpad) · INGEST : CRÉÉ wiki/concept-hermes-agent.md (canon Hermes-Agent ex-Hermes-Exec, status: draft) depuis raw/2026-07-12--canon-lumina-hermes-agent (le commit d70e04b n'avait ajouté que le raw, non compilé) · 6 backlinks réciproques ajoutés (concept-bibliotheque-skills-apprenante, concept-memoire-vivante-agents, concept-routeur-multi-llm, sop-cablage-orchestrateur-subagents, sop-agent-n8n-cookie-auth, synthese-lumina-ai-os) · concept-bibliotheque-skills-apprenante VÉRIFIÉ (déjà compilé) + queue · AUDIT backlinks : 6 orphelins architecture/ reliés via nouvelle section « Architecture & fondations » dans synthese-lumina-systeme-reference (seul README.md reste sans inbound, normal) ; 0 lien cassé réel · index.md +1 (concept-hermes-agent) · _archive_queue.json : PURGE 1 entrée périmée (auto-ingest-2026-07-07 déjà archivé par n8n, absent de raw/) + AJOUT 2 (canon-hermes, bibliotheque-skills → « IA & Agents ») · EXCLU (vault: personal, hors périmètre — à confirmer/re-router) : capture-connaissance-debrief (07-06 + 07-07 doublon), configuration-obsidian-ios-self-hosted, apprendre-un-skill-a-hermes (les 3 derniers sont topiquement ai-automation mais tagués personal)
-## [2026-07-13] ingest | /ingest — liste fournie (5 fichiers) · PURGE : sync vérifiée (HEAD == origin/main, 0/0) ; manifeste 2 entrées → 2 (toutes présentes, conservées) · raw/2026-07-06--pos-generique-bibliotheque-de-skills-apprenante-agents.md : DEDUP vérifié (déjà reflété dans wiki/concept-bibliotheque-skills-apprenante.md, aucune modif) · CRÉÉ wiki/concept-capture-connaissance-debrief.md (draft) depuis raw/2026-07-06--pos-generique-capture-connaissance-debrief-20260706.md + raw/2026-07-07--pos-generique-capture-connaissance-debrief-20260706.md (2 exports identiques du même patron, dédupliqués en 1 page) · CRÉÉ wiki/sop/sop-apprendre-skill-a-hermes.md (draft) depuis raw/2026-07-07--pos-lumina-apprendre-un-skill-a-hermes-20260705.md · backlinks réciproques ajoutés : concept-archivage-n8n-idempotent, concept-pipeline-memoire-wiki-git, concept-memoire-vivante-agents (← concept-capture-connaissance-debrief) ; concept-bibliotheque-skills-apprenante, concept-hermes-agent, concept-memoire-vivante-agents, sop/sop-creer-memoire-agents-humains (← sop-apprendre-skill-a-hermes) · index.md +2 pages (Mémoire & Connaissance, Agents & orchestration) · AUDIT backlinks complet : 0 orpheline (hors README.md, normal), 0 lien cassé réel · EXCLU (hors périmètre, vault: personal dans son propre frontmatter, tooling personnel Obsidian/iOS pas API/MCP/agents/n8n) : raw/2026-07-07--pos-generique-configuration-obsidian-ios-self-hosted.md — à router vers coffre personal · _archive_queue.json : +3 (capture-connaissance-debrief ×2 → Mémoire & Connaissance, apprendre-skill-a-hermes → Agents & MCP)
-## [2026-07-20] ingest | /ingest — liste fournie (1 fichier) · PURGE : sync vérifiée (HEAD == origin/main, 0/0) ; manifeste 5 entrées → 0 (toutes absentes, déjà archivées par n8n) · raw/2026-07-20--pos-generique-bibliotheque-de-skills-apprenante-agents.md : DEDUP (corps identique à raw/2026-07-06--pos-generique-bibliotheque-de-skills-apprenante-agents.md, déjà compilé) → MAJ wiki/concept-bibliotheque-skills-apprenante.md (source ajoutée, updated: 2026-07-20, note de re-capture dans le corps) · aucune page créée · index.md inchangé · audit backlinks rapide : page déjà pleinement reliée (0 orpheline) · _archive_queue.json : +1 (raw/2026-07-20--...-agents.md → Agents & MCP)
-## [2026-07-21] ingest | /ingest — liste fournie (1 fichier) · PURGE SAUTÉE (repo local en retard de 7 commits sur origin/main, fetch confirmé HEAD..origin/main=7 / origin/main..HEAD=0 → sync requise avant purge, _archive_queue.json non touché) · raw/2026-07-21--pos-lumina-reparation-credential-postgres-partagee-20260706.md (runbook infra critique, à pousser au canon) → CRÉÉ wiki/sop/sop-reparer-credential-postgres-partagee-n8n.md (status: draft) : credential Postgres partagée fantôme (404 au chargement), scan d'impact multi-workflows, diagnostic (pas la DB), retrouver host/port en Coolify, repoint API en masse, piège central republication `/activate` (brouillon ≠ publié, executeWorkflow vs webhook), health-check de durcissement · backlinks réciproques ajoutés : concept-n8n-credentials (+section panne credential partagée), sop/sop-audit-edition-n8n-api-interne (+cas d'usage PATCH/activate), sop/sop-diagnostiquer-pipeline-memoire-vectorielle (+cas limite détaillé), sop/SOP_installer-pgvector-sur-postgres-coolify (+Voir aussi) · index.md +1 page (section Infrastructure pgvector & agents) · _archive_queue.json : purge de désynchronisation SAUTÉE (repo local en retard de 7 commits, entrée existante non revérifiée sur disque — à relancer après un `git pull`), mais AJOUT de la nouvelle entrée pour la source compilée ce run (+1 : raw/2026-07-21--pos-lumina-reparation-credential-postgres-partagee-20260706.md → Infrastructure)
-## [2026-07-21] ingest | /ingest — liste fournie (1 fichier) · PURGE : sync vérifiée (HEAD == origin/main, 0/0) ; manifeste 2 entrées → 1 (bibliotheque-de-skills-apprenante-agents ABSENT → retirée, déjà archivée par n8n ; credential-postgres-partagee PRÉSENT → conservée) · raw/2026-07-21--pos-generique-backfill-outreach-manuel-20260705.md : DEDUP (corps identique à raw/2026-07-06--pos-generique-backfill-outreach-manuel-20260705.md, déjà compilé) → MAJ wiki/sop/sop-outreach-backfill.md (source ajoutée, updated: 2026-07-21, note de re-capture dans le corps) · aucune page créée · index.md : corrigé statut stale de sop-outreach-backfill (draft → active, la page avait été promue par le CEO dans Obsidian sans que l'index suive) · audit backlinks rapide : page déjà pleinement reliée (0 orpheline) · _archive_queue.json : +1 (raw/2026-07-21--pos-generique-backfill-outreach-manuel-20260705.md → Méthodes & SOP)
-## [2026-07-21] ingest | /ingest — liste fournie (1 fichier) · PURGE : sync vérifiée (HEAD == origin/main, 0/0) ; manifeste 1 entrée → 1 (credential-postgres-partagee PRÉSENT, conservée) · raw/2026-07-21--pos-generique-meta-ads-systemuser-token-n8n-20260705.md → CRÉÉ wiki/sop/sop-token-systemuser-meta-ads-n8n.md (status: draft) : procédure token System User Meta Ads (rôle applicatif « Gérer l'app » = piège n°1), credential natif n8n « Facebook Graph API », erreur 100 générique → `fullResponse`+`neverError`, campagnes créées en PAUSED · backlinks réciproques ajoutés : concept-n8n-credentials (+type de credential « Token System User »), concept-oauth2-automation (+section contre-exemple, ce n'est pas un flux OAuth2), sop/Guide-Connexion-Agents-AI-n8n (+Voir aussi) · index.md +1 page (section Automation & contenus) · audit backlinks rapide : 0 orpheline introduite · _archive_queue.json : +1 (raw/2026-07-21--pos-generique-meta-ads-systemuser-token-n8n-20260705.md → Automatisation (n8n))
-## [2026-07-21] ingest | /ingest — liste fournie (1 fichier) · PURGE : sync vérifiée (HEAD == origin/main, 0/0) ; manifeste 1 entrée → 1 (credential-postgres-partagee PRÉSENT, conservée) · raw/2026-07-21--pos-generique-repondeur-email-drafts-agent-20260704.md → CRÉÉ wiki/sop/sop-repondeur-email-drafts-agent.md (status: draft) : répondeur email à brouillons via agent (chaîne 10 nodes : lecture inbox → filtre → agent rédacteur sortie balisée → découpage → création brouillon → idempotence → notification → mémoire), gouvernance draft-only (envoi toujours humain), pièges (403 API non activée, parseur MIME contre format supposé, chat id bot introspection) · backlinks réciproques ajoutés : sop/sop-calendrier-contenu-agent (+Voir aussi, autre patron draft-only), concept-memoire-vivante-agents (+Voir aussi, primitive WRITE étape 9), concept-n8n-credentials (+section piège « 403 malgré credential valide = API non activée côté fournisseur ») · index.md +1 page (section Automation & contenus) · audit backlinks rapide : 0 orpheline introduite · NON traité ce run (hors périmètre de la liste fournie) : raw/2026-07-07--pos-generique-repondeur-email-drafts-agent-20260704.md — re-capture au corps identique, jamais compilée, désormais reflétée par le même contenu mais pas ajoutée à `sources:` (à faire si un futur run la traite explicitement) · _archive_queue.json : +1 (raw/2026-07-21--pos-generique-repondeur-email-drafts-agent-20260704.md → Automatisation (n8n))
-## [2026-07-21] ingest | /ingest — liste fournie (1 fichier) · PURGE : sync vérifiée (HEAD == origin/main, 0/0) ; manifeste 4 entrées → 4 (toutes présentes, conservées) · raw/2026-07-21--pos-lumina-apprendre-un-skill-a-hermes-20260705.md : DEDUP (corps identique à raw/2026-07-07--pos-lumina-apprendre-un-skill-a-hermes-20260705.md, déjà archivée par n8n, déjà compilée en 2026-07-13) → MAJ wiki/sop/sop-apprendre-skill-a-hermes.md (source ajoutée, updated: 2026-07-21, note de re-capture dans le corps) · aucune page créée · index.md inchangé (aucune page nouvelle) · audit backlinks rapide : page déjà pleinement reliée (0 orpheline) · _archive_queue.json : +1 (raw/2026-07-21--pos-lumina-apprendre-un-skill-a-hermes-20260705.md → Agents & MCP)
-## [2026-07-21] ingest | /ingest — liste fournie (1 fichier) · PURGE : sync vérifiée (HEAD == origin/main, 0/0) ; manifeste 5 entrées → 5 (toutes présentes, conservées) · raw/2026-07-21--aftrsn-lumina-marche-a-suivre-exacte-etape-1-architecture-memoire-multi-banques-schema-nommage-registre-2026-06-29.md (spec figée originale du 2026-06-29, antérieure aux sources 2026-07-02 déjà compilées) : DEDUP enrichi → MAJ wiki/concept-memoire-vectorielle-multi-marques.md (+source, status corrigé draft→active dans index.md car déjà promue, +section « Origine de la décision » (asp_memory→lumina_memory, problème Gardien-marque/Afro House), +note évolution taxonomie (canon/voice/ops/process/history + automation/ai_os/pattern → superseded par canon/episodic/insights/docs/skills), +section « Mapping amont (coffre Obsidian) → banque pgvector » (ai-automation→lumina_memory, brands 1 dossier/marque→1 table/marque, personal→non ingéré ; point ouvert codes dossier=codes registre), +préfixe nommage `LUMINA-` workflows, +note noms d'outils MCP originaux `search_brand_memory`/`search_process_memory` vs `search_entity_memory` retenu) · backlink réciproque ajouté avec wiki/concept-pipeline-memoire-wiki-git.md (Voir aussi + related dans les 2 sens) · aucune page créée · index.md : statut stale de concept-memoire-vectorielle-multi-marques corrigé (draft → active) · audit backlinks rapide : 0 orpheline introduite, 0 lien cassé · _archive_queue.json : +1 (raw/2026-07-21--aftrsn-lumina-marche-a-suivre-exacte...md → Mémoire & Connaissance)
-## [2026-07-21] ingest | /ingest — liste fournie (1 fichier) · PURGE : sync vérifiée (HEAD == origin/main, 0/0) ; manifeste 6 entrées → 6 (toutes présentes, conservées) · raw/2026-07-21--howto-generique-creer-la-memoire-agents-et-humains.md : DEDUP (corps identique à raw/2026-06-29--howto-generique-creer-la-memoire-agents-et-humains.md déjà compilé, seul le source_url dropbox change) → MAJ wiki/concept-pipeline-memoire-wiki-git.md (+source, updated: 2026-07-21, note de re-capture dans le corps) · aucune page créée · index.md inchangé (page déjà listée, status active exact) · audit backlinks rapide : page déjà pleinement reliée (0 orpheline) · _archive_queue.json : +1 (raw/2026-07-21--howto-generique-creer-la-memoire-agents-et-humains.md → Mémoire & Connaissance)
+## [0000-00-00] ingest : Session-Recap-n8n-Agents-AI
+## [2026-06-19] ingest : 2026-06-19_session_memoire-centrale_etapes-1-2
+## [2026-06-20] ingest : 2026-06-20_session_agents-orchestration-mcp
+## [2026-06-22] ingest : marketing-psychologie-du-consommateur
+## [2026-06-24] ingest : lumina-systeme-reference
+## [2026-07-02] ingest : 2026-06-19_session_memoire-centrale_etapes-1-2
+## [2026-07-02] ingest : 2026-06-20_session_agents-orchestration-mcp
+## [2026-07-02] ingest : AFTRSN · Cadrage organisation d'agents (roster complet + modele de collaboration + checklist ce soir apres Hermes) · 2026-06-30
+## [2026-07-02] ingest : AFTRSN · System-prompts 1ere vague (Maestro + 2 experts + Secretaire) + cablage memoire · 2026-07-01
+## [2026-07-02] ingest : AFTRSN · System-prompts 1ere vague (Maestro + 3 experts + Secretaire) + cablage memoire · 2026-07-01
+## [2026-07-02] ingest : AFTRSN · System-prompts 1ere vague v2 (Maestro + Culture + Experience + Secretaire + Marketing) · 2026-07-01
+## [2026-07-02] ingest : AFTRSN-LUMINA · Etape 2 · DDL pret a executer (memory_registry + aftrsn_memory) + plan rename supervise
+## [2026-07-02] ingest : AFTRSN-LUMINA · Marche a suivre EXACTE · Etape 1 architecture memoire multi-banques (schema + nommage + registre) · 2026-06-29
+## [2026-07-02] ingest : Inventaire_Workflows_n8n_LUMINA
+## [2026-07-02] ingest : PASSATION_Agents-AFTER-SUN-PEOPLE_etat-des-lieux_version-Claude-Code_revision
+## [2026-07-02] ingest : PASSATION_Knowledge-Architecture_2026-06-22-23
+## [2026-07-04] ingest : Concept_Runbook_Definition-et-Usage-LUMINA
+## [2026-07-06] ingest : BIBLE_LUMINA-OS_360_2026-07-02
+## [2026-07-06] ingest : MILESTONE_Agents-AFTRSN-etat-reel-n8n_2026-07-02
+## [2026-07-06] ingest : MILESTONE_Clarification-Hermes-et-processus-connaissance_2026-07-03
+## [2026-07-06] ingest : PASSATION_LUMINA-AI-OS_2026-07-02
+## [2026-07-06] ingest : PASSATION_LUMINA-OS_Inventaire-360_2026-07-02
+## [2026-07-07] ingest : 2026-07-07--TEST-AFTSRN-Brands-04
+## [2026-07-07] ingest : AFTRSN-LUMINA · POS EXACT · LUMINA-AI-Router (routage multi-LLM via OpenRouter) · 2026-07-01
+## [2026-07-07] ingest : AFTRSN_Brand_Voice_Generic
+## [2026-07-07] ingest : AFTRSN_SOP_Event-Creation_W1
+## [2026-07-07] ingest : Architecture_Connaissance_Obsidian_Centric
+## [2026-07-07] ingest : Brief_ClaudeCode_Montage_Vaults_Obsidian
+## [2026-07-07] ingest : Claude_Review_Knowledge_Governance_Layer_v1
+## [2026-07-07] ingest : FICHE_PROJET_AFTRSN_Automation
+## [2026-07-07] ingest : Fiche_AFTRSN-Artist-Coordinator_20260705
+## [2026-07-07] ingest : Fiche_AFTRSN-Budget-Tracker_20260705
+## [2026-07-07] ingest : Fiche_AFTRSN-Email-Responder_20260704
+## [2026-07-07] ingest : Fiche_AFTRSN-Event-Creator_20260703
+## [2026-07-07] ingest : Fiche_AFTRSN-Knowledge-Capture_20260706
+## [2026-07-07] ingest : Fiche_AFTRSN-Marketing-Planner_20260705
+## [2026-07-07] ingest : Fiche_AFTRSN-Venue-Coordinator_20260704
+## [2026-07-07] ingest : Generique_MarcheASuivre_Construction-n8n-Navigateur
+## [2026-07-07] ingest : Guide-Connexion-Agents-AI-n8n
+## [2026-07-07] ingest : HOWTO_GENERIQUE_creer-la-memoire-agents-et-humains
+## [2026-07-07] ingest : Hermes_Clarification_20260703
+## [2026-07-07] ingest : Instructions_Projet_ChatGPT_n8n_v2
+## [2026-07-07] ingest : Memoire_Centrale_ASP_Brief_Construction
+## [2026-07-07] ingest : PASSATION_AFTRSN_AutomationArchitecture_20260702
+## [2026-07-07] ingest : PASSATION_AFTRSN_ProchainesEtapes_20260705-NUIT
+## [2026-07-07] ingest : PASSATION_AFTRSN_ProchainesEtapes_20260705-SOIR
+## [2026-07-07] ingest : PASSATION_AFTRSN_ProchainesEtapes_20260706
+## [2026-07-07] ingest : PLAN-PROJET_LUMINA-AI-OS_2026-07-02
+## [2026-07-07] ingest : POS-GENERIQUE_Audit-edition-workflows-n8n-via-API-interne
+## [2026-07-07] ingest : POS-GENERIQUE_Backfill-Outreach-Manuel_20260705
+## [2026-07-07] ingest : POS-GENERIQUE_Ingestion-multi-format-vers-banque-vectorielle
+## [2026-07-07] ingest : POS-GENERIQUE_Meta-Ads-SystemUser-Token-n8n_20260705
+## [2026-07-07] ingest : POS-GENERIQUE_Repondeur-Email-Drafts-Agent_20260704
+## [2026-07-07] ingest : POS-GENERIQUE_Suivi-Budget-Sheets-Base_20260705
+## [2026-07-07] ingest : POS-GENERIQUE_configuration-obsidian-ios-self-hosted
+## [2026-07-07] ingest : POS-LUMINA_Apprendre-Un-Skill-A-Hermes_20260705
+## [2026-07-07] ingest : POS-LUMINA_Audit-edition-workflows-n8n-API-interne_2026-07-02
+## [2026-07-07] ingest : POS-LUMINA_Reparation-Credential-Postgres-Partagee_20260706
+## [2026-07-07] ingest : Plan_Demarrage_Memoire_Centrale_MVP
+## [2026-07-07] ingest : RECAP_Session_20260703_W1-n8n-Build
+## [2026-07-07] ingest : SOP_installer-pgvector-sur-postgres-coolify
+## [2026-07-07] ingest : Spec_AFTRSN-Knowledge-Capture_W7_20260705
+## [2026-07-07] ingest : Test Brands Auto-Ingest
+## [2026-07-07] ingest : W1_Decoupage_Sous-Workflows_20260703
+## [2026-07-07] ingest : W1_Event-Creator_Flowchart_Spec_20260702
+## [2026-07-07] ingest : brief-montage-vaults
+## [2026-07-07] ingest : concept-archivage-n8n-idempotent
+## [2026-07-07] ingest : concept-gestion-erreurs-429
+## [2026-07-07] ingest : concept-intake-source-git
+## [2026-07-07] ingest : concept-limites-api-claude
+## [2026-07-07] ingest : concept-n8n-credentials
+## [2026-07-07] ingest : concept-oauth2-automation
+## [2026-07-07] ingest : concept-pipeline-memoire-wiki-git
+## [2026-07-07] ingest : concept-prompt-caching
+## [2026-07-07] ingest : n8n-Brancher-API-et-Premier-Workflow
+## [2026-07-07] ingest : sop-creer-memoire-agents-humains
+## [2026-07-07] ingest : sop-generique-pipeline-source-vers-vues
+## [2026-07-07] ingest : sop-lumina-archive-raw-vers-drive
+## [2026-07-07] ingest : sop-lumina-intake-et-publish
+## [2026-07-07] ingest : synthese-lumina-systeme-reference
+## [2026-07-07] ingest : synthese-oauth2-n8n-google
+## [2026-07-20] ingest : PASSATION_Incidents-memoire-et-intake_2026-07-05
+## [2026-07-21] ingest : AFTRSN-LUMINA · Marche a suivre EXACTE · Reparation pipeline memoire (credential OpenAI + INSERT parametre) et etat des lieux agents · 2026-06-29
+## [2026-07-21] ingest : AFTRSN-LUMINA · Marche a suivre EXACTE · Reparation recuperation apres rename lumina_memory + ingestion bible de marque depuis Drive (etape 4 MVP) · 2026-06-30
+## [2026-07-21] ingest : AFTRSN-LUMINA · POS EXACT · Hermes Agent sur Coolify (deploiement, acces, depannage) · 2026-07-01
+## [2026-07-21] ingest : AFTRSN-LUMINA · POS EXACT · Runbook ingestion bible de marque (Drive PDF vers aftrsn_memory) et recuperation simplifiee
+## [2026-07-21] ingest : AFTRSN-LUMINA · POS EXACT · Runbook memoire centrale (asp_memory) et agents AFTRSN
+## [2026-07-21] ingest : AFTRSN-LUMINA · POS EXACT · Runbook memoire multi-banques (ajouter une marque, ingerer, router)
+## [2026-07-21] ingest : AFTRSN-LUMINA · POS EXACT · Synchronisation mobile Obsidian CouchDB LiveSync · 2026-07-08
+## [2026-07-21] ingest : AFTRSN-LUMINA · Plan de projet LUMINA AI OS · etapes achevees et a venir · 2026-07-01
+## [2026-07-21] ingest : AFTRSN_Architecture_Processus_20260704
+## [2026-07-21] ingest : AFTRSN_Budget_How-To_SOP
+## [2026-07-21] ingest : AFTRSN_MarcheASuivre_Construction-n8n
+## [2026-07-21] ingest : BIBLE_LUMINA-OS_360_v2.5_2026-07-12
+## [2026-07-21] ingest : CANON_LUMINA-Hermes-Agent_2026-07-12
+## [2026-07-21] ingest : CARTOGRAPHIE_Automatisation-n8n-Notion_Evenementiel-et-Hors-evenementiel_2026-07-17
+## [2026-07-21] ingest : CONCEPT_Backstage-v3_Deux-Mondes_2026-07-16
+## [2026-07-21] ingest : GUIDE-BUILD_LUMINA-M2-Intent-Router_2026-07-08
+## [2026-07-21] ingest : GUIDE-BUILD_LUMINA-M3-Memory-Search_2026-07-09
+## [2026-07-21] ingest : GUIDE-BUILD_LUMINA-M4-Web-Hermes-Search_2026-07-09
+## [2026-07-21] ingest : GUIDE-BUILD_LUMINA-M5-Gmail-Ops_2026-07-12
+## [2026-07-21] ingest : GUIDE-BUILD_LUMINA-M6-Calendar-Ops_2026-07-13
+## [2026-07-21] ingest : GUIDE-BUILD_LUMINA-M8-Validation-Gate_2026-07-14
+## [2026-07-21] ingest : GUIDE-BUILD_LUMINA-M9-Save-Episode_2026-07-14
+## [2026-07-21] ingest : HOWTO_GENERIQUE_archiver-source-apres-compilation-idempotent-n8n
+## [2026-07-21] ingest : HOWTO_GENERIQUE_intake-source-vers-git-idempotent-blinde
+## [2026-07-21] ingest : HOWTO_archive-raw-vers-drive_workflow-n8n-LUMINA
+## [2026-07-21] ingest : LUMINA-PLAYBOOK_v1_2026-07-02
+## [2026-07-21] ingest : POS-AFTRSN_Backfill-Outreach-Manuel_20260705
+## [2026-07-21] ingest : POS-AFTRSN_Branchement-Business-Maestro_2026-07-11
+## [2026-07-21] ingest : POS-AFTRSN_Cablage-Maestro-subagents-Router_2026-07-02
+## [2026-07-21] ingest : POS-AFTRSN_Calendrier-Contenu-Agent-Notion_20260705
+## [2026-07-21] ingest : POS-AFTRSN_Capture-Connaissance-Debrief_20260706
+## [2026-07-21] ingest : POS-AFTRSN_Clonage-roster-agents-nouvelle-marque_2026-07-02
+## [2026-07-21] ingest : POS-AFTRSN_Hermes-outil-Ops-agents_2026-07-02
+## [2026-07-21] ingest : POS-AFTRSN_Ingestion-texte-et-recursion-Drive_2026-07-02
+## [2026-07-21] ingest : POS-AFTRSN_Memoire-episodique-consolidation-RAG_2026-07-02
+## [2026-07-21] ingest : POS-AFTRSN_Outreach-Relances-Notion-Drafts_20260704
+## [2026-07-21] ingest : POS-AFTRSN_Repondeur-Email-Drafts-Agent_20260704
+## [2026-07-21] ingest : POS-AFTRSN_Skills-library-Hermes-apprenant_2026-07-02
+## [2026-07-21] ingest : POS-AFTRSN_Suivi-Budget-Sheets-Notion_20260705
+## [2026-07-21] ingest : POS-EXACT_Allocation-modeles-LLM_2026-07-15
+## [2026-07-21] ingest : POS-EXACT_AutoEvent-P3_M1-EDITION-WATCHER_a-jour_2026-07-19
+## [2026-07-21] ingest : POS-EXACT_AutoEvent-P3_M1-orchestrateur-edition-checklist-brief_2026-07-17
+## [2026-07-21] ingest : POS-EXACT_AutoEvent-P3_M1b-Iris-auto-declenchement_2026-07-17
+## [2026-07-21] ingest : POS-EXACT_AutoEvent-P3_M2-copy-runner_2026-07-18
+## [2026-07-21] ingest : POS-EXACT_AutoEvent-P3_M2-refonte-depot-direct-par-canal_2026-07-19
+## [2026-07-21] ingest : POS-EXACT_AutoEvent-P3_M3-M4-fiabilisation-scan_2026-07-18
+## [2026-07-21] ingest : POS-EXACT_AutoEvent-P3_M3-visual-tracker_2026-07-18
+## [2026-07-21] ingest : POS-EXACT_AutoEvent-P3_M4-fix-paid-external_2026-07-19
+## [2026-07-21] ingest : POS-EXACT_AutoEvent-P3_M4-wix-event-runner_2026-07-18
+## [2026-07-21] ingest : POS-EXACT_AutoEvent-P3_M5-newsletter-tracker_2026-07-19
+## [2026-07-21] ingest : POS-EXACT_AutoEvent-P3_M5b-newsletter-metrics-runner_2026-07-19
+## [2026-07-21] ingest : POS-EXACT_AutoEvent-P3_M5c-website-metrics-runner_2026-07-19
+## [2026-07-21] ingest : POS-EXACT_AutoEvent-P3_M6-instagram-tracker_2026-07-19
+## [2026-07-21] ingest : POS-EXACT_AutoEvent-P3_M8-kpi-dashboard-seeder_2026-07-19
+## [2026-07-21] ingest : POS-EXACT_AutoEvent-P3_M8-moitie2-convergence-recap_2026-07-20
+## [2026-07-21] ingest : POS-EXACT_AutoEvent-P3_M9-verification-finale-cloture_2026-07-20
+## [2026-07-21] ingest : POS-EXACT_AutoEvent-P3_anti-repetition-inter-vagues_2026-07-20
+## [2026-07-21] ingest : POS-EXACT_AutoEvent-P3_repointage-M4-M5-migration-intake_2026-07-19
+## [2026-07-21] ingest : POS-EXACT_Backstage-P2_P2-1-credential-notion-n8n_2026-07-17
+## [2026-07-21] ingest : POS-EXACT_Backstage-P2_P2-2-task-runner-lecture-garde-fou_2026-07-17
+## [2026-07-21] ingest : POS-EXACT_Backstage-P2_P2-3-ecriture-controlee_2026-07-17
+## [2026-07-21] ingest : POS-EXACT_Backstage-P2_P2-4-P2-5-hermes-boucle-complete_2026-07-17
+## [2026-07-21] ingest : POS-EXACT_Backstage-v3_A2-cockpit-human-space_2026-07-17
+## [2026-07-21] ingest : POS-EXACT_Backstage-v3_A3-cockpit-sur-page-human-space_2026-07-17
+## [2026-07-21] ingest : POS-EXACT_Backstage-v3_N1-executor_2026-07-16
+## [2026-07-21] ingest : POS-EXACT_Backstage-v3_N2-human-space_2026-07-16
+## [2026-07-21] ingest : POS-EXACT_Backstage-v3_N3-agent-space_2026-07-16
+## [2026-07-21] ingest : POS-EXACT_Backstage-v3_N4-portail-cockpit_2026-07-16
+## [2026-07-21] ingest : POS-EXACT_Backstage-v3_N5-sidebar_2026-07-16
+## [2026-07-21] ingest : POS-EXACT_Backstage-v3_N6-verification-finale_2026-07-17
+## [2026-07-21] ingest : POS-EXACT_Branchement-Business-Maestro_2026-07-11
+## [2026-07-21] ingest : POS-EXACT_Elimination-OpenRouter-LLM-direct_2026-07-15
+## [2026-07-21] ingest : POS-EXACT_Etat-conversation-clarification-Gateway_2026-07-12
+## [2026-07-21] ingest : POS-EXACT_Fiabilisation-orchestration-Maestro-latence_2026-07-12
+## [2026-07-21] ingest : POS-EXACT_Health-check-M3-Memory-Search_2026-07-12
+## [2026-07-21] ingest : POS-EXACT_Hermes-fiabilite-garde-fou-erreurs-backend_2026-07-15
+## [2026-07-21] ingest : POS-EXACT_Intendance-Drive-LUMINA-AI-DOCS_2026-07-12
+## [2026-07-21] ingest : POS-EXACT_Iris-qualite_Peupler-canon-memoire-marque_2026-07-20
+## [2026-07-21] ingest : POS-EXACT_Iris-qualite_Retouche-prompt-Iris_2026-07-20
+## [2026-07-21] ingest : POS-EXACT_LUMINA-accueil-glossaire-portes-team-space_2026-07-17
+## [2026-07-21] ingest : POS-EXACT_LUMINA-demenagement-espace-notion-et-renommage-token_2026-07-17
+## [2026-07-21] ingest : POS-EXACT_M7-Draft-Writer-voix-marque_2026-07-14
+## [2026-07-21] ingest : POS-EXACT_M8-Validation-Gate_2026-07-14
+## [2026-07-21] ingest : POS-EXACT_M9-Save-Episode_2026-07-14
+## [2026-07-21] ingest : POS-EXACT_Procedures_F1-task-lifecycle_2026-07-17
+## [2026-07-21] ingest : POS-EXACT_Procedures_F2-validate-agent-work_2026-07-17
+## [2026-07-21] ingest : POS-EXACT_Procedures_F3-the-cockpit_2026-07-17
+## [2026-07-21] ingest : POS-EXACT_Telegram-Calendar-Ops_2026-07-13
+## [2026-07-21] ingest : POS-EXACT_chemin-business-Maestro_2026-07-11
+## [2026-07-21] ingest : POS-GENERIQUE_Agent-n8n-vers-service-cookie-auth-sans-exposer-secret
+## [2026-07-21] ingest : POS-GENERIQUE_Bibliotheque-de-skills-apprenante-agents
+## [2026-07-21] ingest : POS-GENERIQUE_Bot-Telegram-prive-auth-ACL-Postgres
+## [2026-07-21] ingest : POS-GENERIQUE_Branche-calendar-ops-telegram
+## [2026-07-21] ingest : POS-GENERIQUE_Branche-gmail-ops-telegram
+## [2026-07-21] ingest : POS-GENERIQUE_Branche-memory-search-telegram
+## [2026-07-21] ingest : POS-GENERIQUE_Brancher-un-intent-vers-un-sous-workflow-agent-dans-un-gateway-n8n
+## [2026-07-21] ingest : POS-GENERIQUE_Cablage-orchestrateur-subagents-router-n8n
+## [2026-07-21] ingest : POS-GENERIQUE_Calendrier-Contenu-Agent-Base_20260705
+## [2026-07-21] ingest : POS-GENERIQUE_Capture-Connaissance-Debrief_20260706
+## [2026-07-21] ingest : POS-GENERIQUE_Classification-workflows-n8n_process-flow_2026-07-02
+## [2026-07-21] ingest : POS-GENERIQUE_Clonage-roster-agents-multimarques
+## [2026-07-21] ingest : POS-GENERIQUE_Decoupage-Workflow-n8n-Orchestrateur-Sous-Workflows_20260704
+## [2026-07-21] ingest : POS-GENERIQUE_Etat-conversation-clarification-bot-n8n
+## [2026-07-21] ingest : POS-GENERIQUE_Fix-httpRequestTool-JSON-body-fromAI
+## [2026-07-21] ingest : POS-GENERIQUE_Gateway-Telegram-auth-dispatch-n8n
+## [2026-07-21] ingest : POS-GENERIQUE_Health-check-workflow-live-n8n-API-interne
+## [2026-07-21] ingest : POS-GENERIQUE_Intendance-dossier-Drive-nettoyage-doublons-et-redepot
+## [2026-07-21] ingest : POS-GENERIQUE_Journalisation-episodique-echanges-bot
+## [2026-07-21] ingest : POS-GENERIQUE_Memoire-vivante-agents-episodique-consolidation-RAG
+## [2026-07-21] ingest : POS-GENERIQUE_Onboarding-nouvelle-marque_roster-clone_2026-07-02
+## [2026-07-21] ingest : POS-GENERIQUE_Orchestration-multi-agents-selection-verification-latence
+## [2026-07-21] ingest : POS-GENERIQUE_Outreach-Relances-Base-Drafts_20260704
+## [2026-07-21] ingest : POS-GENERIQUE_Porte-validation-Telegram-boutons-inline
+## [2026-07-21] ingest : POS-GENERIQUE_Redaction-verifiee-multi-agents-via-orchestrateur
+## [2026-07-21] ingest : POS-GENERIQUE_Router-intention-LLM-n8n
+## [2026-07-21] ingest : POS-GENERIQUE_Routeur-multi-LLM-par-task_type-passerelle-OpenAI-compatible
+## [2026-07-21] ingest : POS-GENERIQUE_Runner-LLM-headless-declenche-par-webhook_2026-07-07
+## [2026-07-21] ingest : POS-GENERIQUE_accueil-et-glossaire-espace-connaissances_2026-07-17
+## [2026-07-21] ingest : POS-GENERIQUE_auto-declencher-orchestrateur-n8n-sur-changement-notion-empreinte-idempotente_2026-07-17
+## [2026-07-21] ingest : POS-GENERIQUE_basculer-runner-triggers-notion-vers-scan-planifie-et-durcir-multi-items_2026-07-18
+## [2026-07-21] ingest : POS-GENERIQUE_brancher-moteur-agent-boucle-claim-report_2026-07-17
+## [2026-07-21] ingest : POS-GENERIQUE_connecter-outil-automation-notion-token-dedie_2026-07-17
+## [2026-07-21] ingest : POS-GENERIQUE_consolider-domaine-espace-et-renommer-token-sans-casser_2026-07-17
+## [2026-07-21] ingest : POS-GENERIQUE_contenu-accueil-vs-sidebar-notion-synced-blocks_2026-07-17
+## [2026-07-21] ingest : POS-GENERIQUE_creer-espace-agents-vues-filtrees-api_2026-07-16
+## [2026-07-21] ingest : POS-GENERIQUE_creer-fiche-procedure-wiki-notion-mvp_2026-07-17
+## [2026-07-21] ingest : POS-GENERIQUE_dashboard-live-notion-webhook-page-hybride-seeder_2026-07-19
+## [2026-07-21] ingest : POS-GENERIQUE_demenager-cockpit-notion-sans-casser-relations_2026-07-16
+## [2026-07-21] ingest : POS-GENERIQUE_deplacer-blocs-notion-navigateur-move-to_2026-07-17
+## [2026-07-21] ingest : POS-GENERIQUE_double-trigger-agent-et-memoire
+## [2026-07-21] ingest : POS-GENERIQUE_durcir-prompt-agent-generateur-langue-json-variete-voix_2026-07-20
+## [2026-07-21] ingest : POS-GENERIQUE_ecriture-controlee-statuts-agent-jamais-done_2026-07-17
+## [2026-07-21] ingest : POS-GENERIQUE_orchestrateur-n8n-entite-notion-vers-checklist-taches-liees-idempotente_2026-07-17
+## [2026-07-21] ingest : POS-GENERIQUE_pointer-page-tierce-vers-billetterie-externe-create-type-autorise-puis-patch-type_2026-07-19
+## [2026-07-21] ingest : POS-GENERIQUE_recette-cloture-verification-finale-moteur-multi-workflow_2026-07-20
+## [2026-07-21] ingest : POS-GENERIQUE_refondre-runner-pack-unique-vers-bases-par-canal-upsert-titre_2026-07-19
+## [2026-07-21] ingest : POS-GENERIQUE_renommer-wrappers-linked-views-sidebar_2026-07-16
+## [2026-07-21] ingest : POS-GENERIQUE_runner-convergence-multi-canaux-recap-go-live-tache_2026-07-20
+## [2026-07-21] ingest : POS-GENERIQUE_runner-entite-vers-page-web-tierce-draft-create-update-idempotent-liens-retour_2026-07-18
+## [2026-07-21] ingest : POS-GENERIQUE_runner-lecture-filtree-garde-fou-pilote_2026-07-17
+## [2026-07-21] ingest : POS-GENERIQUE_runner-lire-livrables-anterieurs-injecter-contrainte-negative-anti-repetition_2026-07-20
+## [2026-07-21] ingest : POS-GENERIQUE_runner-releve-metriques-entite-page-modele-analytique-filtrable-garde-etat_2026-07-19
+## [2026-07-21] ingest : POS-GENERIQUE_runner-releve-metriques-plateforme-vers-base-metrics_2026-07-19
+## [2026-07-21] ingest : POS-GENERIQUE_runner-tache-checklist-vers-agent-LLM-brouillons-multiplateformes-a-valider_2026-07-18
+## [2026-07-21] ingest : POS-GENERIQUE_runner-tracker-consommer-tache-checklist-remplir-livrable-pret-a-coller-gate-humain_2026-07-19
+## [2026-07-21] ingest : POS-GENERIQUE_runner-tracker-livrable-humain-checklist-idempotente-source-unique_2026-07-18
+## [2026-07-21] ingest : POS-GENERIQUE_select-executor-separation-human-agent_2026-07-16
+## [2026-07-21] ingest : POS-GENERIQUE_verifier-conformite-page-apres-amendement_2026-07-16
+## [2026-07-21] ingest : POS-GENERIQUE_verifier-pont-humain-agent-taches-sonde_2026-07-17
+## [2026-07-21] ingest : POS-HERMES_Fix-Approbation-Latence
+## [2026-07-21] ingest : POS-LUMINA_Auto-Ingest-Raw-vers-Wiki_2026-07-07
+## [2026-07-21] ingest : POS-LUMINA_Bot-Telegram-dedie-et-auth-ACL_2026-07-08
+## [2026-07-21] ingest : POS-LUMINA_Etat-conversation-clarification-Gateway_2026-07-12
+## [2026-07-21] ingest : POS-LUMINA_Fiabilisation-orchestration-Maestro-latence_2026-07-12
+## [2026-07-21] ingest : POS-LUMINA_Fix-Knowledge-JSON-body-Maestro_2026-07-09
+## [2026-07-21] ingest : POS-LUMINA_Health-check-M3-Memory-Search_2026-07-12
+## [2026-07-21] ingest : POS-LUMINA_Hermes-bascule-OpenAI-direct_2026-07-15
+## [2026-07-21] ingest : POS-LUMINA_Intendance-Drive-LUMINA-AI-DOCS_2026-07-12
+## [2026-07-21] ingest : POS-LUMINA_Reorg-n8n-dossiers-tags_2026-07-12
+## [2026-07-21] ingest : POS-LUMINA_Telegram-Gateway_2026-07-08
+## [2026-07-21] ingest : POS-LUMINA_Telegram-Gmail-Ops_2026-07-13
+## [2026-07-21] ingest : POS-LUMINA_Telegram-Intent-Router_2026-07-08
+## [2026-07-21] ingest : POS-LUMINA_Telegram-Memory-Search_2026-07-09
+## [2026-07-21] ingest : POS-LUMINA_chemin-business-Telegram-Maestro_2026-07-11
+## [2026-07-21] ingest : SOP_GENERIQUE_workflow-archivage-idempotent-n8n
+## [2026-07-21] ingest : SOP_LUMINA-Archive-Raw-vers-Drive_n8n
+## [2026-07-21] ingest : SOP_creer-la-memoire-agents-et-humains
+## [2026-07-21] ingest : SOP_intake-github-idempotent-blinde
+## [2026-07-21] ingest : SOP_systeme-multi-agents-memoire-centrale-mcp-n8n
+## [2026-07-21] ingest : STANDARD_Contenu-par-plateforme_AFTRSN_v2_2026-07-20
+## [2026-07-21] ingest : SYSTEM-CANON_LUMINA_2026-07-03

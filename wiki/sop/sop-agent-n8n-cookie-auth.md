@@ -8,12 +8,8 @@ brand:
 sources:
   - raw/2026-07-02--pos-generique-agent-n8n-vers-service-cookie-auth-sans-exposer-secret.md
   - raw/2026-07-06--pos-generique-agent-n8n-vers-service-cookie-auth-sans-exposer-secret.md
-related:
-  - wiki/concept-hermes-agent.md
-  - wiki/sop/sop-cablage-orchestrateur-subagents.md
-  - wiki/sop/sop-audit-edition-n8n-api-interne.md
-  - wiki/sop/Guide-Connexion-Agents-AI-n8n.md
 updated: 2026-07-06
+related: ["Guide-Connexion-Agents-AI-n8n", "concept-hermes-agent", "sop-audit-edition-n8n-api-interne", "sop-cablage-orchestrateur-subagents", "synthese-lumina-ai-os"]
 ---
 
 # SOP — Brancher un agent n8n sur un service web avec auth par cookie
@@ -93,3 +89,12 @@ Les cookies ne sont **pas partagés automatiquement** entre les nodes HTTP Reque
 - [[sop/sop-cablage-orchestrateur-subagents]] — câbler un outil (toolWorkflow) à l'orchestrateur.
 - [[sop/sop-audit-edition-n8n-api-interne]] — tester par API interne (`triggerToStartFrom`).
 - [[sop/Guide-Connexion-Agents-AI-n8n]] — créer et gérer les credentials dans n8n.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[Guide-Connexion-Agents-AI-n8n]] : Guide · Connecter Claude, ChatGPT et Gemini dans n8n
+- [[concept-hermes-agent]] : Concept · Hermes-Agent (bras d'exécution apprenant de LUMINA OS)
+- [[sop-audit-edition-n8n-api-interne]] : SOP · Auditer/éditer un n8n self-hosté par son API interne (sans clé API)
+- [[sop-cablage-orchestrateur-subagents]] : SOP · Câbler un orchestrateur AI Agent à des sub-agents et un routeur LLM (n8n)
+- [[synthese-lumina-ai-os]] : LUMINA AI OS · Système multi-agents & multi-LLM
+<!-- AUTO-LIENS:fin -->

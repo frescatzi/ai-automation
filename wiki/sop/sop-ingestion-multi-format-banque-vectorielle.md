@@ -8,13 +8,8 @@ brand:
 sources:
   - raw/2026-07-02--pos-generique-ingestion-multi-format-vers-banque-vectorielle.md
   - raw/2026-07-06--pos-generique-ingestion-multi-format-vers-banque-vectorielle.md
-related:
-  - wiki/concept-memoire-vectorielle-multi-marques.md
-  - wiki/concept-memoire-vivante-agents.md
-  - wiki/sop/sop-reparer-webhook-n8n-ingestion-pdf.md
-  - wiki/sop/sop-diagnostiquer-pipeline-memoire-vectorielle.md
-  - wiki/sop/SOP_installer-pgvector-sur-postgres-coolify.md
 updated: 2026-07-06
+related: ["SOP_installer-pgvector-sur-postgres-coolify", "concept-memoire-vectorielle-multi-marques", "concept-memoire-vivante-agents", "sop-diagnostiquer-pipeline-memoire-vectorielle", "sop-reparer-webhook-n8n-ingestion-pdf"]
 ---
 
 # SOP — Ingestion multi-format (texte/markdown + PDF/dossier) vers banque vectorielle
@@ -82,3 +77,12 @@ Un node Extract ne supporte **qu'un seul type** — obligatoire de brancher.
 - [[sop/sop-reparer-webhook-n8n-ingestion-pdf]] — réparer un webhook last-node + ingestion fichier unique.
 - [[sop/sop-diagnostiquer-pipeline-memoire-vectorielle]] — diagnostic + SQL paramétré.
 - [[sop/SOP_installer-pgvector-sur-postgres-coolify]] — setup de la base vectorielle.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[SOP_installer-pgvector-sur-postgres-coolify]] : SOP · Installer pgvector sur un Postgres géré par Coolify
+- [[concept-memoire-vectorielle-multi-marques]] : Mémoire vectorielle multi-marques (banque partagée + tables par marque)
+- [[concept-memoire-vivante-agents]] : Mémoire vivante pour agents (épisodique + consolidation + RAG)
+- [[sop-diagnostiquer-pipeline-memoire-vectorielle]] : SOP · Diagnostiquer/réparer un pipeline de mémoire vectorielle (n8n + pgvector)
+- [[sop-reparer-webhook-n8n-ingestion-pdf]] : SOP · Réparer un webhook n8n (last-node) + ingérer un PDF Drive dans une banque vectorielle
+<!-- AUTO-LIENS:fin -->

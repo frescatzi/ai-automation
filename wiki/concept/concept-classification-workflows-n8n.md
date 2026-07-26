@@ -8,12 +8,8 @@ brand:
 sources:
   - raw/2026-07-02--pos-generique-classification-workflows-n8n-process-flow-2026-07-02.md
   - raw/2026-07-06--pos-generique-classification-workflows-n8n-process-flow-2026-07-02.md
-related:
-  - wiki/sop/sop-clonage-roster-agents.md
-  - wiki/sop/sop-audit-edition-n8n-api-interne.md
-  - wiki/synthese-lumina-ai-os.md
-  - wiki/sop/Guide-Connexion-Agents-AI-n8n.md
 updated: 2026-07-06
+related: ["Guide-Connexion-Agents-AI-n8n", "sop-audit-edition-n8n-api-interne", "sop-cablage-orchestrateur-subagents", "sop-clonage-roster-agents", "synthese-lumina-ai-os", "synthese-lumina-systeme-reference"]
 ---
 
 # Standard de classification des workflows n8n (process-flow)
@@ -80,3 +76,13 @@ fetch('/rest/workflows/<wfId>', { method:'PATCH', ...hdr,
 - [[sop/sop-audit-edition-n8n-api-interne]] — auditer/éditer les workflows par API interne.
 - [[synthese-lumina-ai-os]] — la topologie globale du système Lumina.
 - [[sop/Guide-Connexion-Agents-AI-n8n]] — créer les credentials dans n8n.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[Guide-Connexion-Agents-AI-n8n]] : Guide · Connecter Claude, ChatGPT et Gemini dans n8n
+- [[sop-audit-edition-n8n-api-interne]] : SOP · Auditer/éditer un n8n self-hosté par son API interne (sans clé API)
+- [[sop-cablage-orchestrateur-subagents]] : SOP · Câbler un orchestrateur AI Agent à des sub-agents et un routeur LLM (n8n)
+- [[sop-clonage-roster-agents]] : SOP · Clonage d'un roster d'agents vers une nouvelle marque
+- [[synthese-lumina-ai-os]] : LUMINA AI OS · Système multi-agents & multi-LLM
+- [[synthese-lumina-systeme-reference]] : Lumina · Système de connaissance (référence complète)
+<!-- AUTO-LIENS:fin -->

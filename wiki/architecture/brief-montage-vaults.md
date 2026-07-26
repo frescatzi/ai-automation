@@ -8,11 +8,8 @@ brand: null
 sources:
   - "raw/2026-06-24--brief-claudecode-montage-vaults-obsidian.md"
   - "raw/2026-06-29--brief-claudecode-montage-vaults-obsidian.md"
-related:
-  - "synthese-lumina-systeme-reference"
-  - "architecture/Instructions_Projet_ChatGPT_n8n_v2"
-  - "concept-intake-source-git"
 updated: 2026-06-29
+related: ["Architecture_Connaissance_Obsidian_Centric", "Claude_Review_Knowledge_Governance_Layer_v1", "Instructions_Projet_ChatGPT_n8n_v2", "concept-intake-source-git", "synthese-lumina-systeme-reference"]
 ---
 
 # Architecture — Montage des 3 vaults Obsidian
@@ -101,3 +98,12 @@ Journaliser chaque décision d'inclusion/exclusion dans `log.md`.
 **`sessions/`** : fichiers de sessions datées (lecture seule)
 
 *Brief montage vaults v1.0 — 2026-06-20 (archivé dans wiki 2026-06-24).*
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[Architecture_Connaissance_Obsidian_Centric]] : Architecture de la Connaissance · Modèle Git-hub (Obsidian + LLM Wiki)
+- [[Claude_Review_Knowledge_Governance_Layer_v1]] : Analyse critique · Knowledge Governance Layer v1
+- [[Instructions_Projet_ChatGPT_n8n_v2]] : Projet ChatGPT · Idéation, Architecture & Pré-analyse de l'écosystème IA / n8n
+- [[concept-intake-source-git]] : Concept · Intake source → Git (pattern idempotent & blindé)
+- [[synthese-lumina-systeme-reference]] : Lumina · Système de connaissance (référence complète)
+<!-- AUTO-LIENS:fin -->

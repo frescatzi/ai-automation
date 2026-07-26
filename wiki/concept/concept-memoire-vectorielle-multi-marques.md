@@ -10,14 +10,8 @@ sources:
   - raw/2026-07-02--lumina-ai-os-passation.md
   - raw/2026-07-02--lumina-playbook-v1-2026-07-02.md
   - raw/2026-07-21--aftrsn-lumina-marche-a-suivre-exacte-etape-1-architecture-memoire-multi-banques-schema-nommage-registre-2026-06-29.md
-related:
-  - wiki/concept-memoire-vivante-agents.md
-  - wiki/sop/SOP_installer-pgvector-sur-postgres-coolify.md
-  - wiki/sop/sop-diagnostiquer-pipeline-memoire-vectorielle.md
-  - wiki/sop/sop-clonage-roster-agents.md
-  - wiki/synthese-lumina-ai-os.md
-  - wiki/concept-pipeline-memoire-wiki-git.md
 updated: 2026-07-21
+related: ["SOP_installer-pgvector-sur-postgres-coolify", "concept-bibliotheque-skills-apprenante", "concept-memoire-vivante-agents", "concept-pipeline-memoire-wiki-git", "sop-clonage-roster-agents", "sop-diagnostiquer-pipeline-memoire-vectorielle", "sop-ingestion-multi-format-banque-vectorielle", "sop-reparer-webhook-n8n-ingestion-pdf"]
 ---
 
 # Mémoire vectorielle multi-marques (banque partagée + tables par marque)
@@ -134,3 +128,15 @@ Recherche : k-NN `ORDER BY embedding <=> q LIMIT k`, éventuellement filtré par
 - [[sop/sop-clonage-roster-agents]] — provisionner une nouvelle banque marque + cloner les agents.
 - [[synthese-lumina-ai-os]] — le contexte système Lumina.
 - [[concept-pipeline-memoire-wiki-git]] — le pipeline `wiki/` (Git) → cette base vectorielle (Partie 2), qui alimente le mapping coffre → banque ci-dessus.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[SOP_installer-pgvector-sur-postgres-coolify]] : SOP · Installer pgvector sur un Postgres géré par Coolify
+- [[concept-bibliotheque-skills-apprenante]] : Concept · Bibliothèque de skills apprenante (maturité & graduation)
+- [[concept-memoire-vivante-agents]] : Mémoire vivante pour agents (épisodique + consolidation + RAG)
+- [[concept-pipeline-memoire-wiki-git]] : Concept · Pipeline mémoire depuis wiki Git (hub parallèle agents + humains)
+- [[sop-clonage-roster-agents]] : SOP · Clonage d'un roster d'agents vers une nouvelle marque
+- [[sop-diagnostiquer-pipeline-memoire-vectorielle]] : SOP · Diagnostiquer/réparer un pipeline de mémoire vectorielle (n8n + pgvector)
+- [[sop-ingestion-multi-format-banque-vectorielle]] : SOP · Ingestion multi-format (texte/markdown + PDF/dossier) vers banque vectorielle
+- [[sop-reparer-webhook-n8n-ingestion-pdf]] : SOP · Réparer un webhook n8n (last-node) + ingérer un PDF Drive dans une banque vectorielle
+<!-- AUTO-LIENS:fin -->

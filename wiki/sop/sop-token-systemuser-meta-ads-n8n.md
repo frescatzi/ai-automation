@@ -7,11 +7,8 @@ vault: ai-automation
 brand: null
 sources:
   - raw/2026-07-21--pos-generique-meta-ads-systemuser-token-n8n-20260705.md
-related:
-  - wiki/concept-n8n-credentials.md
-  - wiki/concept-oauth2-automation.md
-  - wiki/sop/Guide-Connexion-Agents-AI-n8n.md
 updated: 2026-07-21
+related: ["Guide-Connexion-Agents-AI-n8n", "concept-n8n-credentials", "concept-oauth2-automation"]
 ---
 
 # SOP — Token System User Meta Ads pour n8n (création de campagnes)
@@ -56,3 +53,10 @@ Meta Ads n'utilise **pas** le patron OAuth2 classique (voir [[concept-oauth2-aut
 - [[concept-n8n-credentials]] — gestion des credentials n8n (API Key, OAuth2, séparation agent/humain sur les secrets).
 - [[concept-oauth2-automation]] — patron OAuth2 générique ; le token System User Meta s'en distingue (pas de flux Authorization Code, expiration « Jamais »).
 - [[sop/Guide-Connexion-Agents-AI-n8n]] — création d'autres credentials n8n (Anthropic/OpenAI/Gemini) pas à pas.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[Guide-Connexion-Agents-AI-n8n]] : Guide · Connecter Claude, ChatGPT et Gemini dans n8n
+- [[concept-n8n-credentials]] : Credentials n8n · gestion et bonnes pratiques
+- [[concept-oauth2-automation]] : OAuth2 · patron universel automation ↔ service cloud
+<!-- AUTO-LIENS:fin -->

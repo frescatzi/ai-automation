@@ -6,8 +6,8 @@ publish: none
 vault: ai-automation
 brand: null
 sources: ["raw/2026-07-07--pos-lumina-auto-ingest-raw-vers-wiki-2026-07-07.md"]
-related: ["sop/sop-generique-runner-llm-headless-webhook", "concept-pipeline-memoire-wiki-git", "sop/sop-lumina-archive-raw-vers-drive", "concept-archivage-n8n-idempotent", "concept-validation-auto-ingest"]
 updated: 2026-07-07
+related: ["concept-archivage-n8n-idempotent", "concept-pipeline-memoire-wiki-git", "concept-validation-auto-ingest", "sop-generique-runner-llm-headless-webhook", "sop-lumina-archive-raw-vers-drive"]
 ---
 
 # SOP Lumina — Auto-Ingest raw→wiki (runner Claude headless, multi-coffres)
@@ -102,3 +102,12 @@ C'est le chaînon automatisé manquant entre l'intake (remplit `raw/`) et l'arch
 - [[sop/sop-lumina-archive-raw-vers-drive]] — le workflow n8n aval qui consomme `_archive_queue.json` produit par ce runner.
 - [[concept-archivage-n8n-idempotent]] — garde-fous équivalents côté archivage.
 - [[concept-validation-auto-ingest]] — validation de bout en bout des runs précédents de ce runner.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[concept-archivage-n8n-idempotent]] : Concept · Archivage idempotent post-compilation (pattern n8n)
+- [[concept-pipeline-memoire-wiki-git]] : Concept · Pipeline mémoire depuis wiki Git (hub parallèle agents + humains)
+- [[concept-validation-auto-ingest]] : Concept · Validation du runner auto-ingest (raw → wiki → Git)
+- [[sop-generique-runner-llm-headless-webhook]] : SOP générique · Runner LLM agentique headless déclenché par webhook
+- [[sop-lumina-archive-raw-vers-drive]] : SOP Lumina · Archive Raw→Drive (n8n)
+<!-- AUTO-LIENS:fin -->

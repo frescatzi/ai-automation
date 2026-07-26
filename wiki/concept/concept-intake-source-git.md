@@ -7,12 +7,8 @@ vault: ai-automation
 brand:
 sources:
   - raw/2026-06-29--howto-generique-intake-source-vers-git-idempotent-blinde.md
-related:
-  - sop/sop-lumina-intake-et-publish
-  - concept-archivage-n8n-idempotent
-  - concept-pipeline-memoire-wiki-git
-  - synthese-lumina-systeme-reference
 updated: 2026-06-29
+related: ["brief-montage-vaults", "concept-archivage-n8n-idempotent", "concept-pipeline-memoire-wiki-git", "sop-generique-runner-llm-headless-webhook", "sop-lumina-intake-et-publish", "synthese-lumina-systeme-reference"]
 ---
 
 # Concept — Intake source → Git (pattern idempotent & blindé)
@@ -88,3 +84,13 @@ Deux catastrophes à éviter :
 ## Adaptation
 
 Remplacer la source (Drive → autre), l'owner/repo, le classifieur LLM. Le pattern **Write → Verify → Delete-if-confirmed** est universel pour « drainer une source vers un stockage ».
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[brief-montage-vaults]] : Architecture · Montage des 3 vaults Obsidian (brief de référence)
+- [[concept-archivage-n8n-idempotent]] : Concept · Archivage idempotent post-compilation (pattern n8n)
+- [[concept-pipeline-memoire-wiki-git]] : Concept · Pipeline mémoire depuis wiki Git (hub parallèle agents + humains)
+- [[sop-generique-runner-llm-headless-webhook]] : SOP générique · Runner LLM agentique headless déclenché par webhook
+- [[sop-lumina-intake-et-publish]] : SOP Lumina · Intake (Drive→GitHub) & Publication Notion idempotente
+- [[synthese-lumina-systeme-reference]] : Lumina · Système de connaissance (référence complète)
+<!-- AUTO-LIENS:fin -->

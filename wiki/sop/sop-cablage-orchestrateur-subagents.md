@@ -8,14 +8,8 @@ brand:
 sources:
   - raw/2026-07-02--pos-generique-cablage-orchestrateur-subagents-router-n8n.md
   - raw/2026-07-06--pos-generique-cablage-orchestrateur-subagents-router-n8n.md
-related:
-  - wiki/concept-hermes-agent.md
-  - wiki/concept-routeur-multi-llm.md
-  - wiki/synthese-lumina-ai-os.md
-  - wiki/sop/sop-audit-edition-n8n-api-interne.md
-  - wiki/sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n.md
-  - wiki/concept-classification-workflows-n8n.md
 updated: 2026-07-06
+related: ["SOP_systeme-multi-agents-memoire-centrale-mcp-n8n", "concept-classification-workflows-n8n", "concept-hermes-agent", "concept-routeur-multi-llm", "sop-agent-n8n-cookie-auth", "sop-audit-edition-n8n-api-interne", "sop-calendrier-contenu-agent", "sop-diagnostiquer-pipeline-memoire-vectorielle"]
 ---
 
 # SOP — Câbler un orchestrateur AI Agent à des sub-agents et un routeur LLM (n8n)
@@ -91,3 +85,15 @@ AUTHORITY: Actions critiques (dépense, envoi, suppression) → validation humai
 - [[sop/sop-agent-n8n-cookie-auth]] — brancher un outil vers un service web protégé par cookie.
 - [[sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n]] — SOP mémoire centrale MCP.
 - [[concept-classification-workflows-n8n]] — ranger Maestro en `03-BRAIN`, sub-agents en `03-BRAIN/Sub-Agents`.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[SOP_systeme-multi-agents-memoire-centrale-mcp-n8n]] : SOP · Système multi-agents avec mémoire centrale & serveur MCP (n8n)
+- [[concept-classification-workflows-n8n]] : Standard de classification des workflows n8n (process-flow)
+- [[concept-hermes-agent]] : Concept · Hermes-Agent (bras d'exécution apprenant de LUMINA OS)
+- [[concept-routeur-multi-llm]] : Routeur multi-LLM par task_type (passerelle OpenAI-compatible)
+- [[sop-agent-n8n-cookie-auth]] : SOP · Brancher un agent n8n sur un service web avec auth par cookie
+- [[sop-audit-edition-n8n-api-interne]] : SOP · Auditer/éditer un n8n self-hosté par son API interne (sans clé API)
+- [[sop-calendrier-contenu-agent]] : SOP · Générateur de calendrier de contenu (agent → base, draft-only)
+- [[sop-diagnostiquer-pipeline-memoire-vectorielle]] : SOP · Diagnostiquer/réparer un pipeline de mémoire vectorielle (n8n + pgvector)
+<!-- AUTO-LIENS:fin -->

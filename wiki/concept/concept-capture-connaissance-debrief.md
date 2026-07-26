@@ -8,12 +8,8 @@ brand: null
 sources:
   - "raw/2026-07-06--pos-generique-capture-connaissance-debrief-20260706.md"
   - "raw/2026-07-07--pos-generique-capture-connaissance-debrief-20260706.md"
-related:
-  - "concept-archivage-n8n-idempotent"
-  - "concept-pipeline-memoire-wiki-git"
-  - "concept-memoire-vivante-agents"
-  - "sop/sop-creer-memoire-agents-humains"
 updated: 2026-07-13
+related: ["concept-archivage-n8n-idempotent", "concept-memoire-vivante-agents", "concept-pipeline-memoire-wiki-git", "sop-creer-memoire-agents-humains"]
 ---
 
 # Concept — Capture de connaissance post-projet (débrief → mémoire)
@@ -60,3 +56,11 @@ Chaque insight porte : collection dédiée, `knowledge_type`, `source`, `source_
 - [[concept-pipeline-memoire-wiki-git]] — pendant « connaissance versionnée en wiki » de cette capture « connaissance en base mémoire ».
 - [[concept-archivage-n8n-idempotent]] — même famille de patron (manifeste/statut pilote + garde-fous d'idempotence).
 - [[sop/sop-creer-memoire-agents-humains]] — implémentation concrète du sous-workflow d'écriture mémoire utilisé en Phase B.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[concept-archivage-n8n-idempotent]] : Concept · Archivage idempotent post-compilation (pattern n8n)
+- [[concept-memoire-vivante-agents]] : Mémoire vivante pour agents (épisodique + consolidation + RAG)
+- [[concept-pipeline-memoire-wiki-git]] : Concept · Pipeline mémoire depuis wiki Git (hub parallèle agents + humains)
+- [[sop-creer-memoire-agents-humains]] : SOP Lumina · Créer la mémoire (agents + humains) depuis le wiki Git
+<!-- AUTO-LIENS:fin -->

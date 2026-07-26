@@ -6,8 +6,8 @@ publish: notion
 vault: ai-automation
 brand: null
 sources: ["raw/2026-06-24--sop-generique-pipeline-source-vers-vues.md"]
-related: ["sop/sop-lumina-intake-et-publish", "synthese-lumina-systeme-reference"]
 updated: 2026-06-24
+related: ["sop-generique-runner-llm-headless-webhook", "sop-lumina-intake-et-publish", "synthese-lumina-systeme-reference"]
 ---
 
 # SOP générique — Robot d'ingestion & publication idempotente (réutilisable)
@@ -86,3 +86,10 @@ updated: 2026-06-24
 - [ ] Tags posés (statut/déclencheur/domaine) ; secrets jamais en clair.
 
 *SOP générique v1.0 — 2026-06-24.*
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[sop-generique-runner-llm-headless-webhook]] : SOP générique · Runner LLM agentique headless déclenché par webhook
+- [[sop-lumina-intake-et-publish]] : SOP Lumina · Intake (Drive→GitHub) & Publication Notion idempotente
+- [[synthese-lumina-systeme-reference]] : Lumina · Système de connaissance (référence complète)
+<!-- AUTO-LIENS:fin -->

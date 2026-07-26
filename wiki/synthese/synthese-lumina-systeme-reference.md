@@ -10,17 +10,8 @@ sources:
   - raw/2026-07-02--lumina-ai-os-passation.md
   - raw/2026-07-02--lumina-playbook-v1-2026-07-02.md
   - raw/2026-07-02--milestone-cablage-maestro-router-2026-07-02.md
-related:
-  - sop/sop-lumina-intake-et-publish
-  - sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n
-  - concept-limites-api-claude
-  - architecture/Instructions_Projet_ChatGPT_n8n_v2
-  - synthese-lumina-ai-os
-  - concept-routeur-multi-llm
-  - concept-memoire-vectorielle-multi-marques
-  - concept-memoire-vivante-agents
-  - concept-classification-workflows-n8n
 updated: 2026-07-06
+related: ["Architecture_Connaissance_Obsidian_Centric", "Guide-Connexion-Agents-AI-n8n", "Instructions_Projet_ChatGPT_n8n_v2", "Memoire_Centrale_ASP_Brief_Construction", "Plan_Demarrage_Memoire_Centrale_MVP", "SOP_installer-pgvector-sur-postgres-coolify", "SOP_systeme-multi-agents-memoire-centrale-mcp-n8n", "brief-montage-vaults"]
 ---
 
 # LUMINA — Système de connaissance (référence complète)
@@ -174,3 +165,15 @@ Documents fondateurs (dossier `wiki/architecture/`) qui sous-tendent cette réf�
 ---
 
 *v1.1 — 2026-06-24 (dédup Notion idempotente terminée).*
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[Architecture_Connaissance_Obsidian_Centric]] : Architecture de la Connaissance · Modèle Git-hub (Obsidian + LLM Wiki)
+- [[Guide-Connexion-Agents-AI-n8n]] : Guide · Connecter Claude, ChatGPT et Gemini dans n8n
+- [[Instructions_Projet_ChatGPT_n8n_v2]] : Projet ChatGPT · Idéation, Architecture & Pré-analyse de l'écosystème IA / n8n
+- [[Memoire_Centrale_ASP_Brief_Construction]] : Mémoire Centrale ASP · Brief de construction (MVP)
+- [[Plan_Demarrage_Memoire_Centrale_MVP]] : Plan de démarrage · Mémoire Centrale (MVP)
+- [[SOP_installer-pgvector-sur-postgres-coolify]] : SOP · Installer pgvector sur un Postgres géré par Coolify
+- [[SOP_systeme-multi-agents-memoire-centrale-mcp-n8n]] : SOP · Système multi-agents avec mémoire centrale & serveur MCP (n8n)
+- [[brief-montage-vaults]] : Architecture · Montage des 3 vaults Obsidian (brief de référence)
+<!-- AUTO-LIENS:fin -->

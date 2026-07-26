@@ -6,8 +6,8 @@ publish: notion
 vault: ai-automation
 brand: null
 sources: []
-related: ["architecture/Instructions_Projet_ChatGPT_n8n_v2", "architecture/brief-montage-vaults"]
 updated: 2026-06-19
+related: ["Instructions_Projet_ChatGPT_n8n_v2", "brief-montage-vaults"]
 ---
 
 # Analyse critique — Knowledge Governance Layer (réponse au Session Review ChatGPT)
@@ -180,3 +180,9 @@ criticality: Medium   # Low | Medium | High (cf. niveaux 1/2/3)
 
 ## Version
 v1.0 — Analyse critique Claude — 2026-06-19
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[Instructions_Projet_ChatGPT_n8n_v2]] : Projet ChatGPT · Idéation, Architecture & Pré-analyse de l'écosystème IA / n8n
+- [[brief-montage-vaults]] : Architecture · Montage des 3 vaults Obsidian (brief de référence)
+<!-- AUTO-LIENS:fin -->

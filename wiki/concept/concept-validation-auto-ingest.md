@@ -9,12 +9,8 @@ sources:
   - raw/raw/2026-07-06--test-auto-ingest.md
   - raw/2026-07-06--test-auto-ingest-2.md
   - raw/2026-07-06--test-3.md
-related:
-  - concept-pipeline-memoire-wiki-git
-  - sop/sop-lumina-auto-ingest-raw-vers-wiki
-  - sop/sop-generique-runner-llm-headless-webhook
-  - concept-archivage-n8n-idempotent
 updated: 2026-07-07
+related: ["concept-archivage-n8n-idempotent", "concept-pipeline-memoire-wiki-git", "sop-generique-runner-llm-headless-webhook", "sop-lumina-auto-ingest-raw-vers-wiki"]
 ---
 
 # Concept — Validation du runner auto-ingest (raw → wiki → Git)
@@ -42,3 +38,11 @@ Le pipeline auto-ingest (dédup par empreinte, anti-boucle, purge du manifeste b
 
 - [[concept-pipeline-memoire-wiki-git]] — le pipeline global dont ce test valide le maillon `raw/ → wiki/`.
 - [[concept-archivage-n8n-idempotent]] — le garde-fou de purge du manifeste testé au point 4.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[concept-archivage-n8n-idempotent]] : Concept · Archivage idempotent post-compilation (pattern n8n)
+- [[concept-pipeline-memoire-wiki-git]] : Concept · Pipeline mémoire depuis wiki Git (hub parallèle agents + humains)
+- [[sop-generique-runner-llm-headless-webhook]] : SOP générique · Runner LLM agentique headless déclenché par webhook
+- [[sop-lumina-auto-ingest-raw-vers-wiki]] : SOP Lumina · Auto-Ingest raw→wiki (runner Claude headless, multi-coffres)
+<!-- AUTO-LIENS:fin -->

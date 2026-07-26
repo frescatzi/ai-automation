@@ -7,15 +7,8 @@ vault: ai-automation
 brand: null
 sources:
   - "raw/2026-07-12--canon-lumina-hermes-agent-2026-07-12.md"
-related:
-  - "concept-bibliotheque-skills-apprenante"
-  - "concept-memoire-vivante-agents"
-  - "concept-routeur-multi-llm"
-  - "sop/sop-cablage-orchestrateur-subagents"
-  - "sop/sop-agent-n8n-cookie-auth"
-  - "synthese-lumina-ai-os"
-  - "sop/sop-apprendre-skill-a-hermes"
 updated: 2026-07-13
+related: ["concept-bibliotheque-skills-apprenante", "concept-memoire-vivante-agents", "concept-routeur-multi-llm", "sop-agent-n8n-cookie-auth", "sop-apprendre-skill-a-hermes", "sop-cablage-orchestrateur-subagents", "synthese-lumina-ai-os"]
 ---
 
 # Concept — Hermes-Agent (bras d'exécution apprenant de LUMINA OS)
@@ -68,3 +61,14 @@ Le câblage « orchestrateur → sous-agents → outil Hermes » est détaillé 
 - [[sop/sop-agent-n8n-cookie-auth]] — le patron cookie-auth utilisé par le moteur Hermes.
 - [[synthese-lumina-ai-os]] — place de Hermes dans le stack LUMINA AI OS.
 - [[sop/sop-apprendre-skill-a-hermes]] — procédure vérifiée pour écrire un skill directement dans sa bibliothèque.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[concept-bibliotheque-skills-apprenante]] : Concept · Bibliothèque de skills apprenante (maturité & graduation)
+- [[concept-memoire-vivante-agents]] : Mémoire vivante pour agents (épisodique + consolidation + RAG)
+- [[concept-routeur-multi-llm]] : Routeur multi-LLM par task_type (passerelle OpenAI-compatible)
+- [[sop-agent-n8n-cookie-auth]] : SOP · Brancher un agent n8n sur un service web avec auth par cookie
+- [[sop-apprendre-skill-a-hermes]] : SOP · Apprendre un skill à Hermès (écriture directe dans la bibliothèque)
+- [[sop-cablage-orchestrateur-subagents]] : SOP · Câbler un orchestrateur AI Agent à des sub-agents et un routeur LLM (n8n)
+- [[synthese-lumina-ai-os]] : LUMINA AI OS · Système multi-agents & multi-LLM
+<!-- AUTO-LIENS:fin -->

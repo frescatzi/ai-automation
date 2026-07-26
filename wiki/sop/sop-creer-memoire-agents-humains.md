@@ -7,15 +7,8 @@ vault: ai-automation
 brand:
 sources:
   - raw/2026-06-29--sop-creer-la-memoire-agents-et-humains.md
-related:
-  - concept-pipeline-memoire-wiki-git
-  - sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n
-  - sop/SOP_installer-pgvector-sur-postgres-coolify
-  - synthese-lumina-systeme-reference
-  - sop/sop-lumina-intake-et-publish
-  - concept-capture-connaissance-debrief
-  - sop/sop-apprendre-skill-a-hermes
 updated: 2026-07-13
+related: ["SOP_installer-pgvector-sur-postgres-coolify", "SOP_systeme-multi-agents-memoire-centrale-mcp-n8n", "concept-capture-connaissance-debrief", "concept-memoire-vivante-agents", "concept-pipeline-memoire-wiki-git", "sop-apprendre-skill-a-hermes", "sop-lumina-archive-raw-vers-drive", "sop-lumina-intake-et-publish"]
 ---
 
 # SOP Lumina — Créer la mémoire (agents + humains) depuis le wiki Git
@@ -141,3 +134,15 @@ Idempotents → re-déclencher à chaque push est totalement sûr. Résultat : �
 
 - [[concept-capture-connaissance-debrief]] — capture volontaire de connaissance (collection `insights`) qui écrit dans cette même couche mémoire.
 - [[sop/sop-apprendre-skill-a-hermes]] — écriture manuelle d'un skill (`collection=skills`) via le sous-workflow WRITE dédié.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[SOP_installer-pgvector-sur-postgres-coolify]] : SOP · Installer pgvector sur un Postgres géré par Coolify
+- [[SOP_systeme-multi-agents-memoire-centrale-mcp-n8n]] : SOP · Système multi-agents avec mémoire centrale & serveur MCP (n8n)
+- [[concept-capture-connaissance-debrief]] : Concept · Capture de connaissance post-projet (débrief → mémoire)
+- [[concept-memoire-vivante-agents]] : Mémoire vivante pour agents (épisodique + consolidation + RAG)
+- [[concept-pipeline-memoire-wiki-git]] : Concept · Pipeline mémoire depuis wiki Git (hub parallèle agents + humains)
+- [[sop-apprendre-skill-a-hermes]] : SOP · Apprendre un skill à Hermès (écriture directe dans la bibliothèque)
+- [[sop-lumina-archive-raw-vers-drive]] : SOP Lumina · Archive Raw→Drive (n8n)
+- [[sop-lumina-intake-et-publish]] : SOP Lumina · Intake (Drive→GitHub) & Publication Notion idempotente
+<!-- AUTO-LIENS:fin -->

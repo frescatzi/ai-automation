@@ -7,11 +7,8 @@ vault: ai-automation
 brand:
 sources:
   - raw/2026-06-22--sop-configuration-oauth2-n8n-google.md
-related:
-  - wiki/concept-oauth2-automation.md
-  - sop/Guide-Connexion-Agents-AI-n8n
-  - sop/sop-lumina-intake-et-publish
 updated: 2026-06-29
+related: ["Guide-Connexion-Agents-AI-n8n", "concept-n8n-credentials", "concept-oauth2-automation", "sop-lumina-intake-et-publish"]
 ---
 
 # Configurer OAuth2 Google dans n8n
@@ -46,3 +43,11 @@ Connecter n8n (auto-hébergé) aux API Google Workspace (Drive, Gmail…) passe 
 - [[concept-n8n-credentials]] — gestion des credentials n8n (API Key, OAuth2, rotation).
 - [[sop/Guide-Connexion-Agents-AI-n8n]] — configurer les credentials Anthropic/OpenAI/Gemini dans n8n (même contexte d'intégration).
 - [[sop/sop-lumina-intake-et-publish]] — le robot d'intake Lumina utilise Google Drive avec ces mêmes credentials OAuth2.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[Guide-Connexion-Agents-AI-n8n]] : Guide · Connecter Claude, ChatGPT et Gemini dans n8n
+- [[concept-n8n-credentials]] : Credentials n8n · gestion et bonnes pratiques
+- [[concept-oauth2-automation]] : OAuth2 · patron universel automation ↔ service cloud
+- [[sop-lumina-intake-et-publish]] : SOP Lumina · Intake (Drive→GitHub) & Publication Notion idempotente
+<!-- AUTO-LIENS:fin -->

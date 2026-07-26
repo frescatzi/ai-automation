@@ -6,8 +6,8 @@ publish: notion
 vault: ai-automation
 brand: null
 sources: ["raw/2026-06-24--n8n-brancher-api-et-premier-workflow.md"]
-related: ["sop/Guide-Connexion-Agents-AI-n8n", "concept-limites-api-claude"]
 updated: 2026-06-24
+related: ["Guide-Connexion-Agents-AI-n8n", "concept-limites-api-claude", "concept-n8n-credentials"]
 ---
 
 # n8n — Brancher les 3 API et créer le premier workflow multi-agents
@@ -103,3 +103,10 @@ Une fois la chaîne validée, deux ajouts fréquents :
 - Gardez des prompts **courts et précis** : moins de tokens = moins cher et plus rapide.
 - Fixez un **plafond de dépense** sur les portails OpenAI et Anthropic pour éviter toute surprise.
 - Pour aller plus loin (un agent « chef » qui appelle les autres comme outils), c'est le nœud **AI Agent** — à explorer en phase 2.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[Guide-Connexion-Agents-AI-n8n]] : Guide · Connecter Claude, ChatGPT et Gemini dans n8n
+- [[concept-limites-api-claude]] : Limites de débit et de dépenses · API Claude
+- [[concept-n8n-credentials]] : Credentials n8n · gestion et bonnes pratiques
+<!-- AUTO-LIENS:fin -->

@@ -8,10 +8,8 @@ brand:
 sources:
   - raw/2026-07-06--pos-generique-backfill-outreach-manuel-20260705.md
   - raw/2026-07-21--pos-generique-backfill-outreach-manuel-20260705.md
-related:
-  - wiki/sop/sop-calendrier-contenu-agent.md
-  - wiki/synthese-lumina-ai-os.md
 updated: 2026-07-21
+related: ["sop-calendrier-contenu-agent", "synthese-lumina-ai-os"]
 ---
 
 # SOP — Backfill : intégrer des contacts déjà démarchés manuellement dans un outreach automatisé
@@ -50,3 +48,9 @@ S'applique à toute marque LUMINA dont l'outreach a commencé manuellement avant
 
 - [[sop/sop-calendrier-contenu-agent]] — génération automatisée d'un calendrier de contenu (draft-only).
 - [[synthese-lumina-ai-os]] — architecture LUMINA OS, contexte multi-marques.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[sop-calendrier-contenu-agent]] : SOP · Générateur de calendrier de contenu (agent → base, draft-only)
+- [[synthese-lumina-ai-os]] : LUMINA AI OS · Système multi-agents & multi-LLM
+<!-- AUTO-LIENS:fin -->

@@ -6,8 +6,8 @@ publish: notion
 vault: ai-automation
 brand: null
 sources: []
-related: ["architecture/Memoire_Centrale_ASP_Brief_Construction", "synthese-lumina-systeme-reference", "sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n"]
 updated: 2026-06-19
+related: ["Memoire_Centrale_ASP_Brief_Construction", "SOP_systeme-multi-agents-memoire-centrale-mcp-n8n", "synthese-lumina-systeme-reference"]
 ---
 
 # Plan de démarrage — Mémoire Centrale (MVP)
@@ -108,3 +108,10 @@ SELECT * FROM pg_available_extensions WHERE name = 'vector';
 
 ## Version
 v1.0 — Plan de démarrage Mémoire Centrale — 2026-06-19
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[Memoire_Centrale_ASP_Brief_Construction]] : Mémoire Centrale ASP · Brief de construction (MVP)
+- [[SOP_systeme-multi-agents-memoire-centrale-mcp-n8n]] : SOP · Système multi-agents avec mémoire centrale & serveur MCP (n8n)
+- [[synthese-lumina-systeme-reference]] : Lumina · Système de connaissance (référence complète)
+<!-- AUTO-LIENS:fin -->

@@ -6,8 +6,8 @@ publish: none
 vault: ai-automation
 brand: null
 sources: ["raw/2026-07-07--pos-generique-runner-llm-headless-declenche-par-webhook-2026-07-07.md"]
-related: ["sop/sop-generique-pipeline-source-vers-vues", "concept-pipeline-memoire-wiki-git", "sop/sop-lumina-archive-raw-vers-drive", "concept-archivage-n8n-idempotent", "sop/sop-lumina-auto-ingest-raw-vers-wiki"]
 updated: 2026-07-07
+related: ["concept-archivage-n8n-idempotent", "concept-intake-source-git", "concept-pipeline-memoire-wiki-git", "concept-validation-auto-ingest", "sop-generique-pipeline-source-vers-vues", "sop-lumina-archive-raw-vers-drive", "sop-lumina-auto-ingest-raw-vers-wiki"]
 ---
 
 # SOP générique — Runner LLM agentique headless déclenché par webhook
@@ -103,3 +103,14 @@ updated: 2026-07-07
 - [[sop/sop-lumina-auto-ingest-raw-vers-wiki]] — implémentation Lumina concrète de ce patron (runner Coolify, secrets, pièges, tests), multi-coffres.
 - [[sop/sop-lumina-archive-raw-vers-drive]] — le workflow n8n aval qui consomme la sortie de ce runner (`_archive_queue.json`).
 - [[concept-archivage-n8n-idempotent]] — garde-fous équivalents côté archivage.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[concept-archivage-n8n-idempotent]] : Concept · Archivage idempotent post-compilation (pattern n8n)
+- [[concept-intake-source-git]] : Concept · Intake source → Git (pattern idempotent & blindé)
+- [[concept-pipeline-memoire-wiki-git]] : Concept · Pipeline mémoire depuis wiki Git (hub parallèle agents + humains)
+- [[concept-validation-auto-ingest]] : Concept · Validation du runner auto-ingest (raw → wiki → Git)
+- [[sop-generique-pipeline-source-vers-vues]] : SOP générique · Pipeline d'ingestion & publication idempotente (n8n)
+- [[sop-lumina-archive-raw-vers-drive]] : SOP Lumina · Archive Raw→Drive (n8n)
+- [[sop-lumina-auto-ingest-raw-vers-wiki]] : SOP Lumina · Auto-Ingest raw→wiki (runner Claude headless, multi-coffres)
+<!-- AUTO-LIENS:fin -->

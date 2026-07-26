@@ -9,13 +9,8 @@ sources:
   - raw/2026-07-02--pos-generique-clonage-roster-agents-multimarques.md
   - raw/2026-07-06--pos-generique-clonage-roster-agents-multimarques.md
   - raw/2026-07-02--lumina-playbook-v1-2026-07-02.md
-related:
-  - wiki/synthese-lumina-ai-os.md
-  - wiki/concept-memoire-vectorielle-multi-marques.md
-  - wiki/sop/sop-audit-edition-n8n-api-interne.md
-  - wiki/concept-classification-workflows-n8n.md
-  - wiki/sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n.md
 updated: 2026-07-06
+related: ["SOP_systeme-multi-agents-memoire-centrale-mcp-n8n", "concept-bibliotheque-skills-apprenante", "concept-classification-workflows-n8n", "concept-memoire-vectorielle-multi-marques", "sop-audit-edition-n8n-api-interne", "synthese-lumina-ai-os", "synthese-lumina-systeme-reference"]
 ---
 
 # SOP — Clonage d'un roster d'agents vers une nouvelle marque
@@ -68,3 +63,14 @@ Ouvrir le hub cloné → requête métier → vérifier : délégation vers les 
 - [[sop/sop-audit-edition-n8n-api-interne]] — API interne pour créer/modifier les workflows.
 - [[concept-classification-workflows-n8n]] — ranger le roster dans `03-BRAIN/Sub-Agents`.
 - [[sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n]] — SOP mémoire centrale MCP.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[SOP_systeme-multi-agents-memoire-centrale-mcp-n8n]] : SOP · Système multi-agents avec mémoire centrale & serveur MCP (n8n)
+- [[concept-bibliotheque-skills-apprenante]] : Concept · Bibliothèque de skills apprenante (maturité & graduation)
+- [[concept-classification-workflows-n8n]] : Standard de classification des workflows n8n (process-flow)
+- [[concept-memoire-vectorielle-multi-marques]] : Mémoire vectorielle multi-marques (banque partagée + tables par marque)
+- [[sop-audit-edition-n8n-api-interne]] : SOP · Auditer/éditer un n8n self-hosté par son API interne (sans clé API)
+- [[synthese-lumina-ai-os]] : LUMINA AI OS · Système multi-agents & multi-LLM
+- [[synthese-lumina-systeme-reference]] : Lumina · Système de connaissance (référence complète)
+<!-- AUTO-LIENS:fin -->

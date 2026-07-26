@@ -8,12 +8,8 @@ brand:
 sources:
   - raw/2026-06-29--howto-generique-archiver-source-apres-compilation-idempotent-n8n.md
   - raw/2026-06-29--sop-generique-workflow-archivage-idempotent-n8n.md
-related:
-  - sop/sop-lumina-archive-raw-vers-drive
-  - concept-intake-source-git
-  - synthese-lumina-systeme-reference
-  - concept-capture-connaissance-debrief
 updated: 2026-07-13
+related: ["concept-capture-connaissance-debrief", "concept-intake-source-git", "concept-pipeline-memoire-wiki-git", "concept-validation-auto-ingest", "sop-generique-runner-llm-headless-webhook", "sop-lumina-archive-raw-vers-drive", "sop-lumina-auto-ingest-raw-vers-wiki", "synthese-lumina-systeme-reference"]
 ---
 
 # Concept — Archivage idempotent post-compilation (pattern n8n)
@@ -120,3 +116,15 @@ return JSON.parse(decoded).map(e => ({ json: e }));
 ## Voir aussi
 
 - [[concept-capture-connaissance-debrief]] — même famille de patron (statut pilote + garde-fous d'idempotence), appliquée à la capture de connaissance plutôt qu'à l'archivage de fichiers.
+
+<!-- AUTO-LIENS:début -->
+## Voir aussi
+- [[concept-capture-connaissance-debrief]] : Concept · Capture de connaissance post-projet (débrief → mémoire)
+- [[concept-intake-source-git]] : Concept · Intake source → Git (pattern idempotent & blindé)
+- [[concept-pipeline-memoire-wiki-git]] : Concept · Pipeline mémoire depuis wiki Git (hub parallèle agents + humains)
+- [[concept-validation-auto-ingest]] : Concept · Validation du runner auto-ingest (raw → wiki → Git)
+- [[sop-generique-runner-llm-headless-webhook]] : SOP générique · Runner LLM agentique headless déclenché par webhook
+- [[sop-lumina-archive-raw-vers-drive]] : SOP Lumina · Archive Raw→Drive (n8n)
+- [[sop-lumina-auto-ingest-raw-vers-wiki]] : SOP Lumina · Auto-Ingest raw→wiki (runner Claude headless, multi-coffres)
+- [[synthese-lumina-systeme-reference]] : Lumina · Système de connaissance (référence complète)
+<!-- AUTO-LIENS:fin -->
