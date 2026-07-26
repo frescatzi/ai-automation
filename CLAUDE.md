@@ -23,7 +23,11 @@ ai-automation/
 ├── index.md      ← carte de navigation du wiki (maintenue par le LLM)
 ├── log.md        ← journal append-only du coffre (ingests, Q&A, lints)
 ├── raw/          ← sources CURÉES et IMMUABLES (le LLM lit, ne modifie jamais)
-└── wiki/         ← pages PROPRES (résumés, concepts, synthèses) — écrites par le LLM
+└── wiki/         ← pages PROPRES écrites par le LLM, RANGÉES par type :
+    ├── architecture/   ← docs d'architecture
+    ├── concept/        ← pages-concepts (concept-*.md)
+    ├── synthese/       ← synthèses (synthese-*.md)
+    └── sop/            ← procédures, marches à suivre (sop-*.md)
 ```
 
 - **`raw/`** : tu y déposes des sources que *tu* as choisies. Pas d'inbox en vrac. Immuable : on ajoute, on ne réécrit pas.
@@ -33,9 +37,13 @@ ai-automation/
 
 ## 3. Conventions (héritées de `lumina-meta/ROUTING.md`, précisées ici)
 
-### 3.1 Nommage
+### 3.1 Nommage et rangement (IMPORTANT)
 - `raw/AAAA-MM-JJ--source-titre-court.md`
-- `wiki/concept-nom.md` (page-concept) ou `wiki/synthese-sujet.md` (synthèse)
+- `wiki/concept/concept-nom.md` (page-concept)
+- `wiki/synthese/synthese-sujet.md` (synthèse)
+- `wiki/sop/sop-nom.md` (procédure) · `wiki/architecture/<nom>.md` (architecture)
+- kebab-case, sans accents, sans majuscules.
+- **RÈGLE : aucune page `.md` à la racine de `wiki/` (sauf `README.md`).** Toujours dans le bon sous-dossier selon le type. Créer le sous-dossier s'il manque.
 
 ### 3.2 Frontmatter `raw/`
 ```yaml
@@ -66,7 +74,7 @@ updated: 2026-06-20
 ---
 ```
 
-> Backlinks Obsidian `[[concept-nom]]` dans le corps. **Rappel : les liens ne sortent pas de ce coffre** — un renvoi vers une marque ou vers `personal` se fait en texte (`brands › AFTRSN › …`).
+> Backlinks Obsidian `[[concept-nom]]` dans le corps, et **RÉCIPROQUES** : si la page A cite B, B doit renvoyer vers A (ligne « Voir aussi » ou `related:`). Toute page citée via `[[...]]` doit **exister** (au minimum un court stub), aucun lien rouge. **Aucune page `wiki/` ne doit rester orpheline** (sans backlink entrant) : audit au lint. Les renvois HORS coffre (vers une marque ou `personal`) se font en texte (`brands › AFTRSN › titre`), jamais en `[[...]]`.
 
 ### 3.4 Statut & publication
 - `status: draft|active|retired` (validation dans Obsidian).
@@ -84,7 +92,7 @@ updated: 2026-06-20
 2. IDENTIFIER les concepts-clés qu'elle introduit ou enrichit.
 3. POUR CHAQUE concept :
      - s'il existe déjà une page wiki/ → la mettre à jour (ajouter, nuancer, dater).
-     - sinon → créer wiki/concept-nom.md (frontmatter status: draft).
+     - sinon → créer la page dans le BON sous-dossier selon le type : concept → `wiki/concept/concept-nom.md`, synthèse → `wiki/synthese/synthese-sujet.md`, procédure → `wiki/sop/sop-nom.md` (frontmatter status: draft). Jamais à la racine de `wiki/`.
 4. RÉSUMER la source dans la/les page(s) concernée(s) : idée centrale, points utiles,
    limites/conditions d'usage. Citer la source dans `sources:`.
 5. RELIER : ajouter les backlinks [[…]] internes + `related:` dans le frontmatter.
