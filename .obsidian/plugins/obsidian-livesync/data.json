@@ -69,13 +69,13 @@
   "syncAfterMerge": false,
   "configPassphraseStore": "",
   "encryptedPassphrase": "%$7994c1h44kD43ldRCAUy2DRTIigZEwfGpall1vp5KID7E213zJDll7+7i88zZGrYn0BpuueCPmUPP6Ce5dqS438JHOaPIs/GTZCy2vPuL2sCzUrpJR0PY+IRaQYRM8rx4Q02qlz4XNWUFxixJrM2t+zj",
-  "encryptedCouchDBConnection": "%$imYBmvmPCc+0z12yaC8BEDhgh3EuLB3iD3/AAfVFFDaErE9SOg/56XCFypaRA5ShQxjV3zAu8R+y0YIL9+c3+omCB2PkwVhG+VboKpVjIjFV9WKizlnSjgb/vXNzFcE3YKN5YtTEvhE5TAsTJZY2Q7hDLwUQKpc0sgIiTDfkEj5Y/Gs4xzB0IlQ0S9OqWChdJNTi5g2ZmbWmg64pKyH7f3syln+7yZOO+wvln7jLJ5uGpuN4zYWUcSePqTwpOgHCtgwwwBmuoBi9Pd7HjYrNHdCjiJ/n9a2rqM5gB7/Cxe12G0MkdIj7jeELh4RzQcXpNH6SIDdf3iBZuJhD+uuOnGsUwwEqt4EmFP29IfaBn4o39GacvpktCVrDt57A/wkmecnhiTclvXiuo3o4QbTgN0c7ExOru73p/zilHRsfxLVw4bXicACyqpWkg0gxhoSq3ZYGn9KZHwCzH+6IQAZiTQKUbmAEeXtnEMnEIsZQ2ui/UuSoM2LnCYGy/l9rfb4uR5ymxMELYI45dbkVJlDARguLqxLuqej4WBxlGHxurEZ6yLNxL6ZoAciAOvgjOXdfZQULR2oYvAUUwzcD2kaMfUq7U5RQ9NAYZpB5HgRlccOY3vb7gszpY5lQ79Fmu2H8OA6v0wU1X82k4RsLEol5CnT1LZSrnSgehm6Xo1KOxr4gtBH7ycTDQhQcDuSvCklvCWYLQBIYJlRDcps3",
+  "encryptedCouchDBConnection": "%$KZzavj0+I0grv+yUqm7CrF2eZ4qP7sbRy5SGidAIeFzSkDsP4el7AShZoMF18gklY3Ra6LXMuTVlYd6fDxZXfHUe2MSQtlsJdusOaakb9/drbjpNeDTal9aHWqS5TVc6cY+gRYUDyhIxnpWOTOaXqt89NGlp95j4kxAVKTg9zgrgJC8UMwfNzgSWDScZdTQ9wdgNtvICHajoMAUtABkE+TM4/dRQk9YM5VtFRDlySu1/po4tMRoNiPLVM7IYhW+SVijjbr/5dAnCuaddHgMS+hA9PkS0yi22gFHtrk0obyeKwGvx2YvzxBvXjc7K0alliLwMKVcGgl6YO+BQpXmHBuQmEPakcUtcPej4qW3wAMM5vdBJDIkQvLtm+i+ROZyLqsACCUF8Cw+CapEVmr5aPOJPs8hS8bGsnll7nhcO8/DCxCpFsRPIv0lLERtv1SaVm8nxtPjT9gGOeNYofFDd/fZQTp05U60gA4jM3CG9KVT/VwRIEQJ4RFGcytAHwckxNFj/xXspI+SvBIC/TMdk6qsfpRKxcsm+k4WT2pQ5hGrXcRoAYYImVr+9BSFugIuPB+uQfSAXWqXEzUdWnjR/PWHE9KmwHKT2c/chFGUwfm0yD1CEtfzCJZ0fRp5uyvcKERLaRRz97Va9XvaUx6sNxG1u7+i48K2DXmrOBkhKYtxcj3CH5qVppDmympQK4NkmKsLEIMsAKGmlqaV2",
   "permitEmptyPassphrase": false,
   "remoteConfigurations": {
     "remote-mrbctj50-x2xvqy": {
       "id": "remote-mrbctj50-x2xvqy",
       "name": "lumina couch",
-      "uri": "%$imYBmvmPCc+0z12yaC8BEDhgh3EuLB3iD3/AAfVFFDb3iB3X0Kno5iXA9EV93xgD7YsVDH/XVW+SWK/bOO3oWiPwE/RrMXNcyuYLX3vKzQHYBBlAOwPKq419VBWiBVgmDMVRQg3Bmq1KGZ1U2e7BeACKQFYmQG7Ljau6OEl+aVsrfQsykjdwleAO8UkIWkWdMpDlP4ArmCg2XPbA0WSZNjPykuyu9/vwkxqBx5DTa7FmgoZOoJvBi/mxIg==",
+      "uri": "%$KZzavj0+I0grv+yUqm7CrF2eZ4qP7sbRy5SGidAIeFxY7Z+8ZmGdBL618Ra/bBzrpVpHk3DPJLGuSZYdgy6tik8HB3G0+s+2I69Nse0lzDjXvEtoI+aLsMVM2zBP1d73+1hcWAEyaUft8hoUvewOPXX05yqaHGG+Z39zRWQ36BpA4w3U5W0pmWVoRnufxCwkRQNxhDgn3bTSqLA5pB0/zTsi/yuN34fTYq1XZc8Tq4XLokvgfuUxLG57cw==",
       "isEncrypted": true
     }
   },
