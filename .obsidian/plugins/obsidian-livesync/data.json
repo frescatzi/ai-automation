@@ -15,7 +15,7 @@
   "minimumChunkSize": 20,
   "longLineThreshold": 250,
   "showVerboseLog": false,
-  "suspendFileWatching": false,
+  "suspendFileWatching": true,
   "trashInsteadDelete": true,
   "periodicReplication": false,
   "periodicReplicationInterval": 60,
@@ -69,13 +69,13 @@
   "syncAfterMerge": false,
   "configPassphraseStore": "",
   "encryptedPassphrase": "%$7994c1h44kD43ldRCAUy2DRTIigZEwfGpall1vp5KID7E213zJDll7+7i88zZGrYn0BpuueCPmUPP6Ce5dqS438JHOaPIs/GTZCy2vPuL2sCzUrpJR0PY+IRaQYRM8rx4Q02qlz4XNWUFxixJrM2t+zj",
-  "encryptedCouchDBConnection": "%$+MVfiW0Sk+Iro6sV9ilGB4fq81b/VxrMl0baZcO5+LMudQvNGu14vrztfnMnd/ZkxrYXoKeJ+Cv80TmY7Vo3y+aD77BCWi5qFCbIsc5fLxspJglLpjOzwjx9wtDQkTZ9p+v1SHue0OmS2fZYRCQ1XXneIc2u6DLLbrGbwQNt7jQ0OGDxre5iRW4tKKXXRFKaVvzuLeIOTCVsddUc4Pio7RN9OZZQves1EiMrBcOrNsaWVPHmdtJzDCKAULYXbN+7cOjS+h3WN6e+jkzt2U0QSIKUGJr8y956JFiaLQYICYG+0rxGcQp65Ajzj5Lsnu9uVrBvonrmstPoA3FYU0dO/OE5MbQCs4HLr6g4zMoPVL9Ql1TQmUWJTED9o8F5fVldEwSP8czHD+RjW/6ozpat9Upo29tTTrHJyWRXaRf8IERcATWCtB4amq5A9vWo2Fi6LImO+GfWIJ3n/1R+ZLaxtxJP1fchNr19dm/RE5sWiAo16XBCSmENJBIZN1E+Uax13VFkTFQLPwLugLID6kCLpORW5OT2fph43J8EsQBjVfy/60687vGKA21Xpa4/ifLiQiYKbvuiO6gZ9GQ/I4QD/Xy4uFAH35XSpBP2CopnA8vvuf9o9mlVvWculFllN1CUu1o7iES/hy6PE2UC8Niwb5lIYAaDX2QaU2VUbd9nf2PNKZ+gv5xnIJ8OCOSIMmQ0RsTG8saWiphZml5f",
+  "encryptedCouchDBConnection": "%$bzmt46WvjGMw5xNL+QixNaPwZpgqi+1+Oq+xDeskgi7Y8s66MjXPl2CFi5t8ZIYgQYC0Z93Jc3oySMK8xtjRyxguGHPUq+HaUFvFZZe6rKHuSRS9bziypfqzEebMSBTXNvJPqLTI+b6CPgjdrlBhdR8R7hdtIoA2iGWqKcyQxPScsaRK+572kpaJ+sA+Oxj3eZKgUqz0TuhrhAvcyF4QY6xERVDTOh0fiNubQmr1PU72zTWzaTr7gwjyVTB5QM2/FMaf4DVbmIIt7ri10+IimI5fPzizWSpCTtTMDtvyyT5ne/bcBTaEO9nQJD8qOTQI8qIADk4jvhwP6obYsut6xV6WvlsmPuMBsQNNLTzIoDhja+2HX9TNzSibzy8uztWXE4tU0et0D4DsqhhsqcprGWi3Hrx80te+fTYMUnlZhg+bVrNleSwVg56p7cSv6coPuyJvgWF0zjWOAJJn45GZJlBXlMtSZ9i+1bCmP6C1ER5t0C5FJdUFu+rWgB6Y4WQZRrSfIUoUV3bQp8ajTZCXKxPAt+7Z371Xt+pSi3/lDNq6BoCIfH4Ony3ABAGQGuJAC31wfwr44JulhKW4SxCS0JcDkGWNNGfbbaosRqxZKJByjEEOI4NGAWAQn/sNJ9KTtqb7faz6iGACLeC+jVAOoQ7qbOY/ZzyUPVybx14UVoDXR18clfRfrnc9rJCIo5+rT5lrrp4FGNfaI8FR",
   "permitEmptyPassphrase": false,
   "remoteConfigurations": {
     "remote-mrbctj50-x2xvqy": {
       "id": "remote-mrbctj50-x2xvqy",
       "name": "lumina couch",
-      "uri": "%$+MVfiW0Sk+Iro6sV9ilGB4fq81b/VxrMl0baZcO5+LPVg/LOlCWV1prwaoGyOtafmyeCIkX9vLBWu6F7HJBH1i5d0ke/nUei4hvZlO0eRM1sqLT3KbnQQzFhLbPu1jyrsJEEf5uBXYktYxf1q1HM07BJdo7tVFmOLlPidEqMVd85/+IU4YbirUj3Jw+OSxMAb/qkYfnkhFZbUtQJP5YdDAhrsLggt+ZfmRKp5BEIZ6vsq6GZnudJEbX0zw==",
+      "uri": "%$bzmt46WvjGMw5xNL+QixNaPwZpgqi+1+Oq+xDeskgi62JLoXs5iT4Zze5ecj8VlwuEqPd1ZvMy1QNriTmuXhzuoO9pfcvqpHhuFEc+/AgT0ljrLfMkerBF35gTn1JYl0pKwc2AvsttdNRHgs8qhlgH/G5tDSWzDhP4AazflnHyKxB2xDai1RHI7fMh5zGAOpsPt4053+n+RqLauDHZCysdOKO4ts5VNMx4mmmeODtm0oSGet/inUMZbZBw==",
       "isEncrypted": true
     }
   },
@@ -170,5 +170,5 @@
   "syncInternalFileOverwritePatterns": "",
   "useOnlyLocalChunk": false,
   "maxMTimeForReflectEvents": 0,
-  "tweakModified": 1783472576869
+  "tweakModified": 1785146001677
 }
