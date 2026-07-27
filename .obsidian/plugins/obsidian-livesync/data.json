@@ -15,7 +15,7 @@
   "minimumChunkSize": 20,
   "longLineThreshold": 250,
   "showVerboseLog": false,
-  "suspendFileWatching": true,
+  "suspendFileWatching": false,
   "trashInsteadDelete": true,
   "periodicReplication": false,
   "periodicReplicationInterval": 60,
@@ -48,7 +48,7 @@
   "skipOlderFilesOnSync": true,
   "checkConflictOnlyOnOpen": false,
   "showMergeDialogOnlyOnActive": false,
-  "syncInternalFiles": false,
+  "syncInternalFiles": true,
   "syncInternalFilesBeforeReplication": false,
   "syncInternalFilesIgnorePatterns": "\\/node_modules\\/, \\/\\.git\\/, \\/obsidian-livesync\\/",
   "syncInternalFilesTargetPatterns": "",
@@ -69,13 +69,13 @@
   "syncAfterMerge": false,
   "configPassphraseStore": "",
   "encryptedPassphrase": "%$7994c1h44kD43ldRCAUy2DRTIigZEwfGpall1vp5KID7E213zJDll7+7i88zZGrYn0BpuueCPmUPP6Ce5dqS438JHOaPIs/GTZCy2vPuL2sCzUrpJR0PY+IRaQYRM8rx4Q02qlz4XNWUFxixJrM2t+zj",
-  "encryptedCouchDBConnection": "%$bzmt46WvjGMw5xNL+QixNaPwZpgqi+1+Oq+xDeskgi7Y8s66MjXPl2CFi5t8ZIYgQYC0Z93Jc3oySMK8xtjRyxguGHPUq+HaUFvFZZe6rKHuSRS9bziypfqzEebMSBTXNvJPqLTI+b6CPgjdrlBhdR8R7hdtIoA2iGWqKcyQxPScsaRK+572kpaJ+sA+Oxj3eZKgUqz0TuhrhAvcyF4QY6xERVDTOh0fiNubQmr1PU72zTWzaTr7gwjyVTB5QM2/FMaf4DVbmIIt7ri10+IimI5fPzizWSpCTtTMDtvyyT5ne/bcBTaEO9nQJD8qOTQI8qIADk4jvhwP6obYsut6xV6WvlsmPuMBsQNNLTzIoDhja+2HX9TNzSibzy8uztWXE4tU0et0D4DsqhhsqcprGWi3Hrx80te+fTYMUnlZhg+bVrNleSwVg56p7cSv6coPuyJvgWF0zjWOAJJn45GZJlBXlMtSZ9i+1bCmP6C1ER5t0C5FJdUFu+rWgB6Y4WQZRrSfIUoUV3bQp8ajTZCXKxPAt+7Z371Xt+pSi3/lDNq6BoCIfH4Ony3ABAGQGuJAC31wfwr44JulhKW4SxCS0JcDkGWNNGfbbaosRqxZKJByjEEOI4NGAWAQn/sNJ9KTtqb7faz6iGACLeC+jVAOoQ7qbOY/ZzyUPVybx14UVoDXR18clfRfrnc9rJCIo5+rT5lrrp4FGNfaI8FR",
+  "encryptedCouchDBConnection": "%$bzmt46WvjGMw5xNL+QixNaPwZpgqi+1+Oq+xDeskgi7ISnW56jMWO+I90fD0l8oS6O+mU50AMgHpmRrjFSCfH76F51UBvgpgQ2OmE7yogD0sfgOBP0tYUYxaASuXVlqEmJfnjfkiX+CCFH6C/O6buHneTVj9dzIXC9EqjZjyFnKukfCcH4knizXz8lVeqI22M1zwyL3xtjB1U/kJ22ef1eMVu+9dGbEbzLfpYJkD84k3RQA6tRuDLcU7EgoVEzOqU5ceMgoDfsGCMc2dO2USllxrauYo4HWP2wwTgxyQe62DOrKVKHU7sbaPnr5TG9hsCf98wlGeXY/JTZRhfjGj7nDbGM6/t8/JAPnvTzhH+04myyHiy729P5qOMI3rIniYTeIZAdOtCJQPjsORUX51RInCgfE3fNEHobxr93fDVnjATkE7TZ8vX2bO1PGnejPr72/PBb6aHEQI2SSGo5+nLIHkyG4R3VjRNbP1CTbtQkmi2+ucbJJhZKM/gkBbT5w0EpHwGZv/7E9XAHcK83Pik75QygBhuzuBWsgA/FznskRcALjsmsCMb6dtixxCZgUUizIzW5rBWyUBG/4nZ7N0c8H2VgvkCFljstJyybHhKY/wL3JrrXDgl6RdYEa4drpe63czcYBJ5XCUo32VdyM9Vew0RYakP6WaW6R9Z12+aca9rCGIuET0xFb6T/GvzlsZyOyrgX6XuO2P4pft",
   "permitEmptyPassphrase": false,
   "remoteConfigurations": {
     "remote-mrbctj50-x2xvqy": {
       "id": "remote-mrbctj50-x2xvqy",
       "name": "lumina couch",
-      "uri": "%$bzmt46WvjGMw5xNL+QixNaPwZpgqi+1+Oq+xDeskgi62JLoXs5iT4Zze5ecj8VlwuEqPd1ZvMy1QNriTmuXhzuoO9pfcvqpHhuFEc+/AgT0ljrLfMkerBF35gTn1JYl0pKwc2AvsttdNRHgs8qhlgH/G5tDSWzDhP4AazflnHyKxB2xDai1RHI7fMh5zGAOpsPt4053+n+RqLauDHZCysdOKO4ts5VNMx4mmmeODtm0oSGet/inUMZbZBw==",
+      "uri": "%$bzmt46WvjGMw5xNL+QixNaPwZpgqi+1+Oq+xDeskgi4w+NplpFU8Lxf1/0E5Re/LYrrgS/U4vAAgDO0SvSNEgyZevF5zvejFpOMk63b6d6DOXQHCDPgWryHpXKgcHKfyDQAmlTvUw7O/SsAosg9JEBqkO31RrCPgRR/erxUvFGNu/gYWQMOXt+T0sbMoCAtnCzg93JbQrvXVGcEspY/OxfS8iFuj+gnvKfR30XeTgRKW23C0aFlB1bZXqw==",
       "isEncrypted": true
     }
   },
@@ -170,5 +170,5 @@
   "syncInternalFileOverwritePatterns": "",
   "useOnlyLocalChunk": false,
   "maxMTimeForReflectEvents": 0,
-  "tweakModified": 1785146001677
+  "tweakModified": 1785147004313
 }
