@@ -8,7 +8,7 @@ brand: null
 sources:
   - "raw/2026-07-12--canon-lumina-hermes-agent-2026-07-12.md"
 updated: 2026-07-13
-related: ["concept-bibliotheque-skills-apprenante", "concept-memoire-vivante-agents", "concept-routeur-multi-llm", "sop-agent-n8n-cookie-auth", "sop-apprendre-skill-a-hermes", "sop-cablage-orchestrateur-subagents", "synthese-lumina-ai-os"]
+related: ["concept-bibliotheque-skills-apprenante", "concept-memoire-vivante-agents", "concept-routeur-multi-llm", "sop-agent-n8n-cookie-auth", "sop-apprendre-skill-a-hermes", "sop-cablage-orchestrateur-subagents", "sop-dream-engine-cron-prescriptions-llm", "synthese-lumina-ai-os"]
 ---
 
 # Concept — Hermes-Agent (bras d'exécution apprenant de LUMINA OS)
@@ -61,6 +61,7 @@ Le câblage « orchestrateur → sous-agents → outil Hermes » est détaillé 
 - [[sop/sop-agent-n8n-cookie-auth]] — le patron cookie-auth utilisé par le moteur Hermes.
 - [[synthese-lumina-ai-os]] — place de Hermes dans le stack LUMINA AI OS.
 - [[sop/sop-apprendre-skill-a-hermes]] — procédure vérifiée pour écrire un skill directement dans sa bibliothèque.
+- [[sop/sop-dream-engine-cron-prescriptions-llm]] — cron `no_agent` hébergé sur l'infra Hermes (à ne pas confondre avec l'agent lui-même).
 
 <!-- AUTO-LIENS:début -->
 ## Voir aussi

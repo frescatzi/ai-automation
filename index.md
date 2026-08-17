@@ -39,6 +39,7 @@
 ## Procédures (SOP)
 
 - [[Guide-Connexion-Agents-AI-n8n]] : Guide · Connecter Claude, ChatGPT et Gemini dans n8n
+- [[sop-dream-engine-cron-prescriptions-llm]] : SOP · Dream Engine, cron quotidien de prescriptions LLM (sévérité × impact $)
 - [[SOP_installer-pgvector-sur-postgres-coolify]] : SOP · Installer pgvector sur un Postgres géré par Coolify
 - [[SOP_systeme-multi-agents-memoire-centrale-mcp-n8n]] : SOP · Système multi-agents avec mémoire centrale & serveur MCP (n8n)
 - [[n8n-Brancher-API-et-Premier-Workflow]] : n8n · Brancher les 3 API et créer le premier workflow multi-agents
@@ -60,4 +61,5 @@
 - [[sop-reparer-credential-postgres-partagee-n8n]] : SOP · Réparer une credential Postgres partagée fantôme (n8n / mémoire agents)
 - [[sop-reparer-webhook-n8n-ingestion-pdf]] : SOP · Réparer un webhook n8n (last-node) + ingérer un PDF Drive dans une banque vectorielle
 - [[sop-repondeur-email-drafts-agent]] : SOP · Répondeur email à brouillons via agent (pattern draft-only)
+- [[sop-synchroniser-sqlite-deux-conteneurs-docker]] : SOP générique · Synchroniser une base SQLite entre deux conteneurs Docker (docker cp + cron)
 - [[sop-token-systemuser-meta-ads-n8n]] : SOP · Token System User Meta Ads pour n8n (création de campagnes)

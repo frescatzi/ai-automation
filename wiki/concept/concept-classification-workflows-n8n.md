@@ -9,7 +9,7 @@ sources:
   - raw/2026-07-02--pos-generique-classification-workflows-n8n-process-flow-2026-07-02.md
   - raw/2026-07-06--pos-generique-classification-workflows-n8n-process-flow-2026-07-02.md
 updated: 2026-07-06
-related: ["Guide-Connexion-Agents-AI-n8n", "sop-audit-edition-n8n-api-interne", "sop-cablage-orchestrateur-subagents", "sop-clonage-roster-agents", "synthese-lumina-ai-os", "synthese-lumina-systeme-reference"]
+related: ["Guide-Connexion-Agents-AI-n8n", "sop-audit-edition-n8n-api-interne", "sop-cablage-orchestrateur-subagents", "sop-clonage-roster-agents", "sop-dream-engine-cron-prescriptions-llm", "sop-synchroniser-sqlite-deux-conteneurs-docker", "synthese-lumina-ai-os", "synthese-lumina-systeme-reference"]
 ---
 
 # Standard de classification des workflows n8n (process-flow)
@@ -76,6 +76,8 @@ fetch('/rest/workflows/<wfId>', { method:'PATCH', ...hdr,
 - [[sop/sop-audit-edition-n8n-api-interne]] — auditer/éditer les workflows par API interne.
 - [[synthese-lumina-ai-os]] — la topologie globale du système Lumina.
 - [[sop/Guide-Connexion-Agents-AI-n8n]] — créer les credentials dans n8n.
+- [[sop/sop-dream-engine-cron-prescriptions-llm]] — exemple de cron `no_agent` planifié classé selon ce standard.
+- [[sop/sop-synchroniser-sqlite-deux-conteneurs-docker]] — autre exemple de cron `no_agent` (synchro SQLite inter-conteneurs) classé selon ce standard.
 
 <!-- AUTO-LIENS:début -->
 ## Voir aussi
