@@ -1,0 +1,11 @@
+---
+type: raw
+title: "POS-EXACT_Operator-OS_Dream-Engine-cron-prescriptions_2026-08-17"
+source_url: "dropbox:/apps/lumina ai os/lumina vps/lumina ai/obsidian/lumina inbox/pos-exact_operator-os_dream-engine-cron-prescriptions_2026-08-17.md"
+captured: 2026-08-17
+vault: ai-automation
+brand: null
+immutable: true
+---
+
+{"# POS-EXACT — Operator OS : Dream Engine (cron quotidien   4 prescriptions Claude)\n\n**Date :** 2026-08-17 · **Projet :** Operator OS / LUMINA · **Objet :** documenter le Dream Engine : cron 7h qui re-collecte les données, interroge Claude, et produit 4 prescriptions classées sévérité × impact dollar.\n**Statut :** ✅ VERROUILLÉ ":""," VALIDÉ LIVE.\n\n---\n\n## 1. Flux quotidien\n\n- Cron Hermes `Operator OS Dream Engine` (7h00, no_agent) → script `operator-dream.sh`.\n- Étapes : re-collecte (schema, collect, skills, derive_usage, memory_ingest) → `collector/dream.py` interroge Claude via `/query-claude` → parse JSON → insert dans `dream_prescriptions`.\n- Sortie lisible livrée : 4 prescriptions avec icône de sévérité, message, action, impact $/mois.\n\n## 2. Format de la prescription\n\n- JSON : `{dimension, severity (high|medium|low), dollar_impact, title, message, action}`.\n- Dimensions autorisées : conversation, cost, skills, memory, session, workflow, external, business.\n- Le prompt exige exactement 4 objets, pas de markdown, pas de tiret cadratin.\n\n## 3. Synchro vers le conteneur\n\n- Le Dream écrit dans `/opt/data/operator-os/operator.db` (conteneur Hermes).\n- Cron hôte 7h15 `sync-operator.sh` : docker cp Hermes→/tmp→lumina   restart du conteneur.\n\n## Difficultés / Solutions / Lessons learned\n\n### Difficultés\n- Le `ORDER BY id DESC` inversait l'ordre de sévérité produit par Claude.\n- La base vit dans Hermes, pas dans le conteneur → nécessite la synchro hôte.\n\n### Solutions\n- Lire le dernier run uniquement (`where run_at ":" max(run_at)`) et `order by id asc`.\n- Script hôte   crontab pour la synchro quotidienne.\n\n### Lessons learned\n- Le Dream est un brief, pas un tableau de bord temps réel : la synchro quotidienne suffit.\n- Claude refuse de conclure sur des données trop pauvres (ex. karteramaris) — c'est le comportement voulu.\n\n---\n\n*POS-EXACT — 2026-08-17, verrouillé. n8n et le dashboard font foi.*"}

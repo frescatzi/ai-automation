@@ -1,0 +1,11 @@
+---
+type: raw
+title: "POS-GENERIQUE_interroger-LLM-externe-n8n-webhook_2026-08-17"
+source_url: "dropbox:/apps/lumina ai os/lumina vps/lumina ai/obsidian/lumina inbox/pos-generique_interroger-llm-externe-n8n-webhook_2026-08-17.md"
+captured: 2026-08-17
+vault: ai-automation
+brand: null
+immutable: true
+---
+
+{"# POS-GÉNÉRIQUE : interroger un LLM externe depuis n8n (webhook   HTTP Request   credential)\n\nDate : 2026-08-17 · Portée : générique, tout appel à une API de LLM externe (Anthropic, OpenAI, etc.) depuis un workflow n8n, avec le secret gardé en credential. Aucun identifiant réel.\n\n## Principe\n\nUn workflow n8n expose un webhook POST qui reçoit un prompt, appelle l'API du LLM, et renvoie la réponse. Le secret vit dans un credential n8n (jamais en clair), et l'authentification passe par le mécanisme de credential du node HTTP, pas par un header écrit à la main.\n\n## Marche à suivre\n\n1. Créer un workflow : Webhook (POST, responseMode lastNode) → HTTP Request vers l'endpoint du LLM.\n2. HTTP Request : authentication ":" predefinedCredentialType, nodeCredentialType = celui du provider.\n3. Headers fixes : version d'API   content-type. Body JSON construit en expression (JSON.stringify).\n4. Tester le webhook en curl. Si « credit balance too low », le câblage est bon mais le crédit est épuisé.\n\n## Garde-fous\n1. Ne jamais mettre la clé en dur dans headerParameters manuel si un credential existe : utiliser predefinedCredentialType.\n2. Toujours tester l'endpoint en curl direct d'abord (isoler crédit vs câblage).\n3. Ne pas confondre « interroger le modèle » avec « lire l'historique » : un LLM raisonne sur le contexte fourni, il n'a pas de mémoire.\n\n## Difficultés rencontrées\n1. « Error in workflow » opaque via l'API : l'erreur réelle n'apparaît qu'en test direct.\n2. Credential qui ne résout pas dans headerParameters manuel.\n\n## Solutions implémentées\n1. Tester l'API en curl direct avec la clé pour isoler la cause.\n2. Basculer sur predefinedCredentialType   nodeCredentialType.\n\n## Lessons learned\n1. Le crédit épuisé se déguise en erreur de workflow. Toujours tester l'API en direct.\n2. Un LLM n'est pas une base de données : il synthétise un contexte, il n'exfiltre pas d'historique.\n"}
