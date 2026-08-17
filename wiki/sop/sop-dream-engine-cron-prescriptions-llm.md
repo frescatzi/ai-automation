@@ -8,7 +8,7 @@ brand: null
 sources:
   - raw/2026-08-17--pos-exact-operator-os-dream-engine-cron-prescriptions-2026-08-17.md
 updated: 2026-08-17
-related: ["concept-classification-workflows-n8n", "concept-hermes-agent", "synthese-lumina-ai-os", "sop-synchroniser-sqlite-deux-conteneurs-docker"]
+related: ["concept-classification-workflows-n8n", "concept-hermes-agent", "synthese-lumina-ai-os", "sop-synchroniser-sqlite-deux-conteneurs-docker", "sop-bridge-claude-code-mac-vps"]
 ---
 
 # SOP — Dream Engine : cron quotidien de prescriptions LLM (sévérité × impact $)
@@ -50,3 +50,4 @@ related: ["concept-classification-workflows-n8n", "concept-hermes-agent", "synth
 - [[concept/concept-classification-workflows-n8n]] — classification « planifié / no_agent » de ce type de cron dans la nomenclature Lumina.
 - [[concept/concept-hermes-agent]] — le conteneur/hôte Hermes mentionné en §3 est l'infrastructure qui héberge aussi Hermes-Agent ; à ne pas confondre : ce cron s'exécute en dehors du chemin d'exécution de l'agent (`no_agent`).
 - [[synthese/synthese-lumina-ai-os]] — place d'Operator OS/Dream Engine dans l'écosystème LUMINA plus large.
+- [[sop/sop-bridge-claude-code-mac-vps]] — autre composant Operator OS interrogeant Claude, sur la même infra VPS.
