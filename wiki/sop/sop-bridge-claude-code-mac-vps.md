@@ -8,12 +8,12 @@ brand: null
 sources:
   - raw/2026-08-17--pos-exact-bridge-claude-code.md
 updated: 2026-08-17
-related: ["concept-hermes-agent", "synthese-lumina-ai-os", "sop-dream-engine-cron-prescriptions-llm", "concept-n8n-credentials"]
+related: ["concept-hermes-agent", "synthese-lumina-ai-os", "sop-dream-engine-cron-prescriptions-llm", "concept-n8n-credentials", "sop-bridge-cli-local-tunnel-serveur-distant"]
 ---
 
 # SOP — Bridge Claude Code Mac↔VPS via tunnel Cloudflare (Operator OS)
 
-**Idée centrale :** patron pour permettre à un service serveur (VPS, derrière NAT dans l'autre sens — c'est lui qui doit *joindre* la machine locale) d'interroger le **Claude Code CLI** installé sur une machine locale (Mac) qui n'a pas d'IP publique. La machine locale ouvre la connexion **sortante** (tunnel), le serveur appelle l'URL publique exposée, et un header d'authentification statique protège chaque requête. Implémentation de référence : **Operator OS** (LUMINA), Hermes (VPS) → Claude Code (Mac) — ✅ verrouillé, validé live au 2026-08-17.
+**Idée centrale :** patron pour permettre à un service serveur (VPS, derrière NAT dans l'autre sens — c'est lui qui doit *joindre* la machine locale) d'interroger le **Claude Code CLI** installé sur une machine locale (Mac) qui n'a pas d'IP publique. La machine locale ouvre la connexion **sortante** (tunnel), le serveur appelle l'URL publique exposée, et un header d'authentification statique protège chaque requête. Implémentation de référence : **Operator OS** (LUMINA), Hermes (VPS) → Claude Code (Mac) — ✅ verrouillé, validé live au 2026-08-17. Instance concrète du patron générique [[sop-bridge-cli-local-tunnel-serveur-distant]].
 
 ## 1. Architecture du pont
 
@@ -49,6 +49,7 @@ related: ["concept-hermes-agent", "synthese-lumina-ai-os", "sop-dream-engine-cro
 
 ## Voir aussi
 
+- [[sop/sop-bridge-cli-local-tunnel-serveur-distant]] — patron générique hors marque dont cette SOP est l'implémentation de référence.
 - [[concept/concept-hermes-agent]] — Hermes (VPS) est l'appelant de ce pont dans l'implémentation Operator OS de référence.
 - [[synthese/synthese-lumina-ai-os]] — place d'Operator OS dans l'écosystème LUMINA plus large.
 - [[sop/sop-dream-engine-cron-prescriptions-llm]] — autre composant Operator OS interrogeant Claude, sur la même infra VPS.

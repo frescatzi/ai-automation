@@ -47,6 +47,7 @@
 - [[sop-agent-n8n-cookie-auth]] : SOP · Brancher un agent n8n sur un service web avec auth par cookie
 - [[sop-apprendre-skill-a-hermes]] : SOP · Apprendre un skill à Hermès (écriture directe dans la bibliothèque)
 - [[sop-audit-edition-n8n-api-interne]] : SOP · Auditer/éditer un n8n self-hosté par son API interne (sans clé API)
+- [[sop-bridge-cli-local-tunnel-serveur-distant]] : SOP générique · Relier un agent serveur à un CLI IA local via tunnel
 - [[sop-cablage-orchestrateur-subagents]] : SOP · Câbler un orchestrateur AI Agent à des sub-agents et un routeur LLM (n8n)
 - [[sop-calendrier-contenu-agent]] : SOP · Générateur de calendrier de contenu (agent → base, draft-only)
 - [[sop-clonage-roster-agents]] : SOP · Clonage d'un roster d'agents vers une nouvelle marque
@@ -60,6 +61,7 @@
 - [[sop-lumina-intake-et-publish]] : SOP Lumina · Intake (Drive→GitHub) & Publication Notion idempotente
 - [[sop-outreach-backfill]] : SOP · Backfill : intégrer des contacts déjà démarchés manuellement dans un outreach automatisé
 - [[sop-reparer-credential-postgres-partagee-n8n]] : SOP · Réparer une credential Postgres partagée fantôme (n8n / mémoire agents)
+- [[sop-registre-agents-multi-backends]] : SOP générique · Registre d'agents multi-backends derrière une interface unique
 - [[sop-reparer-webhook-n8n-ingestion-pdf]] : SOP · Réparer un webhook n8n (last-node) + ingérer un PDF Drive dans une banque vectorielle
 - [[sop-repondeur-email-drafts-agent]] : SOP · Répondeur email à brouillons via agent (pattern draft-only)
 - [[sop-synchroniser-sqlite-deux-conteneurs-docker]] : SOP générique · Synchroniser une base SQLite entre deux conteneurs Docker (docker cp + cron)
