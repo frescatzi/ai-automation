@@ -39,6 +39,7 @@
 ## Procédures (SOP)
 
 - [[Guide-Connexion-Agents-AI-n8n]] : Guide · Connecter Claude, ChatGPT et Gemini dans n8n
+- [[sop-bridge-claude-code-mac-vps]] : SOP · Bridge Claude Code Mac↔VPS via tunnel Cloudflare (Operator OS)
 - [[sop-dream-engine-cron-prescriptions-llm]] : SOP · Dream Engine, cron quotidien de prescriptions LLM (sévérité × impact $)
 - [[SOP_installer-pgvector-sur-postgres-coolify]] : SOP · Installer pgvector sur un Postgres géré par Coolify
 - [[SOP_systeme-multi-agents-memoire-centrale-mcp-n8n]] : SOP · Système multi-agents avec mémoire centrale & serveur MCP (n8n)

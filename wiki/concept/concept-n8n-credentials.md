@@ -7,7 +7,7 @@ vault: ai-automation
 brand:
 sources: []
 updated: 2026-07-21
-related: ["Guide-Connexion-Agents-AI-n8n", "concept-oauth2-automation", "n8n-Brancher-API-et-Premier-Workflow", "sop-reparer-credential-postgres-partagee-n8n", "sop-repondeur-email-drafts-agent", "sop-token-systemuser-meta-ads-n8n", "synthese-oauth2-n8n-google"]
+related: ["Guide-Connexion-Agents-AI-n8n", "concept-oauth2-automation", "n8n-Brancher-API-et-Premier-Workflow", "sop-bridge-claude-code-mac-vps", "sop-reparer-credential-postgres-partagee-n8n", "sop-repondeur-email-drafts-agent", "sop-token-systemuser-meta-ads-n8n", "synthese-oauth2-n8n-google"]
 ---
 
 # Credentials n8n — gestion et bonnes pratiques
@@ -54,6 +54,7 @@ Un `403 Forbidden` sur une API externe (ex. API email) alors que la credential n
 - [[sop/sop-reparer-credential-postgres-partagee-n8n]] — runbook de réparation d'une credential Postgres partagée fantôme.
 - [[sop/sop-token-systemuser-meta-ads-n8n]] — token System User Meta Ads : procédure, pièges, credential natif « Facebook Graph API ».
 - [[sop/sop-repondeur-email-drafts-agent]] — piège API désactivée côté fournisseur mimant une credential invalide.
+- [[sop/sop-bridge-claude-code-mac-vps]] — application du même principe (clé statique en header, jamais en dur) à un bridge Claude Code exposé par tunnel Cloudflare.
 
 <!-- AUTO-LIENS:début -->
 ## Voir aussi
