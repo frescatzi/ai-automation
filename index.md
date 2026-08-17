@@ -39,6 +39,7 @@
 ## Procédures (SOP)
 
 - [[Guide-Connexion-Agents-AI-n8n]] : Guide · Connecter Claude, ChatGPT et Gemini dans n8n
+- [[sop-dream-engine-cron-prescriptions-llm]] : SOP · Dream Engine, cron quotidien de prescriptions LLM (sévérité × impact $)
 - [[SOP_installer-pgvector-sur-postgres-coolify]] : SOP · Installer pgvector sur un Postgres géré par Coolify
 - [[SOP_systeme-multi-agents-memoire-centrale-mcp-n8n]] : SOP · Système multi-agents avec mémoire centrale & serveur MCP (n8n)
 - [[n8n-Brancher-API-et-Premier-Workflow]] : n8n · Brancher les 3 API et créer le premier workflow multi-agents

@@ -13,7 +13,7 @@ sources:
   - raw/2026-07-06--milestone-cablage-maestro-router-2026-07-02.md
   - raw/2026-07-02--aftrsn-lumina-pos-exact-lumina-ai-router-routage-multi-llm-via-openrouter-2026-07-01.md
 updated: 2026-07-06
-related: ["SOP_systeme-multi-agents-memoire-centrale-mcp-n8n", "concept-bibliotheque-skills-apprenante", "concept-classification-workflows-n8n", "concept-hermes-agent", "concept-memoire-vectorielle-multi-marques", "concept-memoire-vivante-agents", "concept-pipeline-memoire-wiki-git", "concept-routeur-multi-llm"]
+related: ["SOP_systeme-multi-agents-memoire-centrale-mcp-n8n", "concept-bibliotheque-skills-apprenante", "concept-classification-workflows-n8n", "concept-hermes-agent", "concept-memoire-vectorielle-multi-marques", "concept-memoire-vivante-agents", "concept-pipeline-memoire-wiki-git", "concept-routeur-multi-llm", "sop-dream-engine-cron-prescriptions-llm"]
 ---
 
 # LUMINA AI OS — Système multi-agents & multi-LLM
@@ -137,6 +137,7 @@ Voir [[concept-memoire-vivante-agents]] pour le détail du pattern.
 - [[sop/sop-outreach-backfill]] — intégrer l'historique d'outreach manuel dans le pipeline.
 - [[sop/sop-calendrier-contenu-agent]] — générer un calendrier de contenu en draft via agent.
 - [[sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n]] — SOP mémoire centrale MCP.
+- [[sop/sop-dream-engine-cron-prescriptions-llm]] — Operator OS/Dream Engine, brief quotidien de prescriptions LLM.
 - [[synthese-lumina-systeme-reference]] — vue d'ensemble du système Lumina (4 couches).
 
 <!-- AUTO-LIENS:début -->
