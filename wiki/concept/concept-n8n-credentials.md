@@ -7,7 +7,7 @@ vault: ai-automation
 brand:
 sources: []
 updated: 2026-07-21
-related: ["Guide-Connexion-Agents-AI-n8n", "concept-oauth2-automation", "n8n-Brancher-API-et-Premier-Workflow", "sop-bridge-claude-code-mac-vps", "sop-bridge-cli-local-tunnel-serveur-distant", "sop-reparer-credential-postgres-partagee-n8n", "sop-repondeur-email-drafts-agent", "sop-token-systemuser-meta-ads-n8n", "synthese-oauth2-n8n-google"]
+related: ["Guide-Connexion-Agents-AI-n8n", "concept-oauth2-automation", "n8n-Brancher-API-et-Premier-Workflow", "sop-bridge-claude-code-mac-vps", "sop-bridge-cli-local-tunnel-serveur-distant", "sop-reparer-credential-postgres-partagee-n8n", "sop-repondeur-email-drafts-agent", "sop-token-systemuser-meta-ads-n8n", "synthese-oauth2-n8n-google", "sop-registre-agents-multi-backends"]
 ---
 
 # Credentials n8n — gestion et bonnes pratiques
@@ -56,6 +56,7 @@ Un `403 Forbidden` sur une API externe (ex. API email) alors que la credential n
 - [[sop/sop-repondeur-email-drafts-agent]] — piège API désactivée côté fournisseur mimant une credential invalide.
 - [[sop/sop-bridge-claude-code-mac-vps]] — application du même principe (clé statique en header, jamais en dur) à un bridge Claude Code exposé par tunnel Cloudflare.
 - [[sop/sop-bridge-cli-local-tunnel-serveur-distant]] — version générique hors marque du même principe (clé statique en header) pour tout bridge CLI IA local exposé par tunnel.
+- [[sop-registre-agents-multi-backends]] — patron UI multi-agents : la règle « le backend gère les clés, jamais l'UI » applique ce même principe.
 
 <!-- AUTO-LIENS:début -->
 ## Voir aussi

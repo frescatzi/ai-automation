@@ -8,7 +8,7 @@ brand: null
 sources:
   - raw/2026-08-17--pos-generique-bridge-claude-code.md
 updated: 2026-08-17
-related: ["sop-bridge-claude-code-mac-vps", "concept-n8n-credentials"]
+related: ["sop-bridge-claude-code-mac-vps", "concept-n8n-credentials", "sop-registre-agents-multi-backends"]
 ---
 
 # SOP générique — Relier un agent serveur à un CLI IA local via tunnel
@@ -49,3 +49,4 @@ related: ["sop-bridge-claude-code-mac-vps", "concept-n8n-credentials"]
 
 - [[sop-bridge-claude-code-mac-vps]] — implémentation concrète de ce patron : Hermes (VPS) ↔ Claude Code (Mac) dans Operator OS/LUMINA, avec pièges et correctifs observés en usage réel.
 - [[concept-n8n-credentials]] — patron général de gestion des clés/secrets statiques (ne jamais coder en dur, toujours en variable d'environnement/credential).
+- [[sop-registre-agents-multi-backends]] — ce bridge est l'implémentation type du backend `CLI local` dans un registre d'agents multi-backends.

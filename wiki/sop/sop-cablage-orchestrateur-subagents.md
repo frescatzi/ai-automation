@@ -8,8 +8,8 @@ brand:
 sources:
   - raw/2026-07-02--pos-generique-cablage-orchestrateur-subagents-router-n8n.md
   - raw/2026-07-06--pos-generique-cablage-orchestrateur-subagents-router-n8n.md
-updated: 2026-07-06
-related: ["SOP_systeme-multi-agents-memoire-centrale-mcp-n8n", "concept-classification-workflows-n8n", "concept-hermes-agent", "concept-routeur-multi-llm", "sop-agent-n8n-cookie-auth", "sop-audit-edition-n8n-api-interne", "sop-calendrier-contenu-agent", "sop-diagnostiquer-pipeline-memoire-vectorielle"]
+updated: 2026-08-17
+related: ["SOP_systeme-multi-agents-memoire-centrale-mcp-n8n", "concept-classification-workflows-n8n", "concept-hermes-agent", "concept-routeur-multi-llm", "sop-agent-n8n-cookie-auth", "sop-audit-edition-n8n-api-interne", "sop-calendrier-contenu-agent", "sop-diagnostiquer-pipeline-memoire-vectorielle", "sop-registre-agents-multi-backends"]
 ---
 
 # SOP — Câbler un orchestrateur AI Agent à des sub-agents et un routeur LLM (n8n)
@@ -85,6 +85,7 @@ AUTHORITY: Actions critiques (dépense, envoi, suppression) → validation humai
 - [[sop/sop-agent-n8n-cookie-auth]] — brancher un outil vers un service web protégé par cookie.
 - [[sop/SOP_systeme-multi-agents-memoire-centrale-mcp-n8n]] — SOP mémoire centrale MCP.
 - [[concept-classification-workflows-n8n]] — ranger Maestro en `03-BRAIN`, sub-agents en `03-BRAIN/Sub-Agents`.
+- [[sop-registre-agents-multi-backends]] — variante UI/dashboard générique (hors n8n) : registre d'agents multi-backends + routage par `agent_id`.
 
 <!-- AUTO-LIENS:début -->
 ## Voir aussi

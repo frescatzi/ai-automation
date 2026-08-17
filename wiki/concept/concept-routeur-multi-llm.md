@@ -11,8 +11,8 @@ sources:
   - raw/2026-07-06--pos-generique-routeur-multi-llm-par-task-type-passerelle-openai-compatible.md
   - raw/2026-07-02--lumina-pos-generique-routeur-multi-llm-par-task-type-via-passerelle-openai-compatible.md
   - raw/2026-07-02--aftrsn-lumina-pos-exact-lumina-ai-router-routage-multi-llm-via-openrouter-2026-07-01.md
-updated: 2026-07-06
-related: ["Guide-Connexion-Agents-AI-n8n", "concept-hermes-agent", "concept-memoire-vivante-agents", "sop-cablage-orchestrateur-subagents", "synthese-lumina-ai-os", "synthese-lumina-systeme-reference"]
+updated: 2026-08-17
+related: ["Guide-Connexion-Agents-AI-n8n", "concept-hermes-agent", "concept-memoire-vivante-agents", "sop-cablage-orchestrateur-subagents", "synthese-lumina-ai-os", "synthese-lumina-systeme-reference", "sop-registre-agents-multi-backends"]
 ---
 
 # Routeur multi-LLM par task_type (passerelle OpenAI-compatible)
@@ -93,6 +93,7 @@ HTTP Request (POST <gateway>/chat/completions)
 - [[sop/sop-cablage-orchestrateur-subagents]] — comment brancher le routeur comme outil d'agent.
 - [[concept-memoire-vivante-agents]] — la mémoire RAG injectée dans `task_payload.context_raw`.
 - [[sop/Guide-Connexion-Agents-AI-n8n]] — créer et gérer les clés API dans n8n.
+- [[sop-registre-agents-multi-backends]] — patron complémentaire : routage par `agent_id` (UI multi-agents) plutôt que par `task_type`.
 
 <!-- AUTO-LIENS:début -->
 ## Voir aussi
