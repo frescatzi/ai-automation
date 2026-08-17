@@ -61,4 +61,5 @@
 - [[sop-reparer-credential-postgres-partagee-n8n]] : SOP · Réparer une credential Postgres partagée fantôme (n8n / mémoire agents)
 - [[sop-reparer-webhook-n8n-ingestion-pdf]] : SOP · Réparer un webhook n8n (last-node) + ingérer un PDF Drive dans une banque vectorielle
 - [[sop-repondeur-email-drafts-agent]] : SOP · Répondeur email à brouillons via agent (pattern draft-only)
+- [[sop-synchroniser-sqlite-deux-conteneurs-docker]] : SOP générique · Synchroniser une base SQLite entre deux conteneurs Docker (docker cp + cron)
 - [[sop-token-systemuser-meta-ads-n8n]] : SOP · Token System User Meta Ads pour n8n (création de campagnes)

@@ -256,3 +256,4 @@
 ## [2026-07-21] ingest : STANDARD_Contenu-par-plateforme_AFTRSN_v2_2026-07-20
 ## [2026-07-21] ingest : SYSTEM-CANON_LUMINA_2026-07-03
 ## [2026-08-17] ingest | POS-EXACT_Operator-OS_Dream-Engine-cron-prescriptions_2026-08-17 -> sop-dream-engine-cron-prescriptions-llm.md (créée) ; concept-hermes-agent, concept-classification-workflows-n8n, synthese-lumina-ai-os (backlinks réciproques ajoutés)
+## [2026-08-17] ingest | POS-GENERIQUE_synchroniser-SQLite-entre-deux-conteneurs-Docker_2026-08-17 -> sop-synchroniser-sqlite-deux-conteneurs-docker.md (créée) ; sop-dream-engine-cron-prescriptions-llm.md et concept-classification-workflows-n8n.md (backlinks réciproques ajoutés)

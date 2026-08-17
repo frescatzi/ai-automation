@@ -8,7 +8,7 @@ brand: null
 sources:
   - raw/2026-08-17--pos-exact-operator-os-dream-engine-cron-prescriptions-2026-08-17.md
 updated: 2026-08-17
-related: ["concept-classification-workflows-n8n", "concept-hermes-agent", "synthese-lumina-ai-os"]
+related: ["concept-classification-workflows-n8n", "concept-hermes-agent", "synthese-lumina-ai-os", "sop-synchroniser-sqlite-deux-conteneurs-docker"]
 ---
 
 # SOP — Dream Engine : cron quotidien de prescriptions LLM (sévérité × impact $)
@@ -32,7 +32,7 @@ related: ["concept-classification-workflows-n8n", "concept-hermes-agent", "synth
 
 - Le Dream Engine écrit dans `/opt/data/operator-os/operator.db`, à l'intérieur du conteneur **Hermes**.
 - Un cron **hôte** séparé, 7h15, `sync-operator.sh` : `docker cp` Hermes → `/tmp` → conteneur cible, puis **restart** du conteneur cible pour qu'il recharge la base fraîche.
-- Pattern générique : quand une donnée est produite dans un conteneur et consommée par un autre **sans volume partagé**, la synchro `docker cp` + restart planifiés est une solution simple et suffisante pour un besoin non temps-réel.
+- Pattern générique : quand une donnée est produite dans un conteneur et consommée par un autre **sans volume partagé**, la synchro `docker cp` + restart planifiés est une solution simple et suffisante pour un besoin non temps-réel. Marche à suivre détaillée, garde-fous et pièges : [[sop-synchroniser-sqlite-deux-conteneurs-docker]].
 
 ## 4. Pièges rencontrés & correctifs
 
