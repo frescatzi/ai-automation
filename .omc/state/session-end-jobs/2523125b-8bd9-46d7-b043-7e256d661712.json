@@ -1,0 +1,343 @@
+{
+  "version": 1,
+  "jobId": "dc35b699-9932-4ff0-8883-8276b6c506c7",
+  "sessionId": "2523125b-8bd9-46d7-b043-7e256d661712",
+  "scopeKey": "cc83186552a77d678b8b711f2db48327573c59dbff77e29c5250926fc6fe45a5",
+  "revision": 43,
+  "createdAt": "2026-08-19T15:58:00.411Z",
+  "updatedAt": "2026-08-19T22:21:17.437Z",
+  "producerGraceExpiresAt": "2026-08-19T15:58:30.411Z",
+  "bestEffortDeadlineAt": "2026-08-19T15:59:21.411Z",
+  "producers": {
+    "core": {
+      "state": "sealed",
+      "intentKey": "86c0663c31e59aeaf5ae27415e9dafcbf305d1ba8a4921d1fd5a8c3435eec9e4",
+      "payloadDigest": "86c0663c31e59aeaf5ae27415e9dafcbf305d1ba8a4921d1fd5a8c3435eec9e4",
+      "sealedAt": "2026-08-19T15:58:00.590Z",
+      "sealedBy": "foreground"
+    },
+    "wiki": {
+      "state": "no-op",
+      "sealedAt": "2026-08-19T15:58:00.474Z",
+      "sealedBy": "wiki-producer"
+    }
+  },
+  "actions": {
+    "foreground-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 0,
+      "idempotencyKey": "95040fb2ecbe265c0126188f3ff59a3d66270a8d358a75fa7b84f8367d8f49c5",
+      "payload": {
+        "transcriptPath": "/Users/karter/.claude/projects/-Users-karter-Documents-Lumina-AI-GitHub-ai-automation/2523125b-8bd9-46d7-b043-7e256d661712.jsonl",
+        "cwd": "/Users/karter/Documents/Lumina AI/GitHub/ai-automation",
+        "reason": "other",
+        "input": {
+          "session_id": "2523125b-8bd9-46d7-b043-7e256d661712",
+          "transcript_path": "/Users/karter/.claude/projects/-Users-karter-Documents-Lumina-AI-GitHub-ai-automation/2523125b-8bd9-46d7-b043-7e256d661712.jsonl",
+          "cwd": "/Users/karter/Documents/Lumina AI/GitHub/ai-automation",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "2523125b-8bd9-46d7-b043-7e256d661712",
+          "ended_at": "2026-08-19T15:58:00.408Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {},
+        "foregroundResult": {
+          "removedTransientFiles": 1,
+          "completedAt": "2026-08-19T15:58:00.589Z"
+        }
+      },
+      "budgetMs": 9000,
+      "completedAt": "2026-08-19T15:58:00.590Z",
+      "lastOutcomeCode": "completed"
+    },
+    "wiki-capture": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 0,
+      "idempotencyKey": "178db854d4dd8ffab317066f2af6065c8bfc65b0cb09f288f3df689e0a06f691",
+      "payload": {
+        "transcriptPath": "/Users/karter/.claude/projects/-Users-karter-Documents-Lumina-AI-GitHub-ai-automation/2523125b-8bd9-46d7-b043-7e256d661712.jsonl",
+        "cwd": "/Users/karter/Documents/Lumina AI/GitHub/ai-automation",
+        "reason": "other",
+        "input": {
+          "session_id": "2523125b-8bd9-46d7-b043-7e256d661712",
+          "transcript_path": "/Users/karter/.claude/projects/-Users-karter-Documents-Lumina-AI-GitHub-ai-automation/2523125b-8bd9-46d7-b043-7e256d661712.jsonl",
+          "cwd": "/Users/karter/Documents/Lumina AI/GitHub/ai-automation",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "2523125b-8bd9-46d7-b043-7e256d661712",
+          "ended_at": "2026-08-19T15:58:00.408Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 9000,
+      "completedAt": "2026-08-19T15:58:00.474Z"
+    },
+    "team-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "1954981b0876948eb28fdd50b916426741ed1d099d501e0f4172913a44ec90fa",
+      "payload": {
+        "transcriptPath": "/Users/karter/.claude/projects/-Users-karter-Documents-Lumina-AI-GitHub-ai-automation/2523125b-8bd9-46d7-b043-7e256d661712.jsonl",
+        "cwd": "/Users/karter/Documents/Lumina AI/GitHub/ai-automation",
+        "reason": "other",
+        "input": {
+          "session_id": "2523125b-8bd9-46d7-b043-7e256d661712",
+          "transcript_path": "/Users/karter/.claude/projects/-Users-karter-Documents-Lumina-AI-GitHub-ai-automation/2523125b-8bd9-46d7-b043-7e256d661712.jsonl",
+          "cwd": "/Users/karter/Documents/Lumina AI/GitHub/ai-automation",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "2523125b-8bd9-46d7-b043-7e256d661712",
+          "ended_at": "2026-08-19T15:58:00.408Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 9000,
+      "claimedAt": "2026-08-19T15:58:00.781Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "8d356d59-4b70-4822-a0b8-db030969baa9",
+        "phase": "terminal",
+        "deadlineAt": "2026-08-19T15:58:10.673Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-08-19T15:58:01.332Z"
+    },
+    "python-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "2dac1dd189c57d03c0582cad2c7ce1116b5d0a4cf63ede6ec9962b4ef592f6f7",
+      "payload": {
+        "transcriptPath": "/Users/karter/.claude/projects/-Users-karter-Documents-Lumina-AI-GitHub-ai-automation/2523125b-8bd9-46d7-b043-7e256d661712.jsonl",
+        "cwd": "/Users/karter/Documents/Lumina AI/GitHub/ai-automation",
+        "reason": "other",
+        "input": {
+          "session_id": "2523125b-8bd9-46d7-b043-7e256d661712",
+          "transcript_path": "/Users/karter/.claude/projects/-Users-karter-Documents-Lumina-AI-GitHub-ai-automation/2523125b-8bd9-46d7-b043-7e256d661712.jsonl",
+          "cwd": "/Users/karter/Documents/Lumina AI/GitHub/ai-automation",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "2523125b-8bd9-46d7-b043-7e256d661712",
+          "ended_at": "2026-08-19T15:58:00.408Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 9000,
+      "claimedAt": "2026-08-19T15:58:01.460Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "a13e900f-b30f-4c79-b3b1-d75290ec0967",
+        "phase": "terminal",
+        "deadlineAt": "2026-08-19T15:58:10.673Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-08-19T15:58:02.275Z"
+    },
+    "reply-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "1f21b1a54721465ca41b9e7a02cc26aaf381766232dab1343fe1f699e7310a47",
+      "payload": {
+        "transcriptPath": "/Users/karter/.claude/projects/-Users-karter-Documents-Lumina-AI-GitHub-ai-automation/2523125b-8bd9-46d7-b043-7e256d661712.jsonl",
+        "cwd": "/Users/karter/Documents/Lumina AI/GitHub/ai-automation",
+        "reason": "other",
+        "input": {
+          "session_id": "2523125b-8bd9-46d7-b043-7e256d661712",
+          "transcript_path": "/Users/karter/.claude/projects/-Users-karter-Documents-Lumina-AI-GitHub-ai-automation/2523125b-8bd9-46d7-b043-7e256d661712.jsonl",
+          "cwd": "/Users/karter/Documents/Lumina AI/GitHub/ai-automation",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "2523125b-8bd9-46d7-b043-7e256d661712",
+          "ended_at": "2026-08-19T15:58:00.408Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 9000,
+      "claimedAt": "2026-08-19T15:58:02.398Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "537578fe-7bc1-4059-b807-e5752e959f42",
+        "phase": "terminal",
+        "deadlineAt": "2026-08-19T15:58:10.673Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-08-19T15:58:02.854Z"
+    },
+    "callback": {
+      "class": "best-effort",
+      "phase": "deferred-best-effort",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "bf81850947fef57ff1924a266663f12fab3bdf9bd055e5975c534fecc442c4c3",
+      "payload": {
+        "transcriptPath": "/Users/karter/.claude/projects/-Users-karter-Documents-Lumina-AI-GitHub-ai-automation/2523125b-8bd9-46d7-b043-7e256d661712.jsonl",
+        "cwd": "/Users/karter/Documents/Lumina AI/GitHub/ai-automation",
+        "reason": "other",
+        "input": {
+          "session_id": "2523125b-8bd9-46d7-b043-7e256d661712",
+          "transcript_path": "/Users/karter/.claude/projects/-Users-karter-Documents-Lumina-AI-GitHub-ai-automation/2523125b-8bd9-46d7-b043-7e256d661712.jsonl",
+          "cwd": "/Users/karter/Documents/Lumina AI/GitHub/ai-automation",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "2523125b-8bd9-46d7-b043-7e256d661712",
+          "ended_at": "2026-08-19T15:58:00.408Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 2000,
+      "claimedAt": "2026-08-19T15:58:02.957Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "db773991-f934-4938-8651-dd1bde7116d5",
+        "phase": "terminal",
+        "deadlineAt": "2026-08-19T15:58:10.673Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-08-19T15:58:03.436Z"
+    },
+    "notification": {
+      "class": "best-effort",
+      "phase": "deferred-best-effort",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "a842e5c9d40d93b11ba017d132d6f4799f8bda542c49015b4d0018cd5e2b9476",
+      "payload": {
+        "transcriptPath": "/Users/karter/.claude/projects/-Users-karter-Documents-Lumina-AI-GitHub-ai-automation/2523125b-8bd9-46d7-b043-7e256d661712.jsonl",
+        "cwd": "/Users/karter/Documents/Lumina AI/GitHub/ai-automation",
+        "reason": "other",
+        "input": {
+          "session_id": "2523125b-8bd9-46d7-b043-7e256d661712",
+          "transcript_path": "/Users/karter/.claude/projects/-Users-karter-Documents-Lumina-AI-GitHub-ai-automation/2523125b-8bd9-46d7-b043-7e256d661712.jsonl",
+          "cwd": "/Users/karter/Documents/Lumina AI/GitHub/ai-automation",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "2523125b-8bd9-46d7-b043-7e256d661712",
+          "ended_at": "2026-08-19T15:58:00.408Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 2000,
+      "claimedAt": "2026-08-19T15:58:03.531Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "2dc5ea6e-02f0-47fa-bb35-4fdb1f27f76a",
+        "phase": "terminal",
+        "deadlineAt": "2026-08-19T15:58:10.673Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-08-19T15:58:03.926Z"
+    },
+    "openclaw": {
+      "class": "best-effort",
+      "phase": "deferred-best-effort",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "2bbfa1fc335402f4fcf5a3b189c37964f4296158e17b533a9373e794cac80d3c",
+      "payload": {
+        "transcriptPath": "/Users/karter/.claude/projects/-Users-karter-Documents-Lumina-AI-GitHub-ai-automation/2523125b-8bd9-46d7-b043-7e256d661712.jsonl",
+        "cwd": "/Users/karter/Documents/Lumina AI/GitHub/ai-automation",
+        "reason": "other",
+        "input": {
+          "session_id": "2523125b-8bd9-46d7-b043-7e256d661712",
+          "transcript_path": "/Users/karter/.claude/projects/-Users-karter-Documents-Lumina-AI-GitHub-ai-automation/2523125b-8bd9-46d7-b043-7e256d661712.jsonl",
+          "cwd": "/Users/karter/Documents/Lumina AI/GitHub/ai-automation",
+          "hook_event_name": "SessionEnd",
+          "reason": "other"
+        },
+        "metrics": {
+          "session_id": "2523125b-8bd9-46d7-b043-7e256d661712",
+          "ended_at": "2026-08-19T15:58:00.408Z",
+          "reason": "other",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 2000,
+      "claimedAt": "2026-08-19T15:58:04.016Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "d759a14f-049e-4cb0-a277-f12cf04085bc",
+        "phase": "terminal",
+        "deadlineAt": "2026-08-19T15:58:10.673Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-08-19T15:58:04.396Z"
+    }
+  },
+  "owner": null,
+  "phase": "complete",
+  "completion": {
+    "completedAt": "2026-08-19T15:58:04.469Z",
+    "terminalDigest": "6ca32971eb67506b0e11e5a1c5a648521bc4f07c9ca4e7d3ce736ba8f1ba9c20",
+    "terminalRevision": 41
+  }
+}
