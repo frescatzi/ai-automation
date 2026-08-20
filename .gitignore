@@ -17,3 +17,6 @@ secrets/
 .obsidian/graph.json
 .obsidian/app.json
 .obsidian/appearance.json
+
+# Etat agent local (sessions Claude Code) — ne jamais committer
+.omc/

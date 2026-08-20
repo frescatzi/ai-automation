@@ -1,7 +1,0 @@
-{
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"grep -rn -iE \\\"vps|hermes\\\" --include=\\\"*.md\\\" -l . 2>/dev/null | head -30; echo \\\"---SSH CONFIG---\\\"; ls ~/.ssh/config 2>/dev/null && grep -iE \\\"host |hostname\\\" ~/.ssh/config 2>/dev/null...",
-  "error": "Exit code 1\nindex.md\nlog.md\nwiki/synthese/synthese-lumina-ai-os.md\nwiki/sop/sop-creer-memoire-agents-humains.md\nwiki/synthese/synthese-lumina-systeme-reference.md\nwiki/sop/sop-clonage-roster-agents.md\nwiki/sop/sop-cablage-orchestrateur-subagents.md\nwiki/sop/Guide-Connexion-Agents-AI-n8n.md\nwiki/sop/sop-agent-n8n-cookie-auth.md\nwiki/sop/sop-apprendre-skill-a-hermes.md\nwiki/architecture/Memoire_Centrale_ASP_Brief_Construction.md\nwiki/concept/concept-hermes-agent.md\nwiki/architecture/Instructions_P...",
-  "timestamp": "2026-08-02T16:20:35.205Z",
-  "retry_count": 1
-}
