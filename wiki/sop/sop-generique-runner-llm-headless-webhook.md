@@ -7,7 +7,7 @@ vault: ai-automation
 brand: null
 sources: ["raw/2026-07-07--pos-generique-runner-llm-headless-declenche-par-webhook-2026-07-07.md"]
 updated: 2026-07-07
-related: ["concept-archivage-n8n-idempotent", "concept-intake-source-git", "concept-pipeline-memoire-wiki-git", "concept-validation-auto-ingest", "sop-generique-pipeline-source-vers-vues", "sop-lumina-archive-raw-vers-drive", "sop-lumina-auto-ingest-raw-vers-wiki"]
+related: ["concept-archivage-n8n-idempotent", "concept-intake-source-git", "concept-pipeline-memoire-wiki-git", "concept-validation-auto-ingest", "sop-generique-pipeline-source-vers-vues", "sop-lumina-archive-raw-vers-drive", "sop-lumina-auto-ingest-raw-vers-wiki", "sop-interroger-llm-externe-n8n-webhook"]
 ---
 
 # SOP générique — Runner LLM agentique headless déclenché par webhook
@@ -103,6 +103,7 @@ related: ["concept-archivage-n8n-idempotent", "concept-intake-source-git", "conc
 - [[sop/sop-lumina-auto-ingest-raw-vers-wiki]] — implémentation Lumina concrète de ce patron (runner Coolify, secrets, pièges, tests), multi-coffres.
 - [[sop/sop-lumina-archive-raw-vers-drive]] — le workflow n8n aval qui consomme la sortie de ce runner (`_archive_queue.json`).
 - [[concept-archivage-n8n-idempotent]] — garde-fous équivalents côté archivage.
+- [[sop/sop-interroger-llm-externe-n8n-webhook]] — patron voisin mais distinct : simple appel stateless prompt→texte depuis n8n, sans autonomie ni écriture dans une source de vérité.
 
 <!-- AUTO-LIENS:début -->
 ## Voir aussi

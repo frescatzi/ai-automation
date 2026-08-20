@@ -53,16 +53,20 @@
 - [[sop-clonage-roster-agents]] : SOP · Clonage d'un roster d'agents vers une nouvelle marque
 - [[sop-creer-memoire-agents-humains]] : SOP Lumina · Créer la mémoire (agents + humains) depuis le wiki Git
 - [[sop-diagnostiquer-pipeline-memoire-vectorielle]] : SOP · Diagnostiquer/réparer un pipeline de mémoire vectorielle (n8n + pgvector)
+- [[sop-deployer-fastapi-coolify-repo-prive]] : SOP générique · Déployer une app FastAPI sur Coolify depuis un repo GitHub privé
 - [[sop-generique-pipeline-source-vers-vues]] : SOP générique · Pipeline d'ingestion & publication idempotente (n8n)
 - [[sop-generique-runner-llm-headless-webhook]] : SOP générique · Runner LLM agentique headless déclenché par webhook
 - [[sop-ingestion-multi-format-banque-vectorielle]] : SOP · Ingestion multi-format (texte/markdown + PDF/dossier) vers banque vectorielle
+- [[sop-interroger-llm-externe-n8n-webhook]] : SOP générique · Interroger un LLM externe depuis n8n (webhook → HTTP Request → credential)
 - [[sop-lumina-archive-raw-vers-drive]] : SOP Lumina · Archive Raw→Drive (n8n)
 - [[sop-lumina-auto-ingest-raw-vers-wiki]] : SOP Lumina · Auto-Ingest raw→wiki (runner Claude headless, multi-coffres)
 - [[sop-lumina-intake-et-publish]] : SOP Lumina · Intake (Drive→GitHub) & Publication Notion idempotente
+- [[sop-operator-query-claude-n8n]] : SOP · Operator OS : canal query-claude (webhook n8n → API Anthropic)
 - [[sop-outreach-backfill]] : SOP · Backfill : intégrer des contacts déjà démarchés manuellement dans un outreach automatisé
 - [[sop-reparer-credential-postgres-partagee-n8n]] : SOP · Réparer une credential Postgres partagée fantôme (n8n / mémoire agents)
 - [[sop-registre-agents-multi-backends]] : SOP générique · Registre d'agents multi-backends derrière une interface unique
 - [[sop-reparer-webhook-n8n-ingestion-pdf]] : SOP · Réparer un webhook n8n (last-node) + ingérer un PDF Drive dans une banque vectorielle
+- [[sop-routeur-multi-agent-operator-os]] : SOP · Routeur multi-agent Operator OS (DeepSeek / Hermes / Claude API / Claude Code)
 - [[sop-repondeur-email-drafts-agent]] : SOP · Répondeur email à brouillons via agent (pattern draft-only)
 - [[sop-synchroniser-sqlite-deux-conteneurs-docker]] : SOP générique · Synchroniser une base SQLite entre deux conteneurs Docker (docker cp + cron)
 - [[sop-token-systemuser-meta-ads-n8n]] : SOP · Token System User Meta Ads pour n8n (création de campagnes)

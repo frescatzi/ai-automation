@@ -9,7 +9,7 @@ sources:
   - "raw/2026-06-24--sop-installer-pgvector-sur-postgres-coolify.md"
   - "raw/2026-06-29--sop-installer-pgvector-sur-postgres-coolify.md"
 updated: 2026-07-21
-related: ["SOP_systeme-multi-agents-memoire-centrale-mcp-n8n", "concept-memoire-vectorielle-multi-marques", "concept-memoire-vivante-agents", "sop-creer-memoire-agents-humains", "sop-diagnostiquer-pipeline-memoire-vectorielle", "sop-ingestion-multi-format-banque-vectorielle", "sop-reparer-credential-postgres-partagee-n8n", "synthese-lumina-systeme-reference"]
+related: ["SOP_systeme-multi-agents-memoire-centrale-mcp-n8n", "concept-memoire-vectorielle-multi-marques", "concept-memoire-vivante-agents", "sop-creer-memoire-agents-humains", "sop-diagnostiquer-pipeline-memoire-vectorielle", "sop-ingestion-multi-format-banque-vectorielle", "sop-reparer-credential-postgres-partagee-n8n", "synthese-lumina-systeme-reference", "sop-deployer-fastapi-coolify-repo-prive"]
 ---
 
 # SOP — Installer pgvector sur un Postgres géré par Coolify
@@ -100,6 +100,7 @@ CREATE INDEX IF NOT EXISTS ma_table_embedding_idx
 ## Voir aussi
 
 - [[sop/sop-reparer-credential-postgres-partagee-n8n]] — si cette base sert aussi la mémoire/Chat Memory des agents, une credential Postgres corrompue est un point unique de défaillance distinct (panne côté n8n, pas côté pgvector) : procédure de réparation.
+- [[sop/sop-deployer-fastapi-coolify-repo-prive]] — autre patron de déploiement/administration sur la même plateforme Coolify (app FastAPI plutôt que base Postgres).
 
 <!-- AUTO-LIENS:début -->
 ## Voir aussi

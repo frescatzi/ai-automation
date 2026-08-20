@@ -8,7 +8,7 @@ brand: null
 sources:
   - raw/2026-08-17--pos-exact-bridge-claude-code.md
 updated: 2026-08-17
-related: ["concept-hermes-agent", "synthese-lumina-ai-os", "sop-dream-engine-cron-prescriptions-llm", "concept-n8n-credentials", "sop-bridge-cli-local-tunnel-serveur-distant"]
+related: ["concept-hermes-agent", "synthese-lumina-ai-os", "sop-dream-engine-cron-prescriptions-llm", "concept-n8n-credentials", "sop-bridge-cli-local-tunnel-serveur-distant", "sop-routeur-multi-agent-operator-os"]
 ---
 
 # SOP — Bridge Claude Code Mac↔VPS via tunnel Cloudflare (Operator OS)
@@ -54,3 +54,4 @@ related: ["concept-hermes-agent", "synthese-lumina-ai-os", "sop-dream-engine-cro
 - [[synthese/synthese-lumina-ai-os]] — place d'Operator OS dans l'écosystème LUMINA plus large.
 - [[sop/sop-dream-engine-cron-prescriptions-llm]] — autre composant Operator OS interrogeant Claude, sur la même infra VPS.
 - [[concept/concept-n8n-credentials]] — patron général de gestion des clés/secrets statiques (ne jamais coder en dur, toujours dans un credential/variable d'environnement).
+- [[sop/sop-routeur-multi-agent-operator-os]] — ce bridge est le backend `claude-code` du routeur multi-agent Operator OS.

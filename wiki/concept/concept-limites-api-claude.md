@@ -9,7 +9,7 @@ sources:
   - raw/2026-06-22--claude-api-rate-limits.md
   - raw/2026-06-23--concept-claude-api-rate-limits.md
 updated: 2026-06-29
-related: ["Guide-Connexion-Agents-AI-n8n", "concept-gestion-erreurs-429", "concept-prompt-caching", "n8n-Brancher-API-et-Premier-Workflow", "synthese-lumina-systeme-reference"]
+related: ["Guide-Connexion-Agents-AI-n8n", "concept-gestion-erreurs-429", "concept-prompt-caching", "n8n-Brancher-API-et-Premier-Workflow", "synthese-lumina-systeme-reference", "sop-operator-query-claude-n8n", "sop-routeur-multi-agent-operator-os"]
 ---
 
 # Limites de débit et de dépenses — API Claude
@@ -53,6 +53,8 @@ Le robot d'ingestion utilise **Gemini** (gratuit) pour le tri initial → pas de
 - [[synthese-lumina-systeme-reference]] — pourquoi le node Anthropic natif n8n est interdit (bug 404).
 - [[sop/Guide-Connexion-Agents-AI-n8n]] — créer et gérer les clés API Anthropic/OpenAI/Gemini dans n8n.
 - [[sop/n8n-Brancher-API-et-Premier-Workflow]] — brancher la clé Claude dans n8n pas à pas.
+- [[sop/sop-operator-query-claude-n8n]] — cas réel d'erreur « credit balance too low » sur le canal `/query-claude` d'Operator OS.
+- [[sop/sop-routeur-multi-agent-operator-os]] — même erreur de crédit rencontrée sur le backend `claude-api` du routeur multi-agent.
 
 
 <!-- test déclencheur croisé 2026-06-24 Test Katel -->

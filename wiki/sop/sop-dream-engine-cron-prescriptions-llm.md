@@ -8,7 +8,7 @@ brand: null
 sources:
   - raw/2026-08-17--pos-exact-operator-os-dream-engine-cron-prescriptions-2026-08-17.md
 updated: 2026-08-17
-related: ["concept-classification-workflows-n8n", "concept-hermes-agent", "synthese-lumina-ai-os", "sop-synchroniser-sqlite-deux-conteneurs-docker", "sop-bridge-claude-code-mac-vps"]
+related: ["concept-classification-workflows-n8n", "concept-hermes-agent", "synthese-lumina-ai-os", "sop-synchroniser-sqlite-deux-conteneurs-docker", "sop-bridge-claude-code-mac-vps", "sop-operator-query-claude-n8n"]
 ---
 
 # SOP — Dream Engine : cron quotidien de prescriptions LLM (sévérité × impact $)
@@ -19,7 +19,7 @@ related: ["concept-classification-workflows-n8n", "concept-hermes-agent", "synth
 
 1. Cron hôte **`Operator OS Dream Engine`** (7h00, classé `no_agent` — script planifié, pas un appel d'agent) → lance `operator-dream.sh`.
 2. Étapes de re-collecte : `schema` → `collect` → `skills` → `derive_usage` → `memory_ingest`.
-3. `collector/dream.py` interroge Claude via `/query-claude` → parse la réponse JSON → insère les lignes dans la table `dream_prescriptions`.
+3. `collector/dream.py` interroge Claude via le canal `/query-claude` (cf. [[sop-operator-query-claude-n8n]]) → parse la réponse JSON → insère les lignes dans la table `dream_prescriptions`.
 4. Sortie livrée : **4 prescriptions**, chacune avec icône de sévérité, message, action et impact `$`/mois.
 
 ## 2. Contrat de sortie LLM (format de la prescription)
@@ -51,3 +51,4 @@ related: ["concept-classification-workflows-n8n", "concept-hermes-agent", "synth
 - [[concept/concept-hermes-agent]] — le conteneur/hôte Hermes mentionné en §3 est l'infrastructure qui héberge aussi Hermes-Agent ; à ne pas confondre : ce cron s'exécute en dehors du chemin d'exécution de l'agent (`no_agent`).
 - [[synthese/synthese-lumina-ai-os]] — place d'Operator OS/Dream Engine dans l'écosystème LUMINA plus large.
 - [[sop/sop-bridge-claude-code-mac-vps]] — autre composant Operator OS interrogeant Claude, sur la même infra VPS.
+- [[sop/sop-operator-query-claude-n8n]] — détail du canal `/query-claude` (webhook n8n → API Anthropic) que ce cron utilise pour produire les prescriptions.

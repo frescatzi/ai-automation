@@ -7,7 +7,7 @@ vault: ai-automation
 brand: null
 sources:
   - raw/2026-08-17--pos-generique-routeur-multi-agent.md
-related: ["concept-routeur-multi-llm", "sop-cablage-orchestrateur-subagents", "sop-bridge-cli-local-tunnel-serveur-distant", "concept-n8n-credentials"]
+related: ["concept-routeur-multi-llm", "sop-cablage-orchestrateur-subagents", "sop-bridge-cli-local-tunnel-serveur-distant", "concept-n8n-credentials", "sop-routeur-multi-agent-operator-os"]
 updated: 2026-08-17
 ---
 
@@ -52,3 +52,4 @@ Complémentaire à [[concept-routeur-multi-llm]] : ce dernier route **par `task_
 - [[sop-cablage-orchestrateur-subagents]] — variante n8n : un orchestrateur AI Agent délègue à des sub-agents et au routeur LLM via `toolWorkflow`.
 - [[sop-bridge-cli-local-tunnel-serveur-distant]] — patron pour le backend `type: cli local` quand le CLI IA tourne derrière NAT.
 - [[concept-n8n-credentials]] — gestion des secrets/clés que le backend ne doit jamais exposer à l'UI.
+- [[sop-routeur-multi-agent-operator-os]] — implémentation de référence de ce patron chez Operator OS (4 agents : DeepSeek, Hermes, Claude API, Claude Code).

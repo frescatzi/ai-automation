@@ -8,7 +8,7 @@ brand: null
 sources:
   - "raw/2026-07-12--canon-lumina-hermes-agent-2026-07-12.md"
 updated: 2026-07-13
-related: ["concept-bibliotheque-skills-apprenante", "concept-memoire-vivante-agents", "concept-routeur-multi-llm", "sop-agent-n8n-cookie-auth", "sop-apprendre-skill-a-hermes", "sop-bridge-claude-code-mac-vps", "sop-cablage-orchestrateur-subagents", "sop-dream-engine-cron-prescriptions-llm", "synthese-lumina-ai-os"]
+related: ["concept-bibliotheque-skills-apprenante", "concept-memoire-vivante-agents", "concept-routeur-multi-llm", "sop-agent-n8n-cookie-auth", "sop-apprendre-skill-a-hermes", "sop-bridge-claude-code-mac-vps", "sop-cablage-orchestrateur-subagents", "sop-dream-engine-cron-prescriptions-llm", "synthese-lumina-ai-os", "sop-routeur-multi-agent-operator-os", "sop-operator-query-claude-n8n"]
 ---
 
 # Concept — Hermes-Agent (bras d'exécution apprenant de LUMINA OS)
@@ -63,6 +63,8 @@ Le câblage « orchestrateur → sous-agents → outil Hermes » est détaillé 
 - [[sop/sop-apprendre-skill-a-hermes]] — procédure vérifiée pour écrire un skill directement dans sa bibliothèque.
 - [[sop/sop-dream-engine-cron-prescriptions-llm]] — cron `no_agent` hébergé sur l'infra Hermes (à ne pas confondre avec l'agent lui-même).
 - [[sop/sop-bridge-claude-code-mac-vps]] — pont Hermes (VPS) → Claude Code CLI (Mac) via tunnel Cloudflare, une des voies par lesquelles Hermes/Operator OS interroge Claude.
+- [[sop/sop-operator-query-claude-n8n]] — autre voie par laquelle Operator OS interroge Claude : webhook n8n `/query-claude` → API Anthropic.
+- [[sop/sop-routeur-multi-agent-operator-os]] — Hermes est l'un des 4 backends (`hermes-api`) du routeur multi-agent Operator OS.
 
 <!-- AUTO-LIENS:début -->
 ## Voir aussi
