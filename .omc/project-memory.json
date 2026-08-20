@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1787153175589,
+  "lastScanned": 1787239647375,
   "projectRoot": "/Users/karter/Documents/Lumina AI/GitHub/ai-automation",
   "techStack": {
     "languages": [],
@@ -35,8 +35,8 @@
     "raw": {
       "path": "raw",
       "purpose": null,
-      "fileCount": 254,
-      "lastAccessed": 1787153175567,
+      "fileCount": 259,
+      "lastAccessed": 1787239647351,
       "keyFiles": [
         "2026-06-19_session_memoire-centrale_etapes-1-2.md",
         "2026-06-20_session_agents-orchestration-mcp.md",
@@ -49,7 +49,7 @@
       "path": "wiki",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1787153175568,
+      "lastAccessed": 1787239647352,
       "keyFiles": [
         "README.md"
       ]
